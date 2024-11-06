@@ -1,0 +1,1 @@
+API_KEY = "22cff3bda0474158a99c200c58b29267fe4540c8af09fbbfb9499e5741e8031d"  # Replace with your actual Together.AI API key

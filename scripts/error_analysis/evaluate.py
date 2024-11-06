@@ -12,7 +12,7 @@ def write_sent_lines(summaries, file_path):
 
 nlp = spacy.load("en_core_web_sm")
 project_path = os.getcwd()
-generated = pd.read_csv(os.path.join(project_path, "output", "few_shot_summaries", "test_generated.csv"))
+generated = pd.read_csv(os.path.join(project_path, "output", "few_shot_summaries", "trials.csv"))
 
 original_summaries_sentences = []
 generated_summaries_sentences = []

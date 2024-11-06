@@ -1,8 +1,9 @@
-Following is a series of discharge reports and their summaries. See the patterns in the summaries and generate a similar summary for the last report:
-Report6:
- Input:
+Based on the following examples, write a summary for the target report
+
+<BEGIN_REPORT>
+Input:
 age: 65. gender: F.  
-Name:  ___                Unit No:   ___
+Name:  ___                     Unit No:   ___
  
 Admission Date:  ___              Discharge Date:   ___
  
@@ -11,756 +12,427 @@ Date of Birth:  ___             Sex:   F
 Service: MEDICINE
  
 Allergies: 
-Penicillins / oxybutynin
+Motrin
  
-Attending: ___
+Attending: ___.
  
 Chief Complaint:
-hypoxic resp failure
+Dyspnea on Exertion
  
 Major Surgical or Invasive Procedure:
-None
+Cardiac Catheterization
+
  
 History of Present Illness:
-___ w/ a past medical history of ___ disease, 
-orthostatic hypotension, and GERD recent multifocal pneumonia 
-c/b hypoxic respiratory failure requiring prolonged intubation, 
-ultimately trach/PEG placement on ___ c/b 2 bouts of PNA at 
-rehab (d/c home ___, now s/p trach decannulation and PEG 
-removal (___) presenting from ___ clinic for hypoxia, dyspnea, 
-productive cough, congestion, for the past 2 days. 
+___ with PMH CAD, DM with CKD, Afib, HLP presents for the second 
+time in a month with the complaint of exertional dyspnea and 
+chest discomfort.  
 
-Per notation from IP, last seen ___ where she had been doing 
-well denying any respiratory symptoms. PEG and trach were 
-removed at that appointment. Following discharge to rehab ___, 
-initially reported doing well. Stated she started having 
-increased dyspnea and productive cough with difficulty bringing 
-up sputum. Of note she has started using 2L NC overnight for 
-episodes of hypoxia w/o associated apnea or snoring which was 
-cooberated with her husband. During day time over this time 
-period her O2 sats have been ___ and using O2 throughout 
-most of day. Denies fever, chills, myalgias, coryzal symptoms. 
-No obvious sick contacts following d/c from rehab.
- 
-Following presentation to IP for stoma closure ___ am she was 
-referred to ED for these sx. 
+Of note, pt was recently seen here ___ with the complaint of 
+shortness of breath after dialysis.  She was diagnosed with 
+volume overload, underwent ultrafiltration and diuresis and was 
+discharged to rehab.
 
-___ the ED, initial vitals: 0 98.8 65 113/71 8 93% RA. Vitals 
-upon transfer: 84 93/55 44 95% Non-Rebreather. 
- 
-- Exam notable for: tachypnea, rhonchorous lungs, stoma site.  
-- Labs were notable for: WBC 4.9, Hgb 11.3, Hct 36.5, Platelet 
-233.  
-BNP 210. PMN 63.2, L 23.5, 2.5 eosinophils, Mono 9.8.  
-Sodium 140, K 4.7, Chloride 101, Bicarb 29, BUN 19, Cr 0.5.  
-pH 7.44 / 44 / 62 /31 ; Lactate 1.4. O2 sat 90.  
-Repeat VBG: 7.43 / 49 / 53  
- 
-- Imaging:  
-CXR:Extensive atelectasis ___ the lower lungs, difficult to 
-exclude a superimposed pneumonia.  
+Since that time, the patient notes that she initially felt 
+better but would still get short of breath with minimal 
+exertion.  She states that when she gets up to the bathroom from 
+her bed, she feels acutely short of breath.  This symptom is 
+associated with a burning sensation in her substernal region 
+that radiates directly upward towards her throat.  This morning 
+she was walking into the ___ clinic when she began to feel 
+those symptoms.  As she was recently hospitalized with similar 
+symptoms in ___, the Renal doctors ___ with 
+___ and removed 3L.  Her symptoms persisted and she 
+was then sent to the ___ ED.
 
-- Patient was given:  
-___ 14:24 IH Albuterol 0.083% Neb Soln 1 NEB  
-___ 14:24 IH Ipratropium Bromide Neb 1 NEB  
-___ 14:24 NEB Acetylcysteine 20% 4 mL  
-___ 14:24 PO GuaiFENesin ER 600 mg  
-___ 16:14 IV CefePIME 2 g  
-___ 17:18 IV Vancomycin  
-___ 17:18 PO/NG Carbidopa-Levodopa (___) 1 TAB  
-___ 17:18 PO/NG Carbidopa-Levodopa (___) 1 TAB  
-___ 17:19 IV Vancomycin 1 mg  
-___ 18:16 PO Midodrine 5 mg  
-___ 20:20 IH Albuterol 0.083% Neb Soln 1 NEB  
-___ 20:20 IH Ipratropium Bromide Neb 1 NEB  
-___ 20:33 PO/NG Carbidopa-Levodopa (___) 1 TAB  
-___ 22:11 IVF NS ( 1000 mL ordered)  
-___ 00:47 PO/NG Carbidopa-Levodopa (___) 1 TAB 
-___ 00:47 IV MethylPREDNISolone Sodium Succ 125 mg 
+In the ED, the patient was still having symptoms.  An EKG showed 
+slight <1mm ST depressions in the lateral leads.  She was given 
+ASA 325, and a SL nitroglycerin relieved her chest discomfort.  
+Labs were notable for a troponin level of 0.08, and a d-dimer 
+was positive.  Subsequent CTA was negative for PE or aortic 
+dissection.   She was then transferred up to the Cardiology 
+Floor.
 
-- Consults: Respiratory instructed ___ the use of flutter valve, 
-despite firm encouragement and good patient effort. Patient has 
-a weak cough.  
- 
-On arrival to the MICU, tachypneic, uncomfortable. 
+On the floor, the patient is without chest discomfort, shortness 
+of breath, nausea, diaphoresis etc.  
 
-REVIEW OF SYSTEMS: per hpi
+On review of systems, she denies any prior history of stroke, 
+TIA, deep venous thrombosis, pulmonary embolism, bleeding at the 
+time of surgery, myalgias, joint pains, cough, hemoptysis, black 
+stools or red stools. She denies recent fevers, chills or 
+rigors. She denies exertional buttock or calf pain. All of the 
+other review of systems were negative.  
+.  
+Cardiac review of systems is notable for absence of chest pain, 
+dyspnea on exertion, paroxysmal nocturnal dyspnea, orthopnea, 
+ankle edema, palpitations, syncope or presyncope.  
+
  
 Past Medical History:
-___
-*Orthostastic hypotension on mitodrine and fludrocortisone
-*Chronic urinary incontinence s/p Botox
-*GERD
-*Anemia
+1. CARDIAC RISK FACTORS: +Diabetes, +Dyslipidemia, + 
+Hypertension  
+2. CARDIAC HISTORY:  
+- CABG:  
+- PERCUTANEOUS CORONARY INTERVENTIONS: 3VD per cath ___, s/p 
+stent to RCA in ___  
+- PACING/ICD:  
+3. OTHER PAST MEDICAL HISTORY:  
+- PVD - s/p left SFA stent placement ___  
+- DM - on insulin, last A1C 8.9% in ___  
+- ESRD - ___ @ ___ (Dr. ___  
+- HTN  
+- hyperlipidemia  
+- hyperparathyroidism  
+- s/p hysterectomy  
+- h/o colonic polyps  
+- s/p phacoemulsification with posterior chamber lens implant 
+left eye ___.  
+- Anemia  
+- Paroxysmal atrial fibrillation.
  
 Social History:
 ___
 Family History:
-family history of DM 
+- No family history of early MI, arrhythmia, cardiomyopathies, 
+or sudden cardiac death; otherwise non-contributory.  
+-Diabetes, hypertension in several family members  
+
  
 Physical Exam:
-==================
-Admission 
-==================
-VITALS: 98.4(ax) 78 ___ 97%NR 
-GENERAL: Alert, oriented, no acute distress  
-HEENT: Sclera anicteric, MMM, oropharynx clear  
-NECK: supple, JVP not elevated, no LAD  
-LUNGS: Clear to auscultation bilaterally, no wheezes, rales, 
-rhonchi  
-CV: Regular rate and rhythm, normal S1 S2, no murmurs, rubs, 
-gallops  
-ABD: soft, non-tender, non-distended, bowel sounds present, no 
-rebound tenderness or guarding, no organomegaly  
-EXT: Warm, well perfused, 2+ pulses, no clubbing, cyanosis or 
-edema
+97.8 ___ 18 100RA
+GENERAL: WDWN in NAD. Oriented x3. Mood, affect appropriate.  
+HEENT: NCAT. Sclera anicteric. PERRL, EOMI. Conjunctiva were 
+pink, no pallor or cyanosis of the oral mucosa. No xanthalesma.  
 
-==================
-Discharge
-==================
-PHYSICAL EXAM:  
-Vitals:   97.8 PO 120 / 73 69 16 95 Ra 
-General: alert, oriented, currently on trach mask 40% with 
-speaking valve   
-HEENT: sclera anicteric, dry MM, on speaking valve w/ good 
-speech
-Lungs:  CTA no wheezes, rales, ronchi  
-CV: regular rate and rhythm, normal S1 + S2, no murmurs, rubs, 
-gallops  
-Abdomen: soft, non-tender, non-distended, bowel sounds present, 
-no rebound tenderness or guarding, no organomegaly  
-GU: no foley  
-Ext: warm, well perfused, 2+ pulses, no clubbing, cyanosis or 
-edema  
-Neuro: CNs2-12 intact, MAE
+NECK: Supple with JVP not elevated.  
+CARDIAC: PMI located in ___ intercostal space, midclavicular 
+line. RR, normal S1, S2. SEM ___ heard best LUSB radiating to 
+carotids and also between shoulder blades. No thrills, lifts. No 
+S3 or S4.  
+LUNGS: No chest wall deformities, scoliosis or kyphosis. Resp 
+were unlabored, no accessory muscle use. CTAB, no crackles, 
+wheezes or rhonchi.  
+ABDOMEN: Soft, NTND. No HSM or tenderness. Abd aorta not 
+enlarged by palpation. No abdominal bruits.  
+EXTREMITIES: No c/c/e. No femoral bruits.    
+SKIN: Dorsum of R hand w multiple areas of shallow ulceration 
+and apparent desquamation.  Non tender to touch, no evidence of 
+weeping or bleeding.  R hand is visibly edematous, extending to 
+the wrist.  No evidence of similar skin lesions on the remainder 
+of the exposed body surfaces. 
+PULSES:  
+Right: Carotid 2+ Femoral 2+ Popliteal 2+ DP 2+ ___ 2+  
+Left: Carotid 2+ Femoral 2+ Popliteal 2+ DP 2+ ___ 2+  
+
  
 Pertinent Results:
-===================
-ADMISSION
-===================
-___ 01:00PM BLOOD WBC-4.9 RBC-4.03# Hgb-11.3# Hct-36.5# 
-MCV-91 MCH-28.0 MCHC-31.0* RDW-14.5 RDWSD-48.3* Plt ___
-___ 01:00PM BLOOD Neuts-63.2 ___ Monos-9.8 Eos-2.5 
-Baso-0.8 Im ___ AbsNeut-3.09 AbsLymp-1.15* AbsMono-0.48 
-AbsEos-0.12 AbsBaso-0.04
-___ 01:00PM BLOOD ___ PTT-29.2 ___
-___ 01:00PM BLOOD Glucose-89 UreaN-19 Creat-0.5 Na-140 
-K-4.7 Cl-101 HCO3-29 AnGap-15
-___ 06:18AM BLOOD Calcium-8.7 Phos-3.7 Mg-1.9
-___ 01:25PM BLOOD ___ pO2-62* pCO2-44 pH-7.44 
-calTCO2-31* Base XS-4 Comment-GREEN TOP
-___ 01:25PM BLOOD Lactate-1.4
+ADMISSION:
 
-===================
-IMAGING
-===================
-CXR ___ 1): Extensive atelectasis ___ the lower lungs, 
-difficult to exclude a superimposed pneumonia 
----
-CXR ___ 2): Persistent bibasilar opacities which could be 
-due to pneumonia, atelectasis, and/or aspiration, without 
-significant interval change. 
----
-CXR (___): Compared to ___, the patient is 
-rotated to the left making direct comparisons with the prior 
-study difficult.  Bibasilar opacities persist and appear grossly 
-unchanged, allowing for differences ___ study technique, and may 
-represent pneumonia or atelectasis. 
----
-CXR (___): Comparison to ___. Overall stable 
-appearance of the lung parenchyma within only minimal increase 
-___ parenchymal opacities at the left lung basis. The right lung 
-bases is unchanged.  Moderate cardiomegaly persists. No new 
-focal parenchymal opacities. 
----
-CXR (___)
-Comparison to ___.  Overall stable appearance of the 
-lung parenchyma within only minimal increase ___ parenchymal 
-opacities at the left lung basis.  The right lung bases is 
-unchanged.  Moderate cardiomegaly persists.  No new focal 
-parenchymal opacities. 
----
-___ (___)
-No evidence of deep venous thrombosis ___ the right or left lower 
-extremity 
-veins. 
----
-CXR (___)
-Interval repositioning of the right subclavian PICC line, with 
-tip now 
-overlying the SVC/RA junction.If clinically indicated, it could 
-be retracted by approximately 3 cm to more clearly lie within 
-the distal SVC. 
-Thin curvilinear lucency overlying left heart, question ___ 
-line.  Attention to this area on followup films is requested.  
-Otherwise, doubt significant interval change. 
----
-CT Chest (___)
-There is moderate mucous plugging ___ the left lower lobe. 
-Pulmonary edema. Areas of ground-glass opacities bilaterally, 
-most prominent left upper lobe, and nodular opacities ___ the 
-right lower lobe, likely represent combination of edema and 
-infection, consider aspiration, particularly ___ the lower lobes. 
-Bibasilar consolidations, largely atelectasis. Small pleural 
-effusions. 
----
-CT Neck (___)
-1. Secretions ___ the proximal trachea, above the balloon.
----
-CXR (___)
-Compared to chest radiographs ___ through ___.  
-Left lower lobe collapse developed suddenly on ___ and has 
-not really 
-cleared.  Concurrent pneumonia is certainly possible at both 
-lung bases, but not recently changed since ___.  Heart size 
-is normal.  Pleural effusions are likely, moderate on the left 
-probably smaller on the right.  No pneumothorax.  
-Cardiopulmonary support devices ___ standard placements 
-respectively. 
----
-CXR (___)
-Comparison to ___.  There is a newly inserted feeding 
-tube.  The course of the tube is unremarkable, the tip of the 
-tube is not visualized on the image.  The endotracheal tube has 
-been removed and is replaced by a 
-tracheostomy tube.  Stable appearance of the cardiac silhouette 
-and of the 
-bilateral basal parenchymal opacities.  No pneumothorax.  No 
-pulmonary edema. 
----
-CXR (___)
-Low lung volumes with bilateral pleural effusions and bibasilar 
-atelectasis. 
+___ 10:50AM   GLUCOSE-191* UREA N-23* CREAT-4.2*# 
+SODIUM-137 POTASSIUM-5.8* CHLORIDE-95* TOTAL CO2-30 ANION GAP-18
 
-===================
-MICROBIOLOGY
-===================
-___ 10:53 am URINE: Negative
-___ 2:33 am BLOOD CULTURE: negative  
-___ 10:48 am SPUTUM      Source: Endotracheal. 
-   GRAM STAIN (Final ___: 
-      >25 PMNs and <10 epithelial cells/100X field. 
-      NO MICROORGANISMS SEEN. 
+___ 10:50AM   WBC-3.9* RBC-3.15*# HGB-10.0* HCT-30.4* 
+MCV-97 MCH-31.7 MCHC-32.8 RDW-17.9*
+___ 10:50AM   CK-MB-1 ___
+___ 10:50AM   cTropnT-0.08*
+___ 04:35PM   cTropnT-0.08*
+___ 12:30PM   D-DIMER-1635*
 
-   RESPIRATORY CULTURE (Final ___: 
-      Commensal Respiratory Flora Absent. 
-      YEAST.    RARE GROWTH. 
-___ 12:41 am SPUTUM      Source: Expectorated. 
-   GRAM STAIN (Final ___: 
-      <10 PMNs and <10 epithelial cells/100X field. 
-      2+   ___ per 1000X FIELD):   GRAM POSITIVE COCCI. 
-                                    ___ PAIRS. 
-      QUALITY OF SPECIMEN CANNOT BE ASSESSED. 
+CTA chest ___:
+IMPRESSION: 
+1. No focal consolidation or pneumothorax. 
+2. No pulmonary embolism or acute aortic pathology. 
+3. Dense calcifications in the aorta, coronary arteries, and 
+cardiac valves.  
+  
+4. Cholelithiasis without acute cholecystitis. 
 
-   RESPIRATORY CULTURE (Final ___: 
-      MODERATE GROWTH Commensal Respiratory Flora. 
+PMIBI ___:
+IMPRESSION: 
+  
+1. Reversible, medium sized, moderate severity perfusion defect 
+involving the 
+LAD territory. 
+  
+2. Reversible, small, moderate severity perfusion defect 
+involving the OM 
+territory. 
+  
+3. Transient cavity dilation, consistent with left main or 
+multi-vessel 
+disease. 
+  
+4. Apical hypokinesis with preserved systolic function. 
+  
+Compared with the study of ___, the LAD territory defect 
+and apical wall 
+motion abnormality are new. 
 
-   FUNGAL CULTURE (Final ___: 
-      YEAST. 
-___ 4:09 pm MRSA SCREEN: negative 
-___ 6:18 am URINE      Source: Catheter. 
-      ENTEROCOCCUS SP..    10,000-100,000 CFU/mL.  Daptomycin = 
-1MCG/ ML. 
-         Daptomycin Sensitivity testing performed by Etest. 
+STRESS ___:
+IMPRESSION: No anginal symptoms or ischemic ST segment changes. 
+Baseline systolic hypertension with an appropriate hemodynamic 
+response 
+to the Persantine infusion. Nuclear report sent separately. 
 
-                              SENSITIVITIES: MIC expressed ___ 
-MCG/ML
-                      
-_________________________________________________________
-                             ENTEROCOCCUS SP.
-                             |   
-AMPICILLIN------------  =>32 R
-DAPTOMYCIN------------       S
-LINEZOLID-------------     2 S
-NITROFURANTOIN--------    64 I
-TETRACYCLINE----------  =>16 R
-VANCOMYCIN------------  =>32 R
+Coronary CT ___:
+FINDINGS: 
+  
+Coronary arteries are coming out of conventional origin. 
+  
+LEFT MAIN CORONARY ARTERY: The proximal portion and the mid 
+portion of the 
+left main coronary artery are patent with no appreciable 
+atherosclerotic 
+disease. 
+  
+LAD: Just at the bifurcation of left main coronary artery into 
+LAD and 
+circumflex, there is significant atherosclerotic disease 
+represented as 
+calcified and soft plaque with a significant narrowing/almost 
+occluding the 
+proximal portion of LAD by soft plaque. The mid and distal 
+portions of the 
+LAD are free of disease. 
+  
+LEFT CIRCUMFLEX: Extensive disease involves the entire left 
+circumflex 
+artery. At the proximal portion, no apparent obstruction of 
+circumflex is 
+noted. The patient has left dominance. 
+  
+RIGHT CORONARY ARTERY: The right coronary artery is small, 
+heavily calcified 
+and potentially excluded. 
+  
+Extensive calcifications of the branches of LAD and circumflex 
+are present. 
+  
+The airways are patent to the level of subsegmental bronchi 
+bilaterally. The 
+pulmonary arteries are dilated as demonstrated on the recent CT 
+of the chest 
+consistent with pulmonary hypertension. Cardiomegaly is present 
+. Diffuse 
+ground-glass opacities within the lungs in conjunction with air 
+trapping are 
+noted. This appears similar to prior study from ___ and 
+might reflect 
+expiratory character of the study or mild volume overload. No 
+pleural or 
+pericardial effusion is noted. Left ventricular enlargement with 
+prominence 
+of the apical enlargement is seen. 
 
-___ 6:18 am BLOOD CULTURE: negative
-___ 1:00 pm BLOOD CULTURE: negative 
+Cardiac Catheterization ___:
+Findings
+ESTIMATED blood loss: <100 cc
+Hemodynamics (see above): 
+Left ventriculography: mitral regurgitation; LVEF %; 
+Coronary angiography:  right dominant
+LMCA:  40% distal
+LAD:  moderate calcification.   Mid vessel 50% with bifurcating
+diagonal with diffuse disease.  Lower pole 80% stenosis 
+unchanged
+from ___.
+LCX:  Diffuse noncritical disease.  Small OM1 origin 40%.  OM2
+has proximal 70% stenosis also unchanged from ___.
+RCA:  Widely patent stent in a small vessel.  Diffuse 40-50%
+stenoses.
 
-===================
-DISCHARGE
-===================
-___ 05:00AM BLOOD WBC-6.2 RBC-3.40* Hgb-9.7* Hct-30.3* 
-MCV-89 MCH-28.5 MCHC-32.0 RDW-14.8 RDWSD-48.5* Plt ___
-___ 05:00AM BLOOD Glucose-109* UreaN-13 Creat-0.3* Na-138 
-K-4.5 Cl-98 HCO3-28 AnGap-___ w/ a past medical history of ___ disease, 
-orthostatic hypotension, and GERD, recent multifocal pneumonia 
-c/b hypoxic respiratory failure requiring prolonged intubation, 
-ultimately trach/PEG placement on ___ c/b 2 bouts of PNA at 
-rehab (d/c home ___, who was s/p trach decannulation and PEG 
-removal (___) and who presented from ___ clinic for hypoxia, 
-dyspnea, productive cough, congestion, for the past 2 days 
-transferred to MICU for hypoxic respiratory failure secondary to 
-recurrent aspiration. She was unable to be weaned from the 
-ventilator and underwent trach/peg on ___. She was able to be 
-weaned from the ventilator on ___ and was transferred to the 
-floors where she remained stable on the floor on trach mask 40%. 
+Assessment & Recommendations
+1.Unchanged angiography from ___.
+2.Diastolic CHF with elevated LVEDP.
+3.Medical management of CAD and CHF.
 
+ 
+Brief Hospital Course:
+___ with PMH of CAD, DM and ESRD presents with complaint of 
+exertional dyspnea and chest discomfort.
+  
+# CORONARIES:
+- Pt's story of exertional symptoms and atypical chest pain 
+occur with roughly the same amount of exertion, relieved by 
+nitroglycerin, and never at rest
+- With PMH CAD, this presentation was concerning for stable 
+angina
+- initially treated with medical therapy with ASA, statin, and 
+agressive afterload reduction
+- PMIBI results concerning for multiterritorial perfusion 
+defects
+- Main concern regarding the results of her PMIBI was the 
+possibility of left main disease, which would require a high 
+risk cath
+- This has been verified with the presence of high grade 
+proximal LAD and LCx disease (left main equivalent) on Coronary 
+CTA
+- After a risk/benefit discussion with patient and family the 
+decision was made for cardiac catheterization
+  - Cath results failed to reveal any significant left main 
+disease, or any worsening CAD from prior study in ___
+- Pt was not placed on Plavix ___ concern regarding her 
+anemia/thrombocytopenia and potential fall risk at home
+.  
+# PUMP:  
+- last echo on ___ with preserved EF, clinically appears 
+euvolemic but with evidence of elevated LVEDP to 32 during cath
+- communicated to the Nephrology team that pt should be dialyzed 
+as aggressively as possible to optimize fluid status, as volume 
+overload could contribute to her symptoms of DOE
+- dc'ed home lasix as not likely to be of any benefit, pt has 
+very little UOP ___ ESRD
+.  
+#  HTN
+- currently SBP 110's-150, will control to goal <140
+- Continued home meds amlodipine, clonidine and lisinopril at 
+current doses, increased imdur to 60mg daily
+- if further titration is needed in the outpatient setting PO 
+hydralazine would be a good option
+.
+# Skin Lesions
+- Pt initially presented with eczematous lesion on face that was 
+treated symptomatically with sarna lotion with subjective 
+improvement per patient
+- On ___, pt found to have R hand swelling and multiple areas 
+of painless skin sloughing
+- Dermatology consult was obtained, placed pt on regimen of 
+steroid cream for her face, bactroban for the hand lesion which 
+was thought to be skin sloughing from an infiltrated IV
+- RUE US negative for DVT
+- skin creams were continued as an outpatient regimen
+.
+# UTI
+- pt with complaint of dysuria on admission, previous UCx + for 
+VRE on last admission which was not treated
+- Initially placed on empiric linezolid while cx data brewing 
+___ prior untreated VRE
+- ___, Ucx with pan sensitive E coli and other G+ flora, 
+continued tx with cipro to complete 10d course.  Repeat culture 
+with GNR
 
-=================
-ACTIVE ISSUES  
-=================
-# HYPOXEMIC RESPIRATORY FAILURE: Patient with a recent admission 
-___ ___ for multifocal pneumonia complicated by chronic 
-respiratory failure further complicated recurrent PNA x2 at 
-rehab s/p trach/PEG, decannulated on ___. She presented for 
-this admission with 2 days of dyspnea and productive cough, and 
-was found to be hypoxemic requiring high-flow oxygen. CXR showed 
-possible pneumonia and completed course of antibiotics 
-(Vanc/ceftazidime, Day 1: ___. Her respiratory failure was 
-thought to be secondary to recurrent aspiration related to her 
-neuromuscular disease. She was given hypertonic saline nebs, 
-guaiafenesin, Duonebs, pulmonary hygiene with flutter valve. She 
-required intubation, and was unable to be weaned off the 
-ventilator. After numerous goals of care discussions with the 
-ICU team, her outpatient pulmonologist, palliative care, and her 
-family, decision was made to undergo trach/PEG on ___. She 
-tolerated this well, and was able to be weaned off the 
-ventilator by ___, when she was transferred to floor. Cuff 
-pressures were high, but patient had been tolerating this well. 
-She was remained stable on the floor on trach mask 40% and was 
-able to use her speaking valve with good effect. IP deferred 
-trach upsize given tolerance of speaking valve and stable 
-respiratory status.  
-
-# ASPIRATION: Patient agreed to PEG as solution for recurrent 
-aspiration events, however, during MICU course patient reported 
-desire to eat. After discussion of risks of aspiration, which 
-patient accepted, decision was made allow for PO intake. She was 
-able to tolerate thin liquids and ground dysphagia diet on the 
-floor. Due to good PO intake, continuous tube feeds were 
-discontinued. Nutrition recommended bolus feeds of Jevity 1.2 of 
-5 cans/day to meet nutritional needs.  
-
-# BACTERURIA
-# CHRONIC URINARY INCONTINENCE s/p Botox: Urinalysis with 
-moderate leukocytes and few bacteria. Antibiotics as above. 
-
-# ___ DISEASE: Complicated significant dysautonomia and 
-orthostasis. Continued home carbidopa-levodopa, midodrine, and 
-fludrocortisone. Speech and swallow consulted as above.
-
-# Orthostastic hypotension: The patient had intermittent 
-asymptomatic hypotension while ___ the hospital.  This was 
-attributed to her chronic orthostatic hypotension, and it 
-resolved with minimal intervention.  Continued home midodrine 
-and fludricortisone.
-
-# Diarrhea with risk of constipation: The patient developed 
-diarrhea ___ the hospital, likely related to her new tube feeds.  
-Adjustments were made to the tube feeding formula to try to 
-decrease her diarrhea.  Should it persist, despite her risk of 
-constipation, consideration should be given to starting low-dose 
-infrequent loperamide.
-
-=========================
-CHRONIC/STABLE ISSUES
-=========================
-# Insomnia: Ramelteon while inpatient as melatonin 
-non-formulary.
-# Urge Incontinence: Held mirabegron 25 mg oral as 
-non-formulary, resumed on discharge   
-# GERD: Changed home ranitidine to liquid 
-# Depression: Continued home fluoxetine  
-# History of C. diff: Continued probiotic  
-# Other: Continued multivitamin.
-
-=========================
-TRANSITIONAL ISSUES
-=========================
-[ ] MEDICATION CHANGES
--- NEW: senna PRN and Colace PRN constipation
--- HELD: loperamide (as noted above, consider low dose trial if 
-she has continued diarrhea, exercising caution given her 
-increased risk of constipation due to her ___ Disease), 
-magnesium oxide (not requiring significant repletion throughout 
-hospitalization)
--- MEDICATIONS SHOULD BE PLACED DOWN G-TUBE
-[ ] NUTRITION: patient accepts risk of aspiration with PO 
-intake. She has tolerated diet of thin liquids/ground dysphagia 
-diet well. Recommended for Osmolite 1.5 x 4cans/day, can 
-downtitrate # of cans/day pending PO intake. Can consider adding 
-banana flakes to reduce loose stools. 
-[ ] Continue to discuss goals of care with patient  
-[ ] Patient will follow up with the interventional 
-pulmonologists for further monitoring of her tracheostomy 
-
-#CODE: Full
-#CONTACT: ___ (husband) ___ 
-___ (cell)
  
 Medications on Admission:
-The Preadmission Medication list may be inaccurate and requires 
-futher investigation.
-1. Fludrocortisone Acetate 0.2 mg PO DAILY 
-2. Midodrine 2.5 mg PO TID 
-3. Acetaminophen 650 mg PO Q6H:PRN Pain - Mild 
-4. Aluminum-Magnesium Hydrox.-Simethicone ___ mL PO QID:PRN 
-reflux/gerd 
-5. LOPERamide 2 mg PO QID:PRN diarrhea 
-6. Magnesium Oxide 400 mg PO DAILY 
-7. Ipratropium-Albuterol Neb 1 NEB NEB Q6H 
-8. Bisacodyl 10 mg PO/PR DAILY:PRN constipation  
-9. Carbidopa-Levodopa (___) 1.5 TAB PO DAILY 
-10. Carbidopa-Levodopa (___) ODT 1 TAB PO 6X/DAY 
-11. GuaiFENesin ER 1200 mg PO Q12H 
-12. Lactobacillus acidophilus 1 billion cell oral DAILY 
-13. Ranitidine 150 mg PO DAILY 
-14. Multivitamins 1 TAB PO DAILY 
-15. Melatin (melatonin) 3 mg oral QHS:PRN 
-16. Nystatin Oral Suspension 5 mL PO Frequency is Unknown 
-17. mirabegron 25 mg oral DAILY 
-18. FLUoxetine 40 mg PO DAILY 
+1. amlodipine 5 mg Tablet Sig: Two (2) Tablet PO DAILY (Daily).  
+
+
+2. B complex-vitamin C-folic acid 1 mg Capsule Sig: One (1) Cap 
+PO DAILY (Daily).  
+3. calcium acetate 667 mg Capsule Sig: One (1) Capsule PO TID 
+W/MEALS (3 TIMES A DAY WITH MEALS).  
+4. clonidine 0.1 mg Tablet Sig: One (1) Tablet PO BID (2 times a 
+
+day).  
+5. furosemide 20 mg Tablet Sig: One (1) Tablet PO BID (2 times a 
+
+day).  
+6. gabapentin 300 mg Capsule Sig: One (1) Capsule PO Q48H (every 
+
+48 hours).  
+7. isosorbide mononitrate 30 mg Tablet Extended Release 24 hr 
+Sig: One (1) Tablet Extended Release 24 hr PO DAILY (Daily).  
+8. lidocaine 5 %(700 mg/patch) Adhesive Patch, Medicated Sig: 
+One (1) Adhesive Patch, Medicated Topical DAILY (Daily) as 
+needed for pain.  
+9. lisinopril 20 mg Tablet Sig: Two (2) Tablet PO DAILY (Daily). 
+
+ 
+10. metoprolol tartrate 50 mg Tablet Sig: Four (4) Tablet PO BID 
+
+(2 times a day).  
+11. simvastatin 40 mg Tablet Sig: Two (2) Tablet PO DAILY 
+(Daily).  
+12. docusate sodium 100 mg Capsule Sig: One (1) Capsule PO BID 
+(2 times a day).  
+13. senna 8.6 mg Tablet Sig: One (1) Tablet PO BID (2 times a 
+day) as needed for constipation.  
+14. aspirin 81 mg Tablet, Chewable Sig: One (1) Tablet, Chewable 
+
+PO DAILY (Daily).  
+15. acetaminophen 325 mg Tablet Sig: ___ Tablets PO Q6H (every 6 
+
+hours) as needed for fever pain.  
+16. heparin (porcine) 5,000 unit/mL Solution Sig: One (1)  
+Injection TID (3 times a day).  
+17. NPH insulin human recomb 100 unit/mL Suspension Sig: Twenty 
+(20) units Subcutaneous QAM.  
+18. NPH insulin human recomb 100 unit/mL Suspension Sig: Ten 
+(10) units Subcutaneous at bedtime.  
+19. Humalog 100 unit/mL Solution Sig: sliding scale  
+Subcutaneous four times a day: Per sliding scale.  
+20. albuterol sulfate 2.5 mg /3 mL (0.083 %) Solution for 
+Nebulization Sig: One (1)  Inhalation every ___ hours as needed 
+for sob wheeze.  
 
  
 Discharge Medications:
-1.  Albuterol 0.083% Neb Soln 1 NEB IH Q4H:PRN dyspnea, wheeze  
-2.  Albuterol Inhaler 6 PUFF IH Q6H  
-3.  Docusate Sodium 100 mg PO BID:PRN constipation  
-4.  Ipratropium Bromide MDI 4 PUFF IH Q6H  
-5.  Ranitidine (Liquid) 150 mg PO BID  
-6.  Senna 8.6 mg PO BID:PRN const  
-7.  GuaiFENesin ___ mL PO Q6H  
-8.  Acetaminophen 650 mg PO Q6H:PRN Pain - Mild  
-9.  Aluminum-Magnesium Hydrox.-Simethicone ___ mL PO QID:PRN 
-reflux/gerd  
-10.  Bisacodyl 10 mg PO/PR DAILY:PRN constipation   
-11.  Carbidopa-Levodopa (___) ODT 1 TAB PO 6X/DAY  
-12.  Carbidopa-Levodopa (___) 1.5 TAB PO DAILY  
-13.  Fludrocortisone Acetate 0.2 mg PO DAILY  
-14.  FLUoxetine 40 mg PO DAILY  
-15.  Lactobacillus acidophilus 1 billion cell oral DAILY  
-16.  Melatin (melatonin) 3 mg oral QHS:PRN  
-17.  Midodrine 2.5 mg PO TID  
-18.  mirabegron 25 mg oral DAILY  
-19.  Multivitamins 1 TAB PO DAILY  
+1. amlodipine 5 mg Tablet Sig: Two (2) Tablet PO DAILY (Daily).  
+
+2. Nephrocaps 1 mg Capsule Sig: One (1) Capsule PO once a day.  
+3. calcium acetate 667 mg Capsule Sig: One (1) Capsule PO TID 
+W/MEALS (3 TIMES A DAY WITH MEALS).  
+4. gabapentin 300 mg Capsule Sig: One (1) Capsule PO Q48 ().  
+5. lisinopril 20 mg Tablet Sig: Two (2) Tablet PO DAILY (Daily). 
+ 
+6. metoprolol tartrate 50 mg Tablet Sig: Four (4) Tablet PO BID 
+(2 times a day).  
+7. docusate sodium 100 mg Capsule Sig: One (1) Capsule PO BID (2 
+times a day).  
+8. senna 8.6 mg Tablet Sig: One (1) Tablet PO BID (2 times a 
+day) as needed for constipation.  
+9. albuterol sulfate 90 mcg/Actuation HFA Aerosol Inhaler Sig: 
+___ Puffs Inhalation Q4H (every 4 hours) as needed for 
+SOB/wheeze.  
+10. acetaminophen 325 mg Tablet Sig: ___ Tablets PO Q6H (every 6 
+hours) as needed for pain/ha/fever.  
+11. NPH insulin human recomb 100 unit/mL Suspension Sig: Twenty 
+(20) units Subcutaneous QAM.  
+12. NPH insulin human recomb 100 unit/mL Suspension Sig: Ten 
+(10)  Subcutaneous QPM.  
+13. Humalog 100 unit/mL Solution Sig: sliding scale units 
+Subcutaneous with meals.  
+14. aspirin 81 mg Tablet, Chewable Sig: One (1) Tablet, Chewable 
+PO once a day.  
+15. camphor-menthol 0.5-0.5 % Lotion Sig: One (1) Appl Topical 
+QID (4 times a day) as needed for itching: avoid areas of open 
+skin.
+Disp:*qs qs* Refills:*0*
+16. isosorbide mononitrate 60 mg Tablet Extended Release 24 hr 
+Sig: One (1) Tablet Extended Release 24 hr PO DAILY (Daily).
+Disp:*30 Tablet Extended Release 24 hr(s)* Refills:*2*
+17. bisacodyl 10 mg Suppository Sig: One (1) Suppository Rectal 
+HS (at bedtime) as needed for constipation.  
+18. white petrolatum-mineral oil     Cream Sig: One (1) Appl 
+Topical TID (3 times a day) as needed for dry skin.
+Disp:*qs qs* Refills:*0*
+19. mupirocin calcium 2 % Cream Sig: One (1) Appl Topical BID (2 
+times a day): to areas of skin breakdown.
+Disp:*qs qs* Refills:*2*
+20. simvastatin 40 mg Tablet Sig: One (1) Tablet PO DAILY 
+(Daily).  
+21. clonidine 0.1 mg Tablet Sig: One (1) Tablet PO BID (2 times 
+a day).  
+22. lidocaine 5 %(700 mg/patch) Adhesive Patch, Medicated Sig: 
+One (1)  Topical once a day.  
+23. Dermazinc 2 % Bar Sig: One (1) application Topical twice a 
+day: For your face.
+Disp:*2 bars* Refills:*2*
+24. hydrocortisone 1 % Ointment Sig: One (1) application Topical 
+once a day: to face; do not use for longer than 2 weeks at a 
+time.
+Disp:*60 g* Refills:*2*
+25. kerlex  Sig: One (1) application  once a day: to areas of 
+skin breakdown.
+Disp:*qs qs* Refills:*2*
 
  
 Discharge Disposition:
-Extended Care
+Home With Service
  
 Facility:
 ___
  
 Discharge Diagnosis:
-PRIMARY 
-- hypoxemic respiratory failure 
-- aspiration pneumonia 
-- ___ disease  
-
- 
-Discharge Condition:
-Mental Status: Clear and coherent.
-Level of Consciousness: Alert and interactive.
-Activity Status: Out of Bed with assistance to chair or 
-wheelchair.
-
- 
-Discharge Instructions:
-Dear Ms. ___,
-
-It was a pleasure caring for you at ___. You were admitted for 
-difficulty breathing. During your hospitalization, your 
-breathing worsened and you had to be intubated (have a breathing 
-tube placed down your throat) and stay ___ the medical intensive 
-care unit (MICU). They were unable to wean you off the 
-ventilator so you underwent a procedure to have a tracheostomy 
-and PEG tube placed. You tolerated the procedure well and you 
-were able to remain stable on a trach mask at 40% O2. 
-
-There was a discussion held with you about the risk of eating. 
-You stated that your quality of life was significantly impaired 
-by not being able to eat and you accepted the risk of eating, 
-including aspiration, infection, worsening respiratory status. 
-You were able to tolerate a thin liquid and dysphagia diet 
-during your hospitalization. You were on tube feeds but this was 
-stopped when you were able to tolerate oral intake. You should 
-continue bolus feeds with cans of Jevity 1.2 at 5 cans/day. You 
-can decrease this as you tolerate more oral intake.
-
-Please follow up with your physicians as below. 
-
-Wishing you well,
-
-Your ___ Care Team 
- 
-Followup Instructions:
-___
- 
-
-Output:
-Summary6:
- The patient is a 65-year-old female who was admitted to the hospital with hypoxic respiratory failure. She has a past medical history of chronic obstructive pulmonary disease (COPD), orthostatic hypotension, and gastroesophageal reflux disease (GERD). She has allergies to penicillins and oxybutynin. The patient's chief complaint was hypoxia, dyspnea, productive cough, and congestion, which she experienced for the past two days. She was previously intubated and had a tracheostomy and percutaneous endoscopic gastrostomy (PEG) placement. She was referred to the emergency department for stoma closure and was found to have tachypnea, rhonchorous lungs, and a stoma site. The patient was given various medications, including albuterol, ipratropium bromide, and cefepime. She was also given oxygen therapy and had a flutter valve inserted. The patient's physical examination revealed clear lungs, regular heart rate and rhythm, and normal abdominal examination. The patient's laboratory results showed anemia, leukocytosis, and elevated B-type natriuretic peptide (BNP). Imaging studies revealed extensive atelectasis in the lower lungs, which could not exclude a superimposed pneumonia. The patient was discharged with a tracheostomy mask and speaking valve, and was advised to use a flutter valve and oxygen therapy.
- -------
-Report7:
- Input:
-age: 65. gender: F.  
-Name:  ___.                    Unit No:   ___
- 
-Admission Date:  ___              Discharge Date:   ___
- 
-Date of Birth:  ___             Sex:   F
- 
-Service: SURGERY
- 
-Allergies: 
-No Known Allergies / Adverse Drug Reactions
- 
-Attending: ___.
- 
-Chief Complaint:
-Abdominal Pain
- 
-Major Surgical or Invasive Procedure:
-___: s/p ex ___
- 
-History of Present Illness:
-___ is a ___ year-old woman who presents with abdominal
-pain. She reports 2 weeks of general malaise and upper
-respiratory tract infection with a runny nose, dry cough, fevers
-and decreased PO intake. Today, however, she reported severe
-abdominal pain which began at 2:00pm while she was sitting on 
-the
-couch, pain is worse in the lower abdomen. Last bowel movement
-was 2 days ago, last flatus was this morning. She reports
-anorexia, having lost her appetite over the past 4 days. She 
-last
-ate earlier today, toast, however vomited non-bloody, 
-non-bilious
-emesis shortly after. With additional questioning about her URI
-symptoms, she reports she has taken ___ full-strength aspirin
-daily for fevers up to ___ F. She denies chest pain,
-palpitations, diarrhea, bloody bowel movements, vaginal 
-bleeding,
-shortness of breath, dizziness or other symptoms. 
-
-ROS: A 10-point review of symptoms was negative except as noted
-in the HPI. 
- 
-Past Medical History:
-None
-
-Past Surgical History: None
- 
-Social History:
-___
-Family History:
-Parents with HTN, CAD, CVA
- 
-Physical Exam:
-Physical Exam on Admission: 
-VS:  98.7  75  121/69  18  97% RA 
-Gen: Uncomfortable appearing, A&Ox3, pleasant, conversant
-CV: RRR
-Resp: Clear to auscultation bilaterally
-Abd: Soft, tender to palpation bilateral lower abdomen, focal
-rebound and guarding 
-Ext: Warm, well-perfused
-Neuro: No focal neuro deficits 
-
-Physical Exam on Discharge:
- 
-Pertinent Results:
-Pertinent Imaging:
-CT ABD & PELVIS WITH CO ___ 7:14 ___:
-IMPRESSION:
-1. The tip of the appendix is enlarged and edematous measuring 
-up to 10 mm and demonstrates mucosal enhancement.  Findings are 
-concerning for acute appendicitis.
-2. Small to moderate amount of free fluid in the abdomen and 
-pelvis.  Small amount of free air is also noted and best seen in 
-the upper abdomen in the perihepatic and perigastric locations.  
-These findings may be related to perforated appendicitis.
-3. An 8 mm indeterminate lesion in the medial aspect of the left 
-lower pole of the kidney is indeterminate.  Non urgent renal 
-ultrasound is recommended for further evaluation.
-
-UGI SGL W/O KUB ___ 10:06 AM):
-IMPRESSION: Contrast leak along the distal body/antrum of the 
-stomach, possibly along the anterior aspect of the greater 
-curvature
-
-CT ABD & PELVIS WITH CO ___ 5:08 ___:
-IMPRESSION:
-
-1. No definite CT evidence of gastric perforation or 
-postsurgical leak,
-however the ingested contrast has passed the stomach at the time 
-of imaging.  High-density fluid is seen anterior to the stomach 
-and anterior to the left hepatic lobe.  No extraluminal 
-contrast.
-2. 1.8 cm complex fluid collection along the left hepatic lobe 
-which may represent an organized fluid collection or early 
-abscess.
-3. Mild peripheral enhancement and loculation in a 3.7 cm pelvic 
-fluid
-collection which may represent an organizing fluid.
-4. Small foci of air within the bladder likely secondary to 
-catheterization.
-5. Fibroid uterus as on prior.
-
-UGI SGL CONTRAST W/ KUB ___ 10:27 AM)
-IMPRESSION:  No evidence of leak or obstruction.
-
-Laboratory Results:
-___ 6:34 pm BLOOD CULTURE
-
-                            **FINAL REPORT ___
-
-   Blood Culture, Routine (Final ___:    NO GROWTH. 
-
-___ 04:31AM BLOOD WBC-6.8 RBC-3.96 Hgb-11.4 Hct-36.3 MCV-92 
-MCH-28.8 MCHC-31.4* RDW-13.8 RDWSD-45.5 Plt ___
-___ 04:29AM BLOOD WBC-6.8 RBC-4.17 Hgb-11.8 Hct-38.0 MCV-91 
-MCH-28.3 MCHC-31.1* RDW-13.9 RDWSD-45.3 Plt ___
-___ 05:04AM BLOOD WBC-6.6 RBC-3.95 Hgb-11.2 Hct-35.3 MCV-89 
-MCH-28.4 MCHC-31.7* RDW-13.5 RDWSD-43.8 Plt ___
-___ 04:57AM BLOOD WBC-6.6 RBC-3.96 Hgb-11.2 Hct-35.5 MCV-90 
-MCH-28.3 MCHC-31.5* RDW-13.3 RDWSD-43.7 Plt ___
-___ 04:16AM BLOOD WBC-6.6 RBC-3.98 Hgb-11.3 Hct-35.6 MCV-89 
-MCH-28.4 MCHC-31.7* RDW-13.3 RDWSD-43.7 Plt ___
-___ 04:29AM BLOOD WBC-8.9 RBC-3.80* Hgb-10.8* Hct-34.5 
-MCV-91 MCH-28.4 MCHC-31.3* RDW-13.4 RDWSD-44.7 Plt ___
-___ 06:11AM BLOOD WBC-10.8* RBC-3.75* Hgb-10.8* Hct-34.0 
-MCV-91 MCH-28.8 MCHC-31.8* RDW-13.4 RDWSD-44.4 Plt ___
-___ 06:45PM BLOOD WBC-12.5* RBC-4.49 Hgb-12.8 Hct-40.8 
-MCV-91 MCH-28.5 MCHC-31.4* RDW-13.5 RDWSD-44.8 Plt ___
-___ 09:24AM BLOOD WBC-11.1* RBC-3.95 Hgb-11.5 Hct-35.8 
-MCV-91 MCH-29.1 MCHC-32.1 RDW-13.6 RDWSD-44.5 Plt ___
-___ 05:37AM BLOOD WBC-9.2 RBC-4.45 Hgb-12.8 Hct-39.7 MCV-89 
-MCH-28.8 MCHC-32.2 RDW-13.2 RDWSD-42.7 Plt ___
-___ 06:34PM BLOOD WBC-10.2* RBC-4.41 Hgb-12.7 Hct-39.9 
-MCV-91 MCH-28.8 MCHC-31.8* RDW-13.1 RDWSD-42.5 Plt ___
-___ 04:31AM BLOOD Glucose-98 UreaN-10 Creat-0.7 Na-138 
-K-5.0 Cl-100 HCO3-29 AnGap-9*
-___ 04:29AM BLOOD Glucose-127* UreaN-11 Creat-0.7 Na-141 
-K-4.5 Cl-100 HCO3-26 AnGap-15
-___ 05:04AM BLOOD Glucose-126* UreaN-8 Creat-0.6 Na-139 
-K-3.8 Cl-103 HCO3-26 AnGap-10
-___ 04:57AM BLOOD Glucose-125* UreaN-8 Creat-0.7 Na-140 
-K-3.9 Cl-104 HCO3-26 AnGap-10
-___ 04:16AM BLOOD Glucose-122* UreaN-5* Creat-0.7 Na-139 
-K-3.9 Cl-101 HCO3-23 AnGap-15
-___ 04:29AM BLOOD Glucose-107* UreaN-8 Creat-0.7 Na-139 
-K-3.4* Cl-103 HCO3-24 AnGap-12
-___ 06:11AM BLOOD Glucose-102* UreaN-9 Creat-0.8 Na-139 
-K-4.3 Cl-101 HCO3-25 AnGap-13
-___ 06:45PM BLOOD Glucose-126* UreaN-10 Creat-0.8 Na-133* 
-K-4.2 Cl-97 HCO3-24 AnGap-12
-___ 09:24AM BLOOD Glucose-89 UreaN-10 Creat-0.8 Na-137 
-K-4.6 Cl-101 HCO3-25 AnGap-11
-___ 05:37AM BLOOD Glucose-154* UreaN-10 Creat-0.8 Na-135 
-K-4.7 Cl-99 HCO3-22 AnGap-14
-___ 06:34PM BLOOD Glucose-134* UreaN-11 Creat-1.0 Na-135 
-K-4.0 Cl-97 HCO3-22 AnGap-16
-___ 04:31AM BLOOD Calcium-9.0 Phos-4.4 Mg-2.1
-___ 08:20PM BLOOD CK-MB-2 cTropnT-<0.01
-___ 04:29AM BLOOD Calcium-9.0 Phos-4.0 Mg-2.2
-___ 05:04AM BLOOD Calcium-8.7 Phos-3.8 Mg-2.0
-___ 04:16AM BLOOD Calcium-8.5 Phos-2.6* Mg-2.0
-___ 04:29AM BLOOD Calcium-8.2* Phos-2.7 Mg-2.0
-___ 06:45PM BLOOD Calcium-8.6 Phos-2.4* Mg-2.2
-___ 09:24AM BLOOD Calcium-8.4 Phos-3.4 Mg-2.4
-___ 05:37AM BLOOD Calcium-8.6 Phos-4.9* Mg-1.7
-___ 06:34PM BLOOD Albumin-4.2 Calcium-9.5 Phos-4.3 Mg-1.9
-___ 06:56PM BLOOD Lactate-2.2* Creat-1.0
-___ 08:30PM URINE Blood-NEG Nitrite-NEG Protein-TR* 
-Glucose-NEG Ketone-10* Bilirub-NEG Urobiln-NEG pH-7.5 Leuks-SM*
-___ 08:30PM URINE Color-Straw Appear-Clear Sp ___
-___ 08:30PM URINE RBC-3* WBC-5 Bacteri-FEW* Yeast-NONE 
-Epi-<1
- 
-Brief Hospital Course:
-Ms. ___ is a ___ woman who initially presented 
-with severe abdominal pain. At that time, no obvious findings on 
-CT scan and no obvious leak was appreciated. Given her pain and 
-significant CT findings, it was decided that she would benefit 
-from a diagnostic laparoscopy. At that time, I was concerned 
-that she may actually have a gastric perforation and may have a 
-gallbladder issue that could potentially be addressed 
-laparoscopically. Thus, we decided to start the case 
-laparoscopically with potential conversion to an open procedure 
-if a significant
-lesion in the stomach was appreciated. The risks and benefits of 
-the procedure were described in detail to the patient. Despite 
-these risks, she chose to proceed with surgery. She was found to 
-have a gastric perforation and therefore converted to 
-exploratory laparotomy with ___ patch and placement of a 
-Pravena vac. 
-
-Neuro: The patient was alert and oriented throughout 
-hospitalization; pain was initially managed with a IV dialudid 
-PCA and then transitioned to oral acetaminophen and oxycodone 
-once tolerating a diet. 
-CV: The patient remained stable from a cardiovascular 
-standpoint; vital signs were routinely monitored.
-Pulmonary: The patient remained stable from a pulmonary 
-standpoint; vital signs were routinely monitored. Good pulmonary 
-toilet, early ambulation and incentive spirometry were 
-encouraged throughout hospitalization. 
-GI/GU/FEN: The patient was initially kept NPO with a 
-___ tube in place for decompression and nasojejunal 
-tube in place for feeding.  On POD2 tube feeding were started 
-through the doboff. On POD3 the NGT was accidently  removed by 
-the patient when sneezing. She was kept NPO (except tube feeds). 
-On POD5 she underwent upper GI leak test that was unclear and 
-therefore was repeated on POD7 and negative for leak. Doboff was 
-removed and she was given a regular diet with good tolerability. 
-H.Pylori result was positive and therefore she was started on 
-quadruple therapy once tolerating a diet. 
-ID: The patient's fever curves were closely watched for signs of 
-infection, of which there were none. H.Pylori quadrupal therapy 
-started and prescribed 2 week course. 
-HEME: The patient's blood counts were closely watched for signs 
-of bleeding, of which there were none.
-Prophylaxis: The patient received subcutaneous heparin and ___ 
-dyne boots were used during this stay and was encouraged to get 
-up and ambulate as early as possible.
-
-At the time of discharge, the patient was doing well, afebrile 
-and hemodynamically stable.  The patient was tolerating a diet, 
-ambulating, voiding without assistance, and pain was well 
-controlled.  The patient received discharge teaching and 
-follow-up instructions with understanding verbalized and 
-agreement with the discharge plan.
-
- 
-Medications on Admission:
-None. 
- 
-Discharge Medications:
-1.  Bismuth Subsalicylate Chewable 262 mg PO QID Duration: 10 
-Days 
-End on ___. 
-RX *bismuth subsalicylate [Bismuth] 262 mg 1 tablet(s) by mouth 
-four times a day Disp #*36 Tablet Refills:*0 
-2.  MetroNIDAZOLE 250 mg PO/NG QID Duration: 10 Days 
-End on ___. 
-RX *metronidazole 250 mg 1 tablet(s) by mouth four times a day 
-Disp #*36 Tablet Refills:*0 
-3.  Pantoprazole 40 mg PO Q12H Duration: 10 Days 
-End on ___. 
-RX *pantoprazole 40 mg 1 tablet(s) by mouth twice a day Disp 
-#*18 Tablet Refills:*0 
-4.  Pantoprazole 40 mg PO Q24H 
-Take 1 tablet daily after H.pylori treatment ends. Start 
-___. 
-RX *pantoprazole 40 mg 1 tablet(s) by mouth once a day Disp #*30 
-Tablet Refills:*0 
-5.  Tetracycline 500 mg PO QID Duration: 10 Days 
-End on ___. 
-RX *tetracycline 500 mg 1 capsule(s) by mouth four times a day 
-Disp #*36 Capsule Refills:*0 
-
- 
-Discharge Disposition:
-Home
- 
-Discharge Diagnosis:
-Gastric perforation 
-H. Pylori infction
+Coronary Artery Disease
 
  
 Discharge Condition:
@@ -770,62 +442,27 @@ Activity Status: Ambulatory - Independent.
 
  
 Discharge Instructions:
-Dear Ms. ___, 
+Dear Ms ___, 
 
-You were admitted to the hospital because you had abdominal 
-pain. You had a CT scan which showed that you had a perforation 
-in your stomach where it connects to your small intestine. It 
-was found to be caused by an infection (H.pylori), for which you 
-have been started on medication and will finish after discharge. 
-You underwent surgery to get your perforation fixed. You have 
-tolerated a regular diet, had a return of bowel function, and 
-your pain has been well-controlled. Thus, you are now ready to 
-be discharged home to continue your recovery. Please follow the 
-discharge instructions below: 
+You were admitted to the ___ for the evaluation of your 
+shortness of breath.  We performed many studies including a 
+stress test to evaluate whether a blockage in your coronary 
+arteries was causing your shortness of breath.  You underwent a 
+cardiac catheterization that did not show any new blockage in 
+your coronaries to explain your symptoms.  After we made some 
+adjustments to your blood pressure regimen and took off some 
+fluid at dialysis you felt better and were safe for discharge 
+home.  
 
-Please call your doctor or nurse practitioner or return to the 
-Emergency Department for any of the following:
-*You experience new chest pain, pressure, squeezing or 
-tightness.
-*New or worsening cough, shortness of breath, or wheeze.
-*If you are vomiting and cannot keep down fluids or your 
-medications.
-*You are getting dehydrated due to continued vomiting, diarrhea, 
-or other reasons. Signs of dehydration include dry mouth, rapid 
-heartbeat, or feeling dizzy or faint when standing.
-*You see blood or dark/black material when you vomit or have a 
-bowel movement.
-*You experience burning when you urinate, have blood in your 
-urine, or experience a discharge.
-*Your pain in not improving within ___ hours or is not gone 
-within 24 hours. Call or return immediately if your pain is 
-getting worse or changes location or moving to your chest or 
-back.
-*You have shaking chills, or fever greater than 101.5 degrees 
-Fahrenheit or 38 degrees Celsius.
-*Any change in your symptoms, or any new symptoms that concern 
-you.
+Please take all medications as prescribed.  Weigh yourself every 
+morning, call MD if weight goes up more than 3 lbs.
 
-Please resume all regular home medications, unless specifically 
-advised not to take a particular medication. Also, please take 
-any new medications as prescribed.
-
-Please get plenty of rest, continue to ambulate several times 
-per day, and drink adequate amounts of fluids. Avoid lifting 
-weights greater than ___ lbs until you follow-up with your 
-surgeon.
-Avoid driving or operating heavy machinery while taking pain 
-medications.
-
-Incision Care:
-*Please call your doctor or nurse practitioner if you have 
-increased pain, swelling, redness, or drainage from the incision 
-site.
-*Avoid swimming and baths until your follow-up appointment.
-*You may shower, and wash surgical incisions with a mild soap 
-and warm water. Gently pat the area dry.
-*If you have staples, they will be removed at your follow-up 
-appointment.
+Medications:
+Added: Hydrocerin (Eucerin) cream, Hydrocortisone cream, 
+mupirocin cream, sarna lotion, zinc soap, 
+Changed: Imdur (increased to 60mg daily) and simvastatin 
+(decreased to 40mg daily)
+Removed: Lasix
 
  
 Followup Instructions:
@@ -833,14 +470,588 @@ ___
  
 
 Output:
-Summary7:
- The patient is a 65-year-old female who presented with abdominal pain. She reported a 2-week history of general malaise, upper respiratory tract infection, and decreased appetite. She also experienced severe abdominal pain, which began while she was sitting on the couch, and had not had a bowel movement or flatus in 2 days. She vomited non-bloody, non-bilious emesis shortly after eating.
+<END_REPORT>
+<BEGIN_SUMMARY>
+The patient is a 65-year-old female who was admitted to the hospital with complaints of dyspnea on exertion and chest discomfort. She has a past medical history of CAD, DM with CKD, Afib, and HLP. She was recently hospitalized for volume overload and underwent ultrafiltration and diuresis. On admission, her troponin level was 0.08, and a d-dimer was positive. She underwent cardiac catheterization, which showed significant atherosclerotic disease in the left main coronary artery and left anterior descending artery. She was diagnosed with mitral regurgitation and had a left ventricular ejection fraction of unknown percentage.
 
-The patient has no known allergies or adverse reactions. She has no past medical history, past surgical history, or family history of note.
+The patient's medications at discharge include ASA 325 and SL nitroglycerin. She has a history of allergies to Motrin. Her physical examination was notable for a palpable pulse in the right and left carotid, femoral, popliteal, and dorsal pedal arteries. Her skin examination showed multiple areas of shallow ulceration and apparent desquamation on the dorsum of her right hand.
 
-The patient's physical examination revealed a soft, tender abdomen with focal rebound and guarding. Laboratory results showed elevated white blood cell count, blood urea nitrogen, and creatinine levels, as well as abnormal liver function tests.
+The patient's review of systems was negative for prior history of stroke, TIA, deep venous thrombosis, pulmonary embolism, bleeding at the time of surgery, myalgias, joint pains, cough, hemoptysis, black stools or red stools. She denied recent fevers, chills, or rigors.
+<END_SUMMARY>
 
-The patient underwent a diagnostic laparoscopy, which revealed a gastric perforation. She was converted to an exploratory laparotomy and underwent repair of the perforation with a patch and placement of a Pravena vac.
+<BEGIN_REPORT>
+Input:
+age: 47. gender: M.  
+Name:  ___                 Unit No:   ___
+ 
+Admission Date:  ___              Discharge Date:   ___
+ 
+Date of Birth:  ___             Sex:   M
+ 
+Service: MEDICINE
+ 
+Allergies: 
+No Known Allergies / Adverse Drug Reactions
+ 
+Attending: ___.
+ 
+Chief Complaint:
+s/p cardiac arrest
+ 
+Major Surgical or Invasive Procedure:
+cooling with ___ sun cooling system
+Central Venous line
+Intubation and mechanical ventilation
+ 
+History of Present Illness:
+___ w/ no significant PMH reportedly exercising at ___ 
+___ and had witnessed arrest. Pt received 6 min of bystander 
+CPR. EMS shocked 2x and Pt had return of spontaneous 
+circulation. Unclear rhythm but possibly VT per EMS. Pt was 
+brought initially to ___ no ischemia noted on 
+ECG, and Pt was transferred to ___ for catheterization. Found 
+severe 2 vessel dz, 60% in mid and distal LAD. Chronic total of 
+mid-distal L cx, ___ occlusion of OM1. L dominant. RCA small 
+and totally occluded. Distal ___ likely old. OM1 also 
+difficult, likely old. Unclear if this was STEMI. Felt this may 
+be arrhythmia. Fixed OM1 w/ DES. Got no aspirin, clopidogril in 
+field. 
+Labs and imaging significant for WBC 27.2k, Cr 1.2, Lactate:2.8.
 
-The patient was prescribed medications at discharge, but the specific medications are not mentioned in the report.
- -------
+In Cath lab, OG placed. Pt was given ASA and ticegralor since 
+unclear if he has contraindications for prasugrel. Access 
+through R groin. RHC - wedge 25, RVEDP 19. Venous sheath left in 
+place, sutured. 
+
+On propofol for sedation, intubated. Depressed CO, started 
+dopamine for SBP low ___, weaning off. Not cooling because Pt 
+was agitated when off sedation.
+
+On arrival to the floor, patient 93, 96/63, 95% , CMV 550, RR14, 
+TV10, 60% FIO2.
+ 
+Past Medical History:
+1. CARDIAC RISK FACTORS: Diabetes, Dyslipidemia, Hypertension  
+2. CARDIAC HISTORY:  
+-CABG:  
+-PERCUTANEOUS CORONARY INTERVENTIONS:  
+-PACING/ICD:  
+3. OTHER PAST MEDICAL HISTORY:  
+-diabetes, newly on oral meds.
+-significant depression
+-sleep apnea, uses CPAP
+-hypothyroid
+-hyperlipidemia
+
+ 
+Social History:
+___
+Family History:
+Mother - lymphoma
+No family history of early MI, arrhythmia, cardiomyopathies, or 
+sudden cardiac death; otherwise non-contributory. 
+ 
+Physical Exam:
+ADMISSION:
+VS: 93, 96/63, 95% , CMV 550, RR14, TV10, 60% FIO2. 
+General: intubated, sedated, unresponsive
+HEENT:   NCAT, ET tube in place
+Neck:  JVD @ 2cm below jaw
+CV:  RRR, no mrg appreciated
+Lungs: unable to appreciate breath sounds ___ cooling pads in 
+place
+Abdomen: soft, nt, nd.
+GU: foley catheter in place
+Ext: no ___ edema, DP 2+ bilaterally
+Neuro: no purposeful movements at this time
+Skin: no rashes or excoriations
+Pulses: DP 2+ bilaterally, carotid 2+ bl
+
+ 
+Pertinent Results:
+ADMISSION:
+___ 06:42PM BLOOD WBC-27.2* RBC-4.82 Hgb-15.1 Hct-42.5 
+MCV-88 MCH-31.3 MCHC-35.5* RDW-12.5 Plt ___
+___ 06:42PM BLOOD Neuts-85.0* Lymphs-6.3* Monos-8.1 Eos-0.2 
+Baso-0.4
+___ 06:42PM BLOOD Plt ___
+___ 10:24PM BLOOD ___ PTT-39.2* ___
+___ 06:42PM BLOOD Glucose-249* UreaN-19 Creat-1.2 Na-135 
+K-5.0 Cl-105 HCO3-18* AnGap-17
+___ 06:42PM BLOOD CK(CPK)-489*
+___ 10:24PM BLOOD ALT-324* AST-392* LD(LDH)-922* 
+CK(CPK)-3118* AlkPhos-65 TotBili-0.3
+___ 06:42PM BLOOD CK-MB-12* MB Indx-2.5 cTropnT-0.55*
+___ 10:24PM BLOOD Albumin-4.1 Calcium-8.0* Phos-2.3* Mg-2.1
+___ 06:42PM BLOOD Triglyc-223* HDL-27 CHOL/HD-4.3 
+LDLcalc-43
+___ 06:56PM BLOOD Type-ART Rates-/18 pO2-82* pCO2-38 
+pH-7.34* calTCO2-21 Base XS--4 -ASSIST/CON Intubat-INTUBATED
+___ 06:56PM BLOOD Glucose-241* Lactate-2.8* Na-136 K-4.9 
+Cl-105
+___ 06:56PM BLOOD freeCa-1.08*
+
+IMAGING:
+Cardiac Cath: 
+Assessment & Recommendations
+1. Three vessel CAD. 
+2. Probable chronic occlusion of left circumflex and OM1 with
+ventricular tachycardia not due to acute ischemia.
+3. Successful drug-eluting stent OM1.
+4. ASA 81 mg; Ticagrelor 90 mg twice daily. 
+5. Dobutamineat 5 micrograms. 
+6. Echocardiogram to assess RV and LV function.
+
+ECHO: ___
+The left atrium is normal in size. The estimated right atrial 
+pressure is at least 15 mmHg. Left ventricular wall thicknesses 
+and cavity size are normal. Overall left ventricular systolic 
+function is moderately depressed (LVEF= 30%) secondary to 
+akinesis of the entire inferior wall, inferior septum, and 
+dyskinesis of the basal infero-lateral wall. The apex, distal 
+anterior and anteroseptal walls contract best. Right ventricular 
+chamber size is normal. with mild global free wall hypokinesis. 
+The aortic root is mildly dilated at the sinus level. The number 
+of aortic valve leaflets cannot be determined. There is no 
+aortic valve stenosis. No aortic regurgitation is seen. The 
+mitral valve leaflets are mildly thickened. There is no mitral 
+valve prolapse. Mild (1+) mitral regurgitation is seen. The 
+pulmonary artery systolic pressure could not be determined. 
+There is no pericardial effusion.
+
+IMPRESSION: Moderate-severe regional and global systolic 
+dysfunction c/w CAD. Mild global right ventricular systolic 
+dysfunction. Mild mitral regurgitation. Mild dilatation of the 
+aortic root.  
+
+CXR: ___
+IMPRESSION:  No focal consolidation concerning for pneumonia. 
+  
+
+ 
+Brief Hospital Course:
+___ yo M with unknown PMH presented s/p cardiac arrest, with 
+diffuse coronary disease s/p DES to OM1, transferred to ICU 
+intubated.
+
+#. Cardiac Arrest: s/p cardiac arrest likely scarring causing 
+ventricular arrhythmia. Not felt to be due to acute ischemia.  
+Now rewarmed and extubated. Unclear etiology of VT, will be seen 
+by EP regarding need for ICD as well as cardiac MRI to evaluate 
+for scar which may have contributed.
+
+#Fever: patient spiking while on warming protocol requiring cool 
+water to slow warming process, likely in setting of infection.  
+Patient has been cultured when he spikes. Possibly related to 
+GPC in respiratory cx, however had witnessed aspiration event. 
+Initially on vanc/zosyn/flagyl, however transitioned on day 5 to 
+levofloxacin po, to complete total 8-day course
+
+# CAD: Severe 2 vessel disease, 60% in mid and distal LAD; 
+Chronic total of mid-distal L cx; ___ occlusion of OM1; L 
+dominant; RCA small and totally occluded; Distal ___ likely 
+old; OM1 also difficult, likely old. Fixed OM1 w/ DES. Unclear 
+if this was STEMI. More likely arrhythmia secondary to severe 
+CAD and scarring. Lipid panel okay. A1C 5.8%.
+- continue aspirin
+- continue ticagrelor 90 BID
+- continue atorvastatin 80 daily 
+- start metoprolol 25mg  TID
+- start low dose lisinopril
+
+# Respiratory Failure: Resolved. S/P cardiac arrest and 
+intubated. Had an episode of aspiration.  Will treat for 
+aspiration pneumonia with oral course levoflox.
+
+# Acute congestive heart failure: ECHO showing LV systolic 
+function is moderately depressed (LVEF= 30%) secondary to 
+akinesis of the entire inferior wall, inferior septum, and 
+dyskinesis of the basal infero-lateral wall.
+
+#. Depression
+- consider re-starting mirtazepine, sertraline and buproprion 
+slowly as an outpatient
+
+#. Hypothyroid: TSH WNL.
+- continue levothyroxine
+
+ 
+Medications on Admission:
+The Preadmission Medication list is accurate and complete.
+1. Mirtazapine 7.5 mg PO HS 
+2. Sertraline 200 mg PO DAILY 
+3. Levothyroxine Sodium 50 mcg PO DAILY 
+4. MetFORMIN (Glucophage) 500 mg PO BID 
+5. Simvastatin 20 mg PO DAILY 
+6. BuPROPion (Sustained Release) 300 mg PO QAM 
+
+ 
+Discharge Medications:
+1. Levothyroxine Sodium 50 mcg PO DAILY 
+2. Sertraline 200 mg PO DAILY 
+3. Aspirin 81 mg PO DAILY 
+RX *aspirin [Adult Low Dose Aspirin] 81 mg 1 tablet,delayed 
+release (___) by mouth daily Disp #*30 Tablet Refills:*3
+4. Atorvastatin 80 mg PO DAILY 
+RX *atorvastatin 80 mg 1 tablet(s) by mouth daily Disp #*30 
+Tablet Refills:*3
+5. TiCAGRELOR 90 mg PO BID 
+RX *ticagrelor [Brilinta] 90 mg 1 tablet(s) by mouth twice a day 
+Disp #*60 Tablet Refills:*11
+6. Lisinopril 5 mg PO DAILY 
+RX *lisinopril 5 mg 1 tablet(s) by mouth daily Disp #*30 Tablet 
+Refills:*3
+7. Metoprolol Succinate XL 100 mg PO DAILY 
+RX *metoprolol succinate 100 mg 1 tablet extended release 24 
+hr(s) by mouth daily Disp #*30 Tablet Refills:*3
+8. MetFORMIN (Glucophage) 500 mg PO BID 
+9. Potassium Chloride 20 mEq PO DAILY Duration: 24 Hours 
+RX *potassium chloride 20 mEq 1 tablet by mouth daily Disp #*30 
+Packet Refills:*3
+
+ 
+Discharge Disposition:
+Home With Service
+ 
+Facility:
+___
+ 
+Discharge Diagnosis:
+Coronary artery disease
+     -s/p cardiac cath: 60% mid and distal LAD, chronic toatl 
+mid distal L ___ occlusion of the OM1, RCA small and 
+totally occluded
+     -s/p drug coated stent to the OM1
+-presumed ventricular arrythmia
+-cardiac arrest
+-acute systolic Heart Failure now resolved (Ef 30% now 53%)
+-Lifevest
+-diabetes, 
+-significant depression
+-sleep apnea, uses CPAP
+-hypothyroid
+-hyperlipidemia
+
+ 
+Discharge Condition:
+Mental Status: Clear and coherent.
+Level of Consciousness: Alert and interactive.
+Activity Status: Ambulatory - Independent.
+
+ 
+Discharge Instructions:
+You were admitted this hospitalization following a cardiac 
+arrest. You underwent a cooling of your body temperature to help 
+decrease any negative effects on the brain following cardiac 
+arrest. The likely cause of your arrest is an arrythmia as a 
+result of scarring from coronary artery disease. 
+
+In order to assess the perfusion of the heart by the coronary 
+arteries you underwent a cardiac catheterization which revealed 
+multiple blockages in the conroary arteries. We were able to 
+place a stent in one of the arteries; the obtuse marginal branch 
+of the left circumflex artery that feeds the side portion of the 
+heart muscle.
+
+At the time of your cardiac arrest your heart pupming function 
+was depressed. A most recent echocardiogram revealed that the 
+pumping function has greatly improved since the time of your 
+arrest.
+
+You have been started on the following new medications:
+Aspirin 81 mg daily: this is taken to decrease clot in the 
+coronary arteries
+
+Atorvastatin 80mg daily: this is a cholesterol medication taken 
+to decrease worsening of plaque formation.
+
+Lisinopril 5mg daily: this decreases the resistance the heart 
+has to pump against and thereby decreased the blood pressure
+
+Metoprolol XL 100mg daily: this medication decresases the 
+workload of the heart by decreasing the heart rate and thereby 
+the blood pressure
+
+Ticagelor 90mg two times a day: This medication decreases the 
+risk of clot formation where the stent was placed. 
+
+KCL 20meq daily: you have required Potaassium daily since your 
+admission. You should take this daily and then have labs checked 
+on ___ by visiting nursing to assess your response. 
+
+PLEASE CONTINUE:
+Metformin 100mg XL twice a day for your diabetes
+Sertraline 200mg daily for depression
+Levothyroxeine 50mcg daily
+ 
+PLEASE HOLD until seen by your PCP/Cardiologist:
+Wellbutrin
+Mirtazapine
+
+****Failure to take the Ticagelor and the aspirin could result 
+in a lifethreatening heart attack**** 
+
+You have been set up with a Lifevest. The details of this device 
+have been discussed with you. If you go into a lifethreatening 
+arrythmia again, this device will detect that arrythmia and 
+deliver an electric shock to return you to a normal sinus 
+rythym. The plan is for you to eventually receieve an internal 
+cardioverter-defibrillator (ICD) in the future once your heart 
+has been given time to recover from your recent cardiac arrest. 
+This will be discussed in follow up with the electrophysiology 
+team as an outpatient.
+
+You should avoid stressful situations and exercise while you are 
+wearing the lifevest. You also CANNOT drive with the lifevest. 
+You may participate in your reguilar activities including 
+walking as long as this does not cause you physical strain.  
+  
+You will need a variety of follow up appointments as detailed 
+below.
+
+You will need labs in 6 weeks to assess your liver function and 
+cholesterol panel since we increased your statin or cholesterol 
+medication.  You will also need your electrolytes and your 
+kidney function checked on ___ as we have started 
+you on a medication called Lisinopril and a potassium 
+supplement. 
+
+Today we discussed heart failure and the need to weigh yourself 
+every day before breakfast as well as the improtance of 
+following a low salt diet. If your weight goes up by more than 3 
+lbs in 2 days you should call Dr. ___ cardiologist). 
+
+If you have any questions or concerns related to your symptoms 
+or your hospitalization you can call the heartline which has 
+been given to you with your discharge paperwork. 
+ 
+Followup Instructions:
+___
+ 
+
+Output:
+<END_REPORT>
+<BEGIN_SUMMARY>
+The patient is a 47-year-old male who was admitted to the hospital after experiencing a cardiac arrest. He was found to have severe 2-vessel coronary artery disease, with chronic total occlusion of the left circumflex artery and occlusion of the OM1 branch. He underwent a percutaneous coronary intervention (PCI) with a drug-eluting stent (DES) in the OM1 branch. His past medical history includes diabetes, dyslipidemia, hypertension, depression, sleep apnea, and hypothyroidism. He has no known allergies or adverse reactions.
+
+The patient's diagnosis includes moderate-severe regional and global systolic dysfunction due to coronary artery disease, mild global right ventricular systolic dysfunction, and mild mitral regurgitation. He was treated with aspirin, ticagrelor, and atorvastatin, and was also prescribed metoprolol and lisinopril.
+
+The patient's medications at discharge include levothyroxine, sertraline, aspirin, atorvastatin, and metoprolol.
+<END_SUMMARY>
+
+<BEGIN_REPORT>
+Input:
+age: 29. gender: F.  
+Name:  ___               Unit No:   ___
+ 
+Admission Date:  ___              Discharge Date:   ___
+ 
+Date of Birth:  ___             Sex:   F
+ 
+Service: SURGERY
+ 
+Allergies: 
+Patient recorded as having No Known Allergies to Drugs
+ 
+Attending: ___.
+ 
+Chief Complaint:
+Patient admitted for weight reduction surgery.
+ 
+Major Surgical or Invasive Procedure:
+Status Post Laparoscopic Gastric Bypass
+
+ 
+History of Present Illness:
+___ has class III morbid obesity with weight of 249.1 
+pounds
+as of ___ (her initial screen weight was 250.6 pounds on
+___, height 64 inches and BMI of 42.8. Her previous weight
+loss efforts have included two months of the ___ diet and 3
+months of the ___ diet in ___ losing 5 pounds each, one
+year of Weight Watchers in ___ losing 20 pounds and she
+maintained for only two months and 2 to 3 months of
+over-the-counter dietary aide Dexatrim in ___ losing only 
+5
+pounds.  She took one year of Topiramate in ___ for
+migraine prevention/depression but also noted for weight loss
+(off-label) but lost only 2 to 3 pounds.  She has not taken 
+other
+prescription weight loss medications or over-the-counter
+ephedra-containing appetite suppressant/herbal supplements.  Her
+weight at age ___ was 180 pounds her lowest weight as an adult 
+and
+her highest weight was her initial screen weight of 250.6 
+pounds.
+She weighed 225 pounds one year ago and states she has been
+struggling with weight since college.
+ 
+Past Medical History:
+hyperlipidemia not on  
+medication, borderline hypertension not on medication, migraine  
+
+headaches, hypothyroidism, occasional heartburn, fatty liver by  
+
+ultrasound study and urinary tract infection  
+
+ 
+Social History:
+___
+Family History:
+Her family history is noted for both
+parents living father age ___ with heart disease, diabetes,
+hyperlipidemia, and arthritis; mother age ___ with thyroid
+disease.
+ 
+Physical Exam:
+Her blood pressure was 133/84, pulse 104, respirations 16 and O2
+saturation 98% on room air.  On physical examination ___ 
+was
+casually dressed, slightly anxious but in no distress.  Her skin
+was warm, moist but with no rashes, there was mild facial
+erythema. Sclerae were anicteric, conjunctiva clear, pupils were
+equal round and reactive to light, fundi were normal, mucous
+membranes were moist, tongue was ___ as well mildly
+congested, oropharynx was without exudates or hyperemia.  
+Trachea
+was in the midline and the neck was supple with no adenopathy,
+thyromegaly or carotid bruits.  Chest was symmetric and the 
+lungs
+were clear to auscultation bilaterally with good air movement. 
+Cardiac exam was noted for slightly tachycardic rate and normal
+rhythm, normal S1 and S2, no murmurs, rubs or gallops.  The
+abdomen was obese but soft and non-tender, non-distended with
+normal bowel sounds activity and no appreciable masses or
+hernias, there were no incision scars.  Spinal curvature was
+normal without tenderness and there was no flank pain.  Lower
+extremities were without edema, venous insufficiency or 
+clubbing,
+perfusion was good.  There was no evidence of joint swelling or
+inflammation of the joints.  There were no focal neurological
+deficits and her gait was normal.
+ 
+Pertinent Results:
+___ 06:30AM BLOOD Hct-34.4*
+___ 01:22PM BLOOD Hct-34.8*
+ 
+Brief Hospital Course:
+Patient admitted and underwent a laparoscopic gastric bypass 
+without event. His postoperative course was uneventful. She was 
+slowly progressed to a Bariatric stage 3 diet. Her pain was well 
+controlled with roxicet. Her JP was discontinued and she was 
+discharged on postoperative day two.
+
+Discharge instructions were discussed and reviewed. She will 
+follow up with Dr. ___ in 2 weeks.
+ 
+Medications on Admission:
+___ 30 mg daily for depression;  
+Lorazepam one to 2 mg at bedtime for anxiety; Levothyroxine 50  
+mcg daily for hypothyroid; Zolmitriptan 2.5 mg daily and Topamax 
+ 
+50 mg daily for migraine and migraine prevention; multivitamin  
+with minerals daily and vitamin D 1000 units daily  
+
+ 
+Discharge Medications:
+1. Actigall 300 mg Capsule Sig: One (1) Capsule PO twice a day: 
+Please open capsule and place in drink. You must take this 
+medication for 6 months.
+Disp:*60 Capsule(s)* Refills:*5*
+2. Zantac 15 mg/mL Syrup Sig: Ten (10) ml PO twice a day:  
+Please take for one month.
+Disp:*600 ml* Refills:*0*
+3. Roxicet ___ mg/5 mL Solution Sig: ___ ml PO every four (4) 
+hours as needed for pain.
+Disp:*500 ml* Refills:*0*
+4. Colace 50 mg/5 mL Liquid Sig: Ten (10) ml PO twice a day as 
+needed for constipation.
+Disp:*500 ml* Refills:*0*
+5. Fluoxetine 15 mg Tablet Sig: Two (2) Tablet PO DAILY (Daily): 
+Please crush.  
+6. Lorazepam 1 mg Tablet Sig: One (1) Tablet PO HS (at bedtime) 
+as needed for sleep: please crush.  
+7. Levothyroxine 50 mcg Tablet Sig: One (1) Tablet PO DAILY 
+(Daily): Please crush.  
+8. Topiramate 50 mg Tablet Sig: One (1) Tablet PO DAILY (Daily): 
+Please crush.  
+9. Multivitamin     Tablet Sig: One (1) Tablet PO twice a day.  
+
+ 
+Discharge Disposition:
+Home
+ 
+Discharge Diagnosis:
+Priamry Diagnosis: Obesity
+
+ 
+Discharge Condition:
+Stable
+
+ 
+Discharge Instructions:
+Discharge Instructions: Please call your surgeon or return to 
+the emergency department if you develop a fever greater than 
+101.5, chest pain, shortness of breath, severe abdominal pain, 
+pain unrelieved by your pain medication, severe nausea or 
+vomiting, severe abdominal bloating, inability to eat or drink, 
+foul smelling or colorful drainage from your incisions, redness 
+or swelling around your incisions, or any other symptoms which 
+are concerning to you.
+
+Diet: Stay on Stage III diet until your follow up appointment. 
+Do not self advance
+diet, do not drink out of a straw or chew gum.
+
+Medication Instructions:
+Resume your home medications, CRUSH ALL PILLS.
+You will be starting some new medications:
+1.  You are being discharged on medications to treat the pain 
+from your operation. These medications will make you drowsy and 
+impair your ability to drive a motor vehicle or operate 
+machinery safely. You MUST refrain from such activities while 
+taking these medications.
+2. You should begin taking a chewable complete multivitamin with 
+minerals twice a day. No gummy vitamins.
+3. You will be taking Zantac liquid ___ mg twice daily for one 
+month. This medicine prevents gastric reflux.
+4. You will be taking Actigall 300 mg twice daily for 6 months. 
+This medicine prevents you from having problems with your 
+gallbladder.
+5. You should take a stool softener, Colace, twice daily for 
+constipation as needed, or until you resume a normal bowel 
+pattern.
+6. You must not use NSAIDS (non-steroidal anti-inflammatory 
+drugs) Examples are Ibuprofen, Motrin, Aleve, Nuprin and 
+Naproxen. These agents will cause bleeding and ulcers in your 
+digestive system.
+
+Activity:
+No heavy lifting of items ___ pounds for 6 weeks. You may 
+resume moderate
+exercise at your discretion, no abdominal exercises.
+
+Wound Care:
+You may shower, no tub baths or swimming. 
+If there is clear drainage from your incisions, cover with 
+clean, dry gauze. 
+Your steri-strips will fall off on their own. Please remove any 
+remaining strips ___ days after surgery.
+Please call the doctor if you have increased pain, swelling, 
+redness, or drainage from the incision sites. 
+
+ 
+Followup Instructions:
+___
+ 
+
+Output:
+<END_REPORT>
+<BEGIN_SUMMARY>
+The patient is a 29-year-old female who was admitted for weight reduction surgery. She has a history of morbid obesity, with a weight of 249.1 pounds and a body mass index (BMI) of 42.8. She has tried various diets and medications in the past, including Topiramate, but has not had significant weight loss. She has a family history of heart disease, diabetes, and hyperlipidemia.
+
+The patient underwent a laparoscopic gastric bypass procedure without event and was discharged on postoperative day two. She was prescribed several medications, including Actigall, Zantac, Roxicet, Colace, Fluoxetine, Lorazepam, Levothyroxine, and Topiramate. She was also advised to follow a Stage III diet and to crush all pills.
+
+The patient was instructed to resume her home medications, including CRUSH ALL PILLS, and to start taking new medications to treat pain, prevent gastric reflux, and prevent gallbladder problems. She was also advised to take a stool softener and to avoid using NSAIDS. She was instructed to avoid heavy lifting for six weeks and to resume moderate exercise at her discretion.
+<END_SUMMARY>
+
