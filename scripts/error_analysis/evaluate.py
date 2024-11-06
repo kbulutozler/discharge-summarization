@@ -3,8 +3,8 @@ import os
 import pandas as pd
 
 def write_sent_lines(summaries, file_path):
-    for summary in summaries:
-        with open(file_path, "a") as f:
+    with open(file_path, "w") as f:
+        for summary in summaries:
             f.write("###SUMMARY: \n")
             for sent in summary:
                 f.write(sent + "\n")
@@ -12,7 +12,6 @@ def write_sent_lines(summaries, file_path):
 
 nlp = spacy.load("en_core_web_sm")
 project_path = os.getcwd()
-print(project_path)
 generated = pd.read_csv(os.path.join(project_path, "output", "few_shot_summaries", "test_generated.csv"))
 
 original_summaries_sentences = []
