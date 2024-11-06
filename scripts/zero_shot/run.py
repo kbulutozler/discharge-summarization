@@ -1,65 +1,40 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM
-import torch
+import requests
 import pandas as pd
 import os
 
+from together import Together
+API_KEY = "22cff3bda0474158a99c200c58b29267fe4540c8af09fbbfb9499e5741e8031d"  # Replace with your actual Together.AI API key
 
-def generate_summary(text, model, tokenizer, max_length=512):
+
+
+
+def generate_summary(text, model, client):
     """
-    Generates a summary for the input text using the LLaMA model with left padding and a summarization prompt.
+    Generates a summary using the Together.AI API
     """
     # Define prompt for summarization
     prompt = "Summarize the following discharge report: "
-    input_text = prompt + text  # Concatenate prompt with the actual discharge report
-    
-    # Tokenize input with left padding
-    inputs = tokenizer(
-        input_text, 
-        return_tensors="pt", 
-        padding="max_length", 
-        max_length=max_length,
-        truncation=False, 
-        add_special_tokens=False
+    input_text = prompt + text
+
+    response = client.completions.create(
+        model=model,
+        prompt=input_text,
+        max_tokens=4096,
     )
+    return response.choices[0].text
 
-    # Move inputs to device and ensure left padding
-    inputs = {k: v.to(device) for k, v in inputs.items()}
-    
-    # Generate summary with specified max_length for output
-    with torch.no_grad():
-        outputs = model.generate(
-            inputs["input_ids"],
-            max_length=max_length,
-            num_beams=4,
-            early_stopping=True,
-            pad_token_id=tokenizer.pad_token_id,
-            eos_token_id=tokenizer.eos_token_id
-        )
-    
-    # Decode generated output
-    summary = tokenizer.decode(outputs[0], skip_special_tokens=True)
-    return summary
-
-
-# Load model and tokenizer
-model_path = "/home/kbozler/Documents/Llama-3.1-8B"
-model = AutoModelForCausalLM.from_pretrained(model_path)
-tokenizer = AutoTokenizer.from_pretrained(model_path)
-
-# Ensure the EOS token is set as the pad token
-if tokenizer.pad_token_id is None:
-    tokenizer.pad_token_id = tokenizer.eos_token_id
-
-# Set model to evaluation mode and disable gradient calculations
-model.eval()
-device = "cuda" if torch.cuda.is_available() else "cpu"
-model.to(device)
+# Load and process data
 project_path = os.getcwd()
-data_path = os.path.join(project_path, "data/processed")    
+data_path = os.path.join(project_path, "data/processed")
 test_df = pd.read_csv(os.path.join(data_path, "test.csv"))
+test_df = test_df[:10]
 
-# Assume test_df is already loaded with columns "discharge_report" and "discharge_summary"
-test_df["generated_summary"] = test_df["discharge_report"].apply(lambda x: generate_summary(x, model, tokenizer))
+client = Together(api_key=API_KEY)
 
-# Display the first few rows to inspect results
-print(test_df[["discharge_report", "discharge_summary", "generated_summary"]].head())
+model = "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo"
+# Generate summaries using the Together.AI API
+test_df["generated_summary"] = test_df["discharge_report"].apply(lambda x: generate_summary(x, model, client))
+
+# Display results
+save_path = os.path.join(project_path, "output/zero_shot_summaries/test_generated.csv")
+test_df.to_csv(save_path, index=False)
