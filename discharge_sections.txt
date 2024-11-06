@@ -1,0 +1,21 @@
+Patient Information
+Allergies
+Attending Physician
+Chief Complaint
+Major Surgical or Invasive Procedure
+History of Present Illness
+Review of Systems
+Past Medical History
+Social History
+Family History
+Physical Examination
+Pertinent Results
+Brief Hospital Course
+Medications on Admission
+Discharge Medications
+Discharge Disposition
+Facility
+Discharge Diagnosis
+Discharge Condition
+Discharge Instructions
+Follow-up Instructions
