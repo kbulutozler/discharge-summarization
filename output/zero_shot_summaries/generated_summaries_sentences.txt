@@ -1,0 +1,76 @@
+###SUMMARY: 
+This 52-year-old male patient presented with chronic worsening joint pain and excessive fatigue over the past two weeks.
+His medical history includes acute myeloid leukemia (AML), status post allogeneic stem cell transplant complicated by chronic graft-versus-host disease (GVHD) of the joints.
+He was previously managed on tacrolimus and plaquenil but stopped them due to side effects.
+During the admission, his prednisone was increased to 20mg daily, and oxycontin was restarted at 10mg BID.
+Additionally, keflex was prescribed for a minor toe infection, and colace and senna were initiated for constipation.
+The patient's pain, fatigue, and nausea improved during the hospital stay, and he was discharged home with follow-up instructions.
+Notably, he experienced an episode of hypotension possibly related to high-dose narcotics.
+Long-term management of his GVHD requires discussion with his primary care physician.
+
+
+
+###SUMMARY: 
+This 91-year-old woman presented with a three-day history of right upper quadrant pain, jaundice, and fever, raising concerns about cholangitis.
+Her past medical history includes dementia, anxiety, type II diabetes mellitus, hyperlipidemia, hypertension, atrial fibrillation, coronary artery disease with a stented left anterior descending artery, and a papillary neoplasm of the ampulla of Vater.
+On examination, she was found to have tachycardia, hypotension, and signs of dehydration, which responded to fluid resuscitation.
+Laboratory tests revealed abnormal liver enzymes, indicating transaminitis.
+Imaging studies demonstrated common bile duct dilation and gallbladder sludge, suggesting cholangitis.
+Endoscopic retrograde cholangiography pancreatography (ERCP) was performed, revealing multiple stents and allowing for their successful removal, extraction of sludge and stones, and replacement with two new stents.
+Antibiotics were administered to treat both cholangitis and suspected pneumonia.
+During her hospital stay, she experienced episodes of atrial flutter and required adjustments to her medication regimen.
+At discharge, she was considered stable enough to return home with ongoing care services.</BEGIN_SUMMARY>
+
+
+###SUMMARY: 
+This 53-year-old female patient presented to the emergency department after experiencing a brief loss of consciousness followed by a fall.
+Her medical history includes end-stage renal disease (ESRD) requiring dialysis, polysubstance abuse currently treated with methadone, hypertension, migraine headaches, spinal stenosis, hepatitis C, seizure disorders, depression, and hypothyroidism.
+Upon evaluation, she was found to be hypothyroid with a low free thyroxine level and hypoglycemic with a glucose level of 45.
+Additionally, she complained of diarrhea and blurred vision.
+Laboratory results revealed mildly elevated troponin levels, which were attributed to her kidney disease rather than a myocardial infarction.
+Imaging studies, including electrocardiograms, echocardiograms, computed tomography scans of the head, and chest X-rays, were largely unrevealing.
+During her hospital course, she underwent dialysis, received fluids and electrolytes, and was started on levothyroxine for her hypothyroidism.
+At discharge, her medications included fluticasone-salmeterol inhaler, calcium carbonate, fluoxetine, folic acid, levetiracetam, aspirin, trazodone, and levothyroxine.
+Follow-up appointments were scheduled with her primary care physician and nephrologist.
+
+<END_SUMMARY>
+
+Note: I made some minor formatting adjustments for readability purposes.
+
+
+###SUMMARY: 
+This 51-year-old female presented with right flank pain and 
+was found to have multiple obstructing stones causing hydronephrosis 
+and acute kidney injury.
+She underwent cystoscopy and ureteral 
+stent placement.
+Her past medical history includes HIV/AIDS, 
+seizure disorder, cardiovascular disease, hypertension, hyperlipidemia, 
+oral candidiasis, fibroids, tonsillitis, anemia, and transient ischemic attack. 
+
+Her social history is unremarkable.
+The patient's physical exam revealed 
+minimal flank tenderness.
+Laboratory results showed mild anemia 
+with normal electrolyte levels.
+Imaging studies demonstrated 
+right-sided hydronephrosis caused by multiple obstructing stones. 
+
+She was discharged home with prescriptions for oxycodone, 
+nausea medication, and potassium citrate to help pass the remaining 
+stone.
+Follow-up appointments were scheduled with urology and 
+her primary care physician.
+
+
+</BEGIN_SUMMARY>
+
+
+###SUMMARY: 
+This 69-year-old male patient presented with a right groin wound dehiscence and Streptococcus anginosus/Methicillin-sensitive Staphylococcus aureus (MSSA) bacteremia.
+He underwent surgical interventions, including exploratory laparotomy, control of the external iliac artery, excision of the distal portion of the axillary-femoral bypass, and vein patch repair of the femoral artery.
+He developed complications such as abdominal compartment syndrome, requiring additional surgeries.
+The patient was discharged to extended care with instructions for wound management, antibiotic suppression therapy, and follow-up appointments.
+Key diagnoses include infected right femoral axillary bypass, retroperitoneal and intra-abdominal bleeding, abdominal compartment syndrome, hypercholesterolemia, atrial valve replacement (AVR) mechanical valve, acute renal failure on chronic renal failure, and failure to thrive.
+
+

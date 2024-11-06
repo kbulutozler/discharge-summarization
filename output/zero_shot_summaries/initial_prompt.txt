@@ -1,0 +1,2 @@
+ You are a medical doctor. Write a summary of the following report highlighting the most important information in no more than 10 sentences in total:
+    

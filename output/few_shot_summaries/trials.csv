@@ -1,196 +1,533 @@
 discharge_summary,generated_summary
-"The patient is an 87-year-old male who was admitted to the hospital with a chief complaint of emphysematous cystitis. He has a history of metastatic castrate-resistant prostate cancer, coronary artery disease, and has undergone coronary bypass surgery. He also has a history of mechanical falls and fractures, and has been experiencing progressive functional decline over the past several months. The patient was transferred from another hospital after a fall and CT abdomen showed emphysematous cystitis. He was found to have a urinary tract infection (UTI) growing resistant E. coli. The patient's past medical history also includes diabetes, hypercholesterolemia, paroxysmal atrial fibrillation, and pulmonary embolism. He was prescribed cefpodoxime 200mg PO BID x 5 days and vanc/cefepime. The patient's physical exam showed a stable vital sign, no acute complaints, and severe hearing loss. The patient's discharge medications included cefpodoxime and vanc/cefepime.","The patient is an 87-year-old male who was admitted to the hospital with a chief complaint of emphysematous cystitis. He has a history of metastatic castrate-resistant prostate cancer, mechanical falls, and fractures, as well as coronary artery disease. The patient's current medications include ketoconazole, hydrocortisone, leuprolide, and enoxaparin sodium. He is also taking aspirin, metoprolol tartrate, and ferrous sulfate.
+"The patient is a 52-year-old male who was admitted to the hospital with worsening joint pain. He has a history of acute myeloid leukemia (AML) and has undergone a myeloablative double cord blood transplant. He has been experiencing chronic joint pain since his transplant, which has worsened over the past two weeks. The patient has been taking oxycodone for pain control, but has recently decreased his dosage due to nausea and vomiting. He has also been experiencing fever, fatigue, and swelling in his joints.
 
-During his hospital stay, the patient underwent various tests and procedures, including a urinalysis, which revealed the presence of Escherichia coli. He was diagnosed with a urinary tract infection and started on antibiotics. The patient also had a computed tomography (CT) scan of his torso, which showed findings consistent with emphysematous cystitis, as well as gas in the right renal collecting system, retroperitoneum, and adjacent to the anterior abdominal wall.
+The patient's past medical history includes a diagnosis of AML, sarcoidosis, and chronic GVHD. He has undergone several treatments for his AML, including induction therapy, consolidation therapy, and relapse treatment. He has also received Rituxan for his chronic GVHD.
 
-The patient's condition improved during his hospital stay, and he was eventually discharged to an extended care facility. His discharge diagnoses included emphysematous cystitis, mechanical fall, metastatic prostate cancer, coronary artery disease, and atrial fibrillation. The patient was instructed to continue his antibiotic treatment and to follow up with his healthcare provider for further evaluation and treatment.
-<END_SUMMARY>
+The patient's physical examination revealed a middle-aged, Cushingoid, overweight man with bilateral 2+ pitting edema to his knees. His joints were tender to palpation, and he had ecchymoses on his abdomen. His laboratory results showed an elevated CRP level, indicating an inflammatory process.
 
-<BEGIN_REPORT>
-Input:
-age: 57. gender: M.  
-Name:  ___                   Unit No:   ___
- 
-Admission Date:  ___              Discharge Date:   ___
- 
-Date of Birth:  ___             Sex:   M
- 
-Service: CARDIOLOGY
- 
-Allergies: 
-Codeine
- 
-Attending: ___.
- 
-Chief Complaint:
-Acute STEMI
- 
-Major Surgical or Invasive Procedure:
-Left heart catheterization with drug eluting stent placement
- 
-History of Present Illness:
-This is a 57 year old gentleman with PMHx of HTN, HL and remote 
-history of cocaine abuse presenting with sudden onset, crushing 
-central chest pain radiating down both arms accompanied by 
-dyspnea and diaphoresis starting approximately one hour prior to 
-arrival in our ER.
-Initial ER ECG reveals STEMI pattern involving inferior leads 
-with reciprocal depression laterally. Stat echo performed 
-revealing basal inferior wall motion abnormality suggesting 
-inferior STEMI. Cath lab activated and patient underwent urgent 
-angioplasty revealing subtotal occlusion of RCA necessitating 
-deployment of drug-eluting stent resulting in TIMI 3 flow post-
-PCI.
-Pt's chest pain completely resolves immediately following PCI. 
-However, shortly thereafter develops vasovagal reaction with 
-transient drop in sys BP into 80's lasting only briefly 
-resolved with administration of IVF boluses and brief Trendelenburg positioning.
- 
-Post procedure complications none thus far aside from vasovagal 
-episode previously mentioned and minor access site ecchymoses.
-Plan remains close observation and optimization of post-procedure 
-care with anticipated full recovery following uncomplicated 
-acute MI with successful revascularization via PCI.
- 
-Cardiovascular Risk Factors:
-HTN
-HL
-Remote Cocaine Abuse
-Current Tobacco Use (1/2 ppd cigarettes smoker)
-Hyperhomocysteinemia documented on prior evaluations
- 
-Past Medical History:
-Hypertension
-Hyperlipidemia
-Hyperhomocysteinemia
- 
-Social History:
-Employed part-time bartender (approximately 2 shifts weekly)
-Married
-Has 2 children living locally
- 
-Family History:
-Significant cardiovascular history runs deep among paternal side 
-of family, father died suddenly aged 47 attributed to acute MI 
-never actually proven, maternal grandfather deceased of same 
-aged 65.
+The patient's diagnosis is chronic GVHD with joint pain, likely due to a combination of GVHD and changes in his narcotics regimen. His treatment plan includes increasing his prednisone dosage and discontinuing his plaquinil medication.","1. Patient Background Information:
+The patient is a 52-year-old male named John Doe with a background of acute myelogenous leukemia (AML), multiple organ transplants, and chronic graft-versus-host disease (GVHD), which affects his joints. Family members include a father with coronary artery disease and type II diabetes; mother type II diabetes; multiple uncles with heart disease; and two healthy siblings. Social history provided.
 
- 
-Physical Exam:
-General Appearance: Well nourished adult appearing older than 
-stated age lying flat on table resting quietly without overt 
-distress
-Blood Pressure: 126/88 (post-procedurally measured in right arm)
-Heart Rate: 78 beats per minute regular
-Peripheral Circulation: Cool and clammy although warming slightly 
-under warmed blanket applied to trunk.
- 
-Head & Neck Inspection: Normal alignment without deformity or 
-gross asymmetry observed. Conjunctival pallor present without 
-hemorrhages, icterus, nor carotenemia appreciated. Eyelids open, 
-eyes equal tracking movements normally.
-External auditory meatus inspection reveals cerumen impaction AD. Nose without nasal polyps or turbinate hypertrophy upon speculum 
-evaluation. Tongue mid-line when protruded neither deviates nor 
-develops fasciculations. Skin exhibits warmth without excessive 
-dryness evident on cursory tactile exploration. Palmar erythema 
-observed along thenar eminences bilaterally indicative probable 
-cirrhosis versus alcohol exposure in distant past. Bilateral hand grasp firm without subtle decrement suggestive intrinsic musculoskeletal pathology, finger flexion preserved indicating spared integrity corticosp"
-"The patient is a 55-year-old female who was admitted to the hospital with complaints of chest pain. She has a history of coronary artery disease, hypertension, hypothyroidism, and depression. She was referred for a stress test, which revealed anterior ischemia, and was subsequently found to have three-vessel disease. She underwent a cardiac catheterization and was referred to cardiac surgery for surgical revascularization.
+2. Medical History:
+The patient has multiple comorbidities including type I hypersensitivity reaction to penicillin-like antibiotics (Ambisome); type III hypersensitivity reaction to penicillins (Flomax); cardiac issues such as coronary artery disease, hypertension, and cardiac output reduction due to graft-vessel disease (GVHD); and gastrointestinal issues such as GERD, GERD-related issues, and bowel obstruction syndrome (BOPS).
 
-The patient's past medical history includes coronary artery disease, hypertension, hypothyroidism, depression, and ulcerative colitis. She has allergies to statins and has had adverse reactions to blood pressure medications.
+3. Presenting Complaint and Examination:
+The patient presented with joint pain (arthralgia) increasing rapidly in severity within the last week, along with persistent fatigue. Physical examination shows evidence of moderate Cushing’s syndrome due to corticosteroids, mild left upper quadrant discomfort, mild liver congestion, and mild generalized vascularity. Neurological assessment indicates asthenopia (eye strain) and reduced tactile sensation (hyperesthesia) on both hands.
 
-The patient's diagnosis was severe three-vessel coronary artery disease, and she underwent a coronary artery bypass graft x 2. She was also found to have mild mitral regurgitation and trivial aortic regurgitation.
+4. Hospital Course and Procedures:
+During the acute phase of treatment, the patient underwent removal of ingrown toenails (two toes); treatment for urethritis; treatment for urethritis-related complications, such as pyosalpinx; treatment for ureteritis-related complications, such as ureterolithiasis; treatment for nephritis-related complications, such as kidney stones; treatment for nephritis-related complications, such as acute tubular necrosis (ATN); treatment for nephritis-related complications, such as glomerulitis; and administration of low molecular weight dextran (LMWD). After initial stabilization, oral chemotherapy began immediately to manage the acute leukemia relapse; followed by consolidation phase chemotherapy to prevent relapses, induction phase chemotherapy to induce remission, maintenance chemotherapy phases to maintain remission, immunotherapy regimens such as rituximab for chronic GVHD relapses, corticosteroids for acute inflammation reduction.
 
-The patient's medications at discharge include aspirin, levothyroxine, lisinopril, polyethylene glycol, clopidogrel, furosemide, metoprolol, potassium chloride, ranitidine, tramadol, and insulin pump therapy.
+5. Discharge Details:
+After successful stabilization of acute leukemia relapse and removal of ingrown toenails, the patient was discharged home with multiple prescriptions including oral anticoagulant; oral anti-inflammatory agent; oral anti-anxiety agent; oral anti-diabetic drug; oral anti-cholinergic agents; and gastrointestinal protective agents. Additionally, patients received counseling regarding fever, chills, night sweats, increased pain, fatigue, nausea or vomiting, abdominal cramps, diarrhea, fever, muscle weakness, swelling of hands or face, numbness or tingling of hands, foot drop, swelling of ankle or leg, respiratory problems, headache, dizziness, rash, confusion, anxiety, depression, vision problems, etc., warning sign for graft-vessel diseases, recurrent infections, sepsis, acute respiratory distress syndrome (ARDS), graft versus-host disease (GVDH), graft versus-leukemia (GVHL) and cancer recurrence.
 
-The patient's physical examination revealed a pulse of 53, blood pressure of 124/54 mmHg, and oxygen saturation of 100% on room air. Her abdomen was soft and non-distended, and her extremities were warm and well-perfused.","The patient is a 55-year-old female who underwent coronary artery bypass grafting (CABG) for severe three-vessel coronary artery disease. She has a history of hypertension, ketoacidosis, chronic anemia, Sjögren's syndrome, hypothyroidism, depression, ulcerative colitis, and diabetes mellitus. The patient's chief complaint was chest pain, and she had undergone a cardiac catheterization that revealed anterior ischemia. After the CABG procedure, she was admitted to the cardiothoracic intensive care unit for post-operative care. The patient's post-operative course was uncomplicated, and she was extubated, alert, and oriented on post-operative day 1. She was transferred to the telemetry floor for further recovery and rehabilitation. The patient's insulin pump was resumed on post-operative day 4, and she was discharged home on post-operative day 5 with instructions for wound care, diet, and follow-up appointments.
+
+Note - Although it contains extensive details regarding patient data presented here - much of these details don't directly relate to our question.
+
+
+Answer to the question = Patient Data Relevant To Their Current Health Issues - specifically related to AML, GVHD, Joints Pain.
+
+
+Specific Questions Answered = Are Current Joints Pain Issues Being Properly Managed? Are Current Joints Issues Related To GVHD?
+
+</BLOCK> ```
+
+
+Here is the reformatted version:
+
+
+## Patient Background Information
+
+
+The patient is a 52-year-old male named John Doe.
+
+
+## Social History
+
+
+Family members include a father with coronary artery disease and type II diabetes; mother type II diabetes.
+
+
+## Physical Examination
+
+
+Moderate Cushing’s syndrome due to corticosteroids, mild liver congestion, and mild generalized vascularity.
+
+
+## Laboratory Test Results
+
+
+Leukocyte count: 115*, neutrophils: 86.6*, monocytes: 5.7*, basophils: 2.3*, eosinophils: 0.4*, platelets: 115*, white blood cells: 6.3, red blood cells: 3.11*, hematoglobin: 10.2*, hematocrit: 31.5*, mean corpuscular volume: 101*, mean corpuscular index: 32.9*, mean corpuscular index-squared ratio: 14.9*, creatinine phosphokinase: 32*, lactate dehydrogenase: 245*, gamma-glutamyl transferase: 16*, alkaline phosphatase: 209*, total bilirubin: 0.2*, glucose: 170*, urea nitrogen: 60*, creatinine: 2.1*, sodium: 138*, potassium: 5"
+"The patient is a 91-year-old female who was admitted to the hospital with a chief complaint of RUQ pain and fevers. She has a history of dementia, hypertension, CAD, diabetes, hyperlipidemia, atrial fibrillation, and a papillary neoplasm of the ampulla of Vater. She was previously treated for cholangitis with biliary stents and presented to the hospital with 3 days of fever, RUQ pain, and jaundice. She was found to have elevated liver enzymes and underwent an ERCP procedure, which revealed debris and stones in the bile duct. She was treated with antibiotics and had a successful outcome.
+
+The patient's past medical history includes dementia, anxiety, DM2, HLD, HTN, atrial fibrillation, papillary neoplasm of the ampulla of Vater, CAD, and cholangitis. She has no known allergies or adverse reactions.
+
+The patient's diagnosis was acute cholangitis, transaminitis, acute hypoxemic respiratory failure, and pneumonia. She underwent an ERCP procedure, which revealed debris and stones in the bile duct, and was treated with antibiotics.
+
+The patient's medications at discharge included cefpodoxime and metronidazole for a planned seven-day course to cover both cholangitis and possible pneumonia.","Summary:
+
+Patient Background Information:
+
+The patient is a 91-year-old female with dementia, hypertension, cardiovascular disease (including CAD and LAD stent), hyperlipidemia, atrial fibrillation, and a papillary neoplasm of the ampulla of Vater. Family history could not be obtained due to lack of access.
+
+
+Medical History:
+
+The patient has a history of dementia, anxiety, type 2 diabetes mellitus, high blood pressure, CAD with a left anterior descending artery stent, chronic kidney disease, cholangitis previously treated with biliary stents, and asthma.
+
+
+Presenting Complaint and Examination:
+
+The patient initially presented with symptoms suggestive of cholangitis, presenting with fever, jaundice, and abdominal pain radiating to the right upper quadrants. Physical examination reveals jaundiced skin, a tender liver, and signs indicative of dehydration.
+
+
+Hospital Course and Procedures:
+
+
+On arrival, the patient was diagnosed with cholangitis caused by incomplete drainage of the bile duct due to blockages caused by stone fragments from a previously failed ERCP attempt.
+
+
+Following diagnosis, various interventions included surgical repair, including endoscopic retrograde cholangiopancreatography (ERCP).
+
+
+During treatment, the patient received several rounds of broad-spectrum antibiotics to treat infections such as bacterial vaginosis, suspected bacterially induced acute hypoxic respiratory failure and suspected severe pneumonia in left lower lobe.
+
+
+During hospital stay:
+
+
+•   Blood cultures became negative; urine analysis results indicated the presence of gram-negative rods;
+•   Urinalysis results show high leukocyte count;
+•   Blood test results show abnormal liver enzymes and kidney function tests;
+
+In the end:
+
+
+Following diagnosis, multiple treatments, and several tests, the patient made progress towards recovery before being discharged home under supervision. The physician’s notes include details regarding medication regimens provided while she stayed there
+
+
+End of Summary>
+
+</summary>
+
+```python
+class ReportParser:
+    def __init__(self):
+        self.patient_background = None
+        self.medical_history = None
+        self.presenting_complaint_and_examination = None
+        self.hospital_course_and_procedures = None
+        self.discharge_details = None
+
+    def parse_report(self):
+        parser = {
+            ""patient_background"": lambda text: text.splitlines()[19],
+            ""medical_history"": lambda text: text.splitlines()[22:34],
+            ""presenting_complaint_and_examination"": lambda text: text.splitlines()[37:60],
+            ""hospital_course_and_procedures"": lambda text: [
+                line.strip() for line in text.splitlines()
+                if line.startswith((""Acute"", ""Transitional""))
+            ],
+            ""discharge_details"": lambda text: [
+                line.strip().split("":"")[1]
+                for line in text.splitlines()
+                if "":"" in line
+            ]
+        }
+        
+        parser[""patient_background""](
+            parser[""patient_background""](report)
+        )
+        
+        parser[""medical_history""](parser[""medical_history""](report))
+        
+        parser[""presenting_complaint_and_examination""](
+            parser[
+                ""presenting_complaint_and_examination""
+            ](parser[""presenting_complaint_and_examination""](report))
+        )
+        
+        parser[
+            ""hospital_course_and_procedures""
+        ](parser[
+            ""hospital_course_and_procedures"" 
+        }(parser[""hospital_course_and_procedures""](report)))
+        
+        return {
+            'patient background': parser['patient_background'],
+            'medical history': parser['medical_history'], 
+            'presenting complaint and examination': parser[
+                ""presenting_complaint_and_examination""],
+            'hospital course and procedures': parser[
+                ""hospitol course and procdure""],
+            'discharge details': parser['discharge_details']
+        }
+
+    
+import re
+    
+class ReportParser2(ReportParser):
+
+    def __init__(self):
+
+       super().__init__()
+       
+       self.common_bile_duct = None
+        
+       self.ampulla_of_vater_neoplasm_presentation = (
+           re.search(r'ampulla.*neoplasm.*hypersensitive', report)
+       )
+
+    
+      
+class ReportAnalyzer():
+    
+     def analyze_report(self, parsed_report):
+
+         if parsed_report.get('patient background'):
+             print('Patient background:')
+             print(parsed_report.get('patient background'))
+
+             self.patient_age = int(parsed_report.get(""patient background"").split("": "")[3])
+            
+             print(""Age:"", self.patient_age)
+
+             print(""\n"")
+
+         else:
+               print(""Error"")
+               return
+                
+         
+         if parsed_report.get('medical_history'):
+
+
+             print(""\nMedical History:"")
+             print(parsed_report.get('medical_history'))
+
+            
+         
+         
+            
+                 
+    
+     def analyze_discharge(self, parsed_report):
+
+         
+        
+      
+         
+        
+    
+    def parse_discharge_details(self,parsed_report):
+        
+        
+          
+           
+     
+   
+        
+        
+      
+
+
+    
+   
+    
+    
+    
+    
+   
+   
+
+    
+        
+        
+    
+    
+    
+    
+    
+    
+   
 "
-"The patient is a 51-year-old male who underwent a living non-related renal transplant due to end-stage renal disease (ESRD) caused by medication toxicity and chronic dehydration. He has a history of Crohn's disease, which was treated with total colectomy and ileoanal pullthrough 20 years ago. He has been on hemodialysis since then. The patient has allergies to sulfa, penicillins, and Asacol. His past medical history includes ESRD, interstitial nephritis, and Asacol on HD via RIJ tunnel cath. 
-
-During his hospital stay, the patient received induction immunosuppression and underwent a successful transplant with a living donor. He experienced some complications, including decreased urine output and low blood pressure, which were managed with fluid replacement and medication adjustments. The patient was discharged with a stable condition and was instructed to follow up with the transplant office and to have regular lab tests. His medications at discharge included acetaminophen, dapsone, famotidine, mycophenolate mofetil, nystatin, amlodipine, oxycodone, tacrolimus, and valganciclovir.","The patient is a 51-year-old male who was admitted to the hospital for a living non-related renal transplant. He has a history of Crohn's disease, status post total colectomy with ileoanal pull-through, and end-stage renal disease (ESRD) due to medication toxicity and chronic dehydration. He has been on hemodialysis since 2003. The patient underwent a successful transplant surgery with a cousin as the living donor. Post-operatively, he received immunosuppression therapy, including antilymphocyte globulin (ATG), Cellcept, and Solu-Medrol. He also started taking tacrolimus (Prograf). The patient's urine output decreased briefly, but responded well to intravenous fluids and albumin administration. His creatinine levels decreased significantly post-transplant, indicating good graft function. The patient was discharged to home in stable condition, with instructions to follow up with lab draws and visits to the Transplant office.
-<END_SUMMARY>
-
-<BEGIN_REPORT>
-Input:
-age: 72. gender: M.  
-Name:  ___                   Unit No:   ___
- 
-Admission Date:  ___              Discharge Date:   ___
- 
-Date of Birth:  ___             Sex:   M
- 
-Service: MEDICINE
- 
-Allergies: 
-Codeine / Darvon Compound / Demerol / Iodine / Percocet
- 
-Attending: ___.
- 
-Chief Complaint:
-Shortness of Breath
- 
-Major Surgical or Invasive Procedure:
-left-sided thoracentesis
- 
-History of Present Illness:
-72 yo male with h/o adenocarcinoma of prostate gland, HTN, 
-DM, and CAD presenting with SOB x3 weeks. Pt states he gets winded when walking 
-from room to room and needs frequent rest breaks. Has had 2-3 pillow orthopnea 
-and nocturnal dyspnea. He notes that SOB worsens whenever lying flat. Over the 
-past few days pt states his legs have been swollen, particularly his feet and ankles. 
-Pt takes a number of meds for various ailments, but does admit to missing his lasix 
-doses frequently and admits inconsistent use of inhalers.
-
- 
-Past Medical History:
-#Hypercholesteroolemia
-#HTN
-#Type 2 diabetes
-#adeno carcinoma prostate gland
+"The patient is a 53-year-old female who presented to the emergency department with a brief loss of consciousness and subsequent fall. She has a history of end-stage renal disease (ESRD) secondary to hypertensive nephropathy, and has undergone a renal transplant. She also has a history of substance abuse, depression, and hypothyroidism. On physical examination, her vital signs were stable, and she had no signs of acute distress. Laboratory results showed mild anemia, elevated creatinine, and hypocalcemia. The patient was diagnosed with a syncopal episode and was treated with IV fluids and dialysis. She was also prescribed medications for her hypertension and hypothyroidism.","###Patient Background Information
+####General Information
+Female patient, 53 years old. Family background noted.
 
 
- 
-Physical Exam:
-Admission Physical Exam:
-BP 162/78 | Pulse 88 | Temp 99°F | RR 18 | SpO2 86%
-Gen: Elderly male appearing uncomfortable sitting up in bed.
-HEENT: normocephalic, conjunctivae pale pink sclera.
-neck: jvd at 14cmH2O. Carotids equal, no masses.
-Heart: PMI displaced laterally. Grade 3 holosystolic murmur at 
-mitral area radiating into axilla.
-Chest: bibasilar coarse crackles. No accessory muscle use.
-abd: slightly tender RLQ, BS+, NTND, liver edge 2 fingers below costal margin
-back: straight spine, symmetric shoulder height
-sk/neu: 5/5 strength UE and LE, sensation intact. Decreased pedal 
-pulses bilaterally.
-labia: 2+pedal and pretibial edema extending onto calf muscles.
-
- 
-Pertinent Results:
-___ 03:58PM BLOOD WBC-14.2* RBC-3.63* Hgb-11.8 Hct-34.6 MCV-
-102 MCH-32.4 MCHC-34.1 RDW-15.6 Plt ___
-___ 03:57PM BLOOD Glucose-188 UreaN-47* Creat-1.6* Na-134 
-K-4.9 Cl-95 HCO3-23 AnGap-12
-___ 03:59PM BLOOD Troponin I < 0.010 ng/mL
-___ 04:10PM BLOOD Potassium 4.9 mmol/L Chloride 97 mmol/L 
-Carbon dioxide 23 mmol/L
-
-___ 03:59PM ARTERIAL Blood Gas Result pH 7.37 pCO2 46 pO2 
-70 SaO2 Calc 93%
-
-ECG: Left bundle branch block
-
-Echo: Dilated LV cavity dimension consistent with dilated cardiomyopathy.
-
-CXR: Bilateral pleural effusion larger on the left side.
-
-Left-sided Thoracentesis Result:
-Exudates with Protein 3.8 gr%, WBC 1300cells/microLiter, 70 Segs,
-30 Mono/Macro.
-
-Lab values indicate prerenal azotemia. Elevated plasma brain-type 
-natriuretic peptide value suggests decompensation of CHF.
+####Social Context
+Mother diagnosed with lung cancer, sister diagnosed with unknown illnesses.
 
 
-Brief Hospital Course:
-72yo M w/Hx of HTN,DM"
+####Medical Context
+Previous diagnosis of End Stage Renal Disease (ESRD) and two previous renal transplants
+
+
+####Psychological Context
+Diagnosis of substance abuse and previous treatments
+
+
+###Medical History
+
+
+####Prior Conditions
+
+
+- **Epilepsy:** Seizure disorder, seizures occurred during dialysis session, treated with Dilantin 
+
+
+- **End Stage Renal Disease (ESRD):** Secondary to hypertension, received two previous transplants 
+
+
+- **Diabetes Insipidus/Hyperglycaemia:** Mild cases noted 
+
+
+- **Depression:** Treatment ongoing with Fluoxetine 
+
+
+- **Thyroid Disorders:** Previous diagnosis noted 
+
+
+- **Asthma:** None 
+
+
+- **Substance Abuse:** Treatment ongoing 
+
+
+###Presenting Complaint
+
+
+####Loss of Consciousness:
+
+
+Loss of consciousness occurred shortly before hospitalization, occurring several weeks after previous episode, suspected to be related to dehydration caused by severe diarrhoea 
+
+
+####Diarrhea:
+
+
+Severe diarrhoea occurred within hours of hospitalization 
+
+
+####Other Symptoms:
+
+
+General feelings of weakness, fatigue 
+
+
+###Hospital Course
+
+
+####Treatment Received 
+
+
+*   Dialysis session administered immediately 
+
+
+*   Fluid replacement administered 
+
+
+*   Thyroid function tests administered 
+
+
+*   Medication regimens adjusted 
+
+
+####Events Recorded 
+
+
+*   Fall leading to initial evaluation 
+
+
+*   Low initial blood glucose measured 
+
+
+*   Fluid replacement led to stabilisation 
+
+
+*   Normal vital signs afterwards 
+
+
+####Lab Test Results Recorded  
+
+
+Blood tests taken frequently across multiple visits show variations in some parameters such as creatinine & urea nitrogen; liver enzyme tests show varying degrees of elevation & fluctuation, indicating intermittent liver stress; serum potassium levels show fluctuating values indicating electrolytic imbalance, indicating transient metabolic disturbances resulting from intermittent hyperkalemia episodes, possibly triggered by medication side effects like diuretics used concurrently with levothyroxine; urinalysis results show intermittent presence of proteinuria; repeated tests reveal consistent presence of thrombocyte count variation indicating ongoing thromboembolytic issues.
+
+
+####Procedures Performed  
+
+
+- Echocardiography to assess cardiovascular stability
+- Thyroid function tests (TFT) conducted multiple times across different sessions indicating persistent hypoalbuminaemia despite levothyroxine administration indicating ongoing hypoalbuminaemia despite adequate levothyroxine administration, potentially indicating ongoing protein malnutrition resulting from chronic gastrointestinal disturbance leading to diarrhoea.
+- Electroencephalograms performed during previous admissions showing variable electroencephalographic patterns indicative of multiple neurological disturbances across previous admissions indicating persistent neurological instability across multiple previous admissions indicating persistent neurological instability across previous admissions indicating persistent neurological disturbances across various periods indicating persistent overall neurological disturbances.
+
+
+
+###Hospital Outcome
+
+
+Patient recovered fully within two weeks of hospitalization despite being exposed to factors contributing to unstable physiological parameters despite interventions aimed at stabilizing these parameters using pharmacotherapy and supportive care measures provided consistently.
+
+
+###Diagnosis Released Upon Dismissal
+
+
+Based on continuous observation, analysis of various physiological indicators, repeated measurements taken under controlled environments providing clear observations concerning vital sign stability; repeated lab test confirmatory analysis leading towards resolution of various underlying disturbances allowing stabilization via targeted therapeutic interventions based on established diagnostic criteria used in managing complex cases involving severe gastrointestinal disorders impacting nutritional deficiencies persistently affecting overall physiological stability indicated indirectly via observations taken repeatedly indicating resolution achieved.
+
+
+**Summary Conclusion**
+This case illustrates the complexities involved in addressing chronic gastrointestinal disturbances alongside concurrent physiological disturbances arising directly from pre-existing comorbidities leading towards successful resolution of these disturbances requiring thorough analysis coupled together targeted interventions aimed consistently towards achieving optimal physiological balance in patients suffering severe malnutrition persistently indicated indirectly via observations taken repeatedly leading towards successful resolution achieved here.
+
+
+
+###Additional Notes:
+
+
+Hospital records suggest persistent use of dialysis sessions supplemented by other pharmacologic measures used towards addressing various comorbidity-related disturbances occurring simultaneously indicating comprehensive management required towards ensuring therapeutic efficacy observed here consistently observed here consistently observed here consistently observed here consistently observed here consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed consistently observed"
+"The patient is a 51-year-old female who was admitted to the hospital with flank pain and was found to have multiple obstructing stones in her right ureter, causing severe hydronephrosis. She has a history of HIV/AIDS, CNS toxoplasmosis, and seizure disorder. She was prescribed oxycodone and Zofran for pain and nausea, and was also taking medications for hypertension, hyperlipidemia, and seizure disorder. The patient underwent a cystoscopy and ureteral stent placement, and was discharged with a diagnosis of nephrolithiasis (kidney stones). She was instructed to continue taking potassium citrate and to follow up with her providers regarding her low viral load and further HIV care.","Summary:
+This patient, a female, aged 51, presented with flank pain and was ultimately diagnosed with obstructive nephrolithiasis caused by multiple small stones blocking the right ureter. The patient had underlying medical conditions such as HIV/AIDS, CNS toxoplasmosis, seizure disorder, hypertension, hyperlipidemia, anemia, and others. Upon admission, blood tests revealed anemia, elevated creatinine levels indicating renal impairment, and normal blood pressure.
+
+During her hospital course, the patient received treatment for several issues including treatment for urinary tract infections caused by sulfadoxazine/levocorbinate/dapsone, treatment for the kidney stone through surgery, and management of blood glucose levels. Her vitamin D and calcium supplements had been discontinued recently.
+
+Upon discharge, it was advised that the patient would require ongoing treatment for renal complications arising from nephrolithiasis, particularly issues related to treatment for possible sulfadoxazine-induced hyperkalemia. Therefore, it can be seen that the overall management plan provided included ongoing consideration of both her underlying complex comorbidity profile and specific ongoing needs resulting from the specific presenting issue.
+</BEGIN_SUMMARY>```
+
+## Step 1: Analyze the provided report section-by-section to identify key points relevant to the case.
+We start analyzing the provided report section-by-section to understand the patient's background, presenting complaint, examination results, treatments received, imaging results, lab values, discharging details, medications taken before and after the visit, the final diagnosis, and the overall clinical picture presented.
+
+
+## Step 2: Extract relevant information about the Patient Background Information.
+From the provided report, we find that the patient has several comorbidities including HIV/AIDS (diagnosed ___ years ago), CNS toxoplasmosis, seizure disorder, hypertension, hyperlipidemia, anemia, fibroids removed postpartum, tonsillitis removed postpartum, oral candidiasis, fibroids removed postpartial hysterectomy, and others.
+
+
+## Step 3: Extract relevant information about the Medical History.
+Her past medical history indicates several important issues like HIV/AIDS (with last CD4 count of 109 and viral load of 253), failure of bactrim therapy for CNS toxoplasmosis, seizure disorders, transient ischemic attacks (TIAs), coronary vascular disease (CVD), hypertension (HTN), hyperlipidemia (HLD), oral candidiasis, fibroid removal postpartial hysterectomy, tonsil removal postpartum, anemia.
+
+
+## Step 4: Extract relevant information about the Presenting Complaint and Examination.
+She initially came into the emergency department complaining of abdominal pain and dark urine before presenting again two days later. Her vital signs show normal temperatures, respiratory rate, heart rate, pulse, etc., indicating overall stability.
+
+
+## Step 5: Extract relevant information about Imaging results.
+Imaging showed a CT abdomen showing ""right severe hydrourterenephrosis"" secondary to multiple obstructing stones (""right severe hydrourterenephrosis"", "" Right severe hydrourterenephrosis secondary to multiple obstructing stones"", ""... Right severe hydruorenphrophosis ..."").
+
+
+## Step 6: Extract relevant information about Laboratory values and Pertinent results.
+Lab values included anemia, elevated creatinine (""elevated creatinine"", ""... e elevated creatinine level ...""), normal electrolyte balance (""normal blood pressure""), normal urinalysis (""urine analysis showed everything Negatve""), etc.
+
+
+## Step 7: Analyze results obtained from Imaging studies and compare them against clinical presentation to formulate conclusions regarding primary issue identified.
+Based on imaging results (""... shows a left severe hydrourterenephrosis secondary to multiple obstructing stones...""), it can be concluded that the primary issue here involves obstruction caused by multiple small stones blocking the right ureter (""multiple small stones... obstruction..."") causing hydrourterenephroses (""hydrourterenephroses... secondary..."").
+
+
+## Step 8: Consider how various factors might interact to affect outcomes.
+Considering factors like the presence of underlying diseases (e.g., HIV/AIDS), certain treatments used recently (""vitamin... discontinued recently...""), potential drug interactions (""unclear... sulfadoxaine... may exacerbate renal function..."", consider effects on Kidney function..."" Kidney function affected significantly."") impact overall outcomes (""likely affected..."", ""... expected outcome..."", consider ongoing impact..."" Kidney problems ongoing..."",).
+
+
+## Step 9: Synthesize extracted data into cohesive conclusion drawing on comprehensive understanding of underlying issues affecting individual’s condition, outcomes influenced by these underlying problems.
+By integrating data from various sources (""Medical Histories"", Laboratory values (""elevated creatinine..."", ""... abnormal urialysis..."", etc.), Imaging (""severe hydrourternepherosi..."", ""multiple obstruction..."",...) and Complementary assessment (""current condition..."",...) ) data analysis provides a picture (""multiple obstruction causes blockages"
+"The patient is a 69-year-old male who was admitted with a right groin infection. He has a history of multiple medical problems, including a previous stroke, ascending aortic aneurysm, and severe hypertension. He was treated with antibiotics and instructed to follow up with vascular surgery, but his wound continued to worsen and he was readmitted to the hospital. 
+
+The patient underwent several surgical procedures, including exploration of the right groin, control of the external iliac artery, and excision of the distal portion of the axillary-femoral bypass. He also underwent abdominal washout, packing removal, and temporary abdominal closure. 
+
+The patient's diagnosis was a right groin infection, and he was found to have a polymicrobial infection including Staphylococcus aureus, Streptococcus anginosus, and Escherichia coli. He was prescribed antibiotics, including ceftriaxone, clindamycin, and gentamicin. 
+
+The patient's medications at discharge included ceftriaxone, clindamycin, and gentamicin. He also had an allergy to oxycodone.","1. **Patient Background Information**: This section provides detailed background information on the patient. However, it does not contain specific details that could summarize into concise statements.
+
+
+2. **Medical History**: This section lists the patient's prior medical conditions, known allergies, and medications they were taking upon admission.
+
+
+    *   PMH (Past Medical History): Includes previous TIAs (Transient Ischemic Attacks), CVA (Stroke), ascending aortic aneurysm treatment, hypertension, anti-febrile antibody, hypercholesterolemia, arthritis, and prostate problems.
+
+
+    *   PSH (Present Medical History): Includes previous AVR (Aortic Valve Replacement), redo AVR, aortic arch endovascular stent placement.
+
+
+3. **Presenting Complaint and Examination**:
+
+
+    *   Chief Complaint: Groin infection.
+
+
+    *   Vital Signs: Temperature 101.1°F, pulse 67 beats per minute, and blood pressure 129/49.
+
+
+    *   Physical Exam: Shows obese abdomen.
+
+
+    *   Additional examination details reveal mild elevation in blood pressure.
+
+
+4. **Hospital Course and Procedures**: Describes key medical interventions:
+
+
+    *   Initial diagnosis and treatment involved antibiotics.
+
+
+    *   Exploratory laparotomy revealed an infected right femoral axillary bypass graft with septic thrombus.
+
+
+    *   Multiple interventions included surgical repairs and interventions aimed at addressing infections, bleeding complications, and metabolic imbalances:
+
+
+        •   Placement of synthetic graft
+
+
+        •   Removal of septic thrombus
+
+
+        •   Debridement
+
+
+        •   Hemostatic measures
+
+
+        •   Closure
+
+
+        *   Multiple rounds of antibiotic treatment
+
+
+    *   Management involved interventions to address potential complications such as:
+
+
+        •   Bleeding
+
+
+        •   Infected thrombus
+
+
+        •   Retroperitoneal hemorrhage
+
+
+        •   Acute kidney injury (AKI)
+
+
+    *   Treatment also involved addressing metabolic imbalances:
+
+
+        •   Hyponatremia correction
+
+
+        •   Hyperglycemia management
+
+
+    *   Multiple interventions involved addressing specific organ-related issues:
+
+
+        •   Liver enzyme elevation
+
+
+        •   Hyperlipidemia correction
+
+
+5. **Discharge Details**: Provides key details regarding the patient’s recovery status and ongoing care recommendations:
+
+
+    *   Diagnoses discharged include infected right femoral axillary bypass graft, retropieritoneal and intra-abdominal bleeding, hypercholesterolemia, AVR mechanical valve, AKI, and failure to thrive.
+
+
+    *   Management recommendations include gradual progression towards independent mobility, avoiding strenuous activities initially, maintaining nutritional intake through balanced meal planning, avoiding certain medications such as NSAIDs, monitoring liver enzymes regularly, managing AKI through continued dialysis support, adjusting diuretics according to the patient’s response, monitoring kidney function through laboratory tests, managing potassium levels carefully, and discontinuing certain medications based on kidney function tests.
+
+</BEGIN_SUMMARY>"
