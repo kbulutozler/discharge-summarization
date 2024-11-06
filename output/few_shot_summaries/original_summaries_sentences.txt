@@ -1,48 +1,48 @@
 ###SUMMARY: 
-The patient is a 35-year-old female who was admitted with abdominal pain, which was diagnosed as gallstone pancreatitis.
-She had a history of gestational diabetes, Caesarean section, and GERD.
-She was also experiencing pruritus, dark urine, yellowing of her eyes, and fatigue.
-Her laboratory results showed elevated LFTs and lipase levels.
-She underwent ERCP with sphincterotomy and biopsy of the ampulla, which was negative for malignancy.
-Her LFTs were slow to resolve, but she remained pain-free and was tolerating a low-fat diet.
-She was discharged with instructions to follow up with her primary care physician and to schedule an outpatient cholecystectomy.
-Her medications at discharge included diphenhydrAMINE for pruritus and outpatient lab work to monitor her LFTs.
+The patient is an 87-year-old male who was admitted to the hospital with a chief complaint of emphysematous cystitis.
+He has a history of metastatic castrate-resistant prostate cancer, coronary artery disease, and has undergone coronary bypass surgery.
+He also has a history of mechanical falls and fractures, and has been experiencing progressive functional decline over the past several months.
+The patient was transferred from another hospital after a fall and CT abdomen showed emphysematous cystitis.
+He was found to have a urinary tract infection (UTI) growing resistant E. coli.
+The patient's past medical history also includes diabetes, hypercholesterolemia, paroxysmal atrial fibrillation, and pulmonary embolism.
+He was prescribed cefpodoxime 200mg PO BID x 5 days and vanc/cefepime.
+The patient's physical exam showed a stable vital sign, no acute complaints, and severe hearing loss.
+The patient's discharge medications included cefpodoxime and vanc/cefepime.
 
 
 ###SUMMARY: 
+The patient is a 55-year-old female who was admitted to the hospital with complaints of chest pain.
+She has a history of coronary artery disease, hypertension, hypothyroidism, and depression.
+She was referred for a stress test, which revealed anterior ischemia, and was subsequently found to have three-vessel disease.
+She underwent a cardiac catheterization and was referred to cardiac surgery for surgical revascularization.
 
 
-The patient is a 58-year-old male with a history of end-stage renal disease (ESRD) following a renal transplant.
-He has a neurogenic bladder, hypertension, diabetes, and a history of recurrent urinary tract infections (UTIs).
-He was recently hospitalized for septic shock caused by ischemic colitis and Klebsiella urosepsis.
-He was treated with antibiotics and was discharged to a rehabilitation facility, where he developed worsening abdominal pain and diarrhea.
-He was transferred to the emergency department, where he was found to have a large stool burden and continued evidence of proctocolitis.
-He was diagnosed with partially reversible inferolateral perfusion defect and decreased left ventricular ejection fraction.
-He was also found to have a urinary tract infection caused by multidrug-resistant Escherichia coli (MDR E. coli).
+The patient's past medical history includes coronary artery disease, hypertension, hypothyroidism, depression, and ulcerative colitis.
+She has allergies to statins and has had adverse reactions to blood pressure medications.
 
 
-The patient's allergies include antihistamines and glipizide.
-He has a history of chronic back pain, COPD, DM2, HTN, HLD, and recurrent UTIs.
-He has also had a colon adenomatous polyp and umbilical hernia repair.
+The patient's diagnosis was severe three-vessel coronary artery disease, and she underwent a coronary artery bypass graft x 2.
+She was also found to have mild mitral regurgitation and trivial aortic regurgitation.
 
 
-The patient's medications at discharge include cellcept and tacro for his renal transplant, as well as antibiotics for his UTI.
+The patient's medications at discharge include aspirin, levothyroxine, lisinopril, polyethylene glycol, clopidogrel, furosemide, metoprolol, potassium chloride, ranitidine, tramadol, and insulin pump therapy.
+
+
+The patient's physical examination revealed a pulse of 53, blood pressure of 124/54 mmHg, and oxygen saturation of 100% on room air.
+Her abdomen was soft and non-distended, and her extremities were warm and well-perfused.
 
 
 ###SUMMARY: 
-The patient is a 58-year-old female who was admitted to the hospital with a left heel ulcer and cellulitis.
-She has a history of diabetes, hypertension, and depression, and has had multiple ulcerations and debridements in the past.
-She presented to the emergency department with a one-week history of increasing redness and pain in her left heel, which had worsened the day before her admission.
-She was treated with IV antibiotics and a culture of the wound was taken.
-The culture grew coagulase-negative Staphylococcus aureus and diptheroids, and she was started on Vancomycin and PO cipro and flagyl pending culture data.
-She was also treated with wet-to-dry dressing changes and remained afebrile with stable vital signs throughout her admission.
-She was discharged home on PO Bactrim and instructed to perform daily wet-to-dry dressing changes and follow up with her doctor in a week.
+The patient is a 51-year-old male who underwent a living non-related renal transplant due to end-stage renal disease (ESRD) caused by medication toxicity and chronic dehydration.
+He has a history of Crohn's disease, which was treated with total colectomy and ileoanal pullthrough 20 years ago.
+He has been on hemodialysis since then.
+The patient has allergies to sulfa, penicillins, and Asacol.
+His past medical history includes ESRD, interstitial nephritis, and Asacol on HD via RIJ tunnel cath. 
 
 
-The patient's medications on admission included Lisinopril, Metformin, Oxybutynin Chloride, Percocet, Simvastatin, Spironolactone, Trazodone, and Multivitamin.
-Her discharge medications included Sulfamethoxazole-Trimethoprim, Budesonide-Formoterol, Lisinopril, Metformin, Simvastatin, Spironolactone, Trazodone, Fexofenadine, Multivitamin, Vitamin E, Ferrous Sulfate, and Oxybutynin Chloride.
-
-
-The patient's discharge diagnosis was left heel ulcer and cellulitis, and her discharge condition was clear and coherent mental status, alert and interactive level of consciousness, and ambulatory-independent activity status.
+During his hospital stay, the patient received induction immunosuppression and underwent a successful transplant with a living donor.
+He experienced some complications, including decreased urine output and low blood pressure, which were managed with fluid replacement and medication adjustments.
+The patient was discharged with a stable condition and was instructed to follow up with the transplant office and to have regular lab tests.
+His medications at discharge included acetaminophen, dapsone, famotidine, mycophenolate mofetil, nystatin, amlodipine, oxycodone, tacrolimus, and valganciclovir.
 
 
