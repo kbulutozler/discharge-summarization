@@ -1,0 +1,65 @@
+###SUMMARY: 
+Here are my input values, so I'll start:   
+Patient Age: 89 years old Patient Gender: Male   Patient came to the hospital because of recurrent episodes of severe lower abdomen pain along with nausea and vomiting.   
+Relevant Past Medical History:   Diabetes Type II chronic Diastolic Heart Failure  Paroxysmal Atrial Fibrillation  Asbestosis  Essential Tremor  Knee Osteoarthritis S/P Knee Replacement  Esophagitis  Colonic Adenoma  Obesity  Vitamin B12 Deficiency    Patient's Chief Complaint:   Severe episodes of Lower Abdominal Pain   Physical Examination Findings:   General exam: alert and oriented x3, nasal congestion x3, normal airway, normal lungs   Abdominal exam: soft, nondistended, nontender   Other notable exam finding: no significant abnormalities   Hospital Visit Summary   Hospital course went smoothly; Patient underwent a surgical procedure, which involved converting from a laparoscopic method to an open cholecystectomy   Discharge Instructions & Conditions   Upon discharge, the Patient will receive guidance from the surgeon’s office.   
+The Patient has been advised to take medications such as acetaminophen and pain management drugs.   
+Upon Discharge   Patient cleared   
+
+
+###SUMMARY: 
+Please generate the response based on the provided text.   
+She was 65 years old and female who came to the hospital due to exertional dyspnea and chest discomfort.  
+Her past medical history included diabetes mellitus, chronic kidney disease, atrial fibrillation, and peripheral vascular disease.  
+Her chief complaint consisted of exertional dyspnea and chest discomfort associated with a burning sensation in her substernal region that radiated upwards towards her throat.  
+Her physical exam revealed signs of volume overload, ankle edema, and superficial ulcers on her dorsum of the right hand, along with a general lack of vital signs abnormalities except for slightly elevated BP.  
+She had undergone numerous diagnostic tests including stress testing, echocardiogram, cardiology consultation, cardiac catheterization, and computed tomography scans before being discharged back home under close monitoring due to suspected chronic heart failure.  
+Upon discharge, she received various medication adjustments such as increasing Imdur dosage and reducing Simvastatin dosage along with removal of Lasix, along with additional topical treatments such as moisturizers and antifungal treatments due to suspected peripheral arterial occlusive disease manifestations like skin ulcers.
+
+
+###SUMMARY: 
+The patient is a 60-year-old female who came to the hospital due to severe back pain radiating down her right leg following a diagnosis of lumbar stenosis.
+The patient has multiple allergies including codeine, lipitor, econazole, nitrate, pepper, flagyl, proair hfa, sag etc.
+Relevant past medical histories include diabetes mellitus II, cutaneous candidiasis, hip pain, vitamin deficiency, hepatic steatoasis, hypothyroidism, and sleep apnea.
+Physical exam reveals paresthesias to the right inner thigh and outer calf with intact sensation, minimal motor function impairment, and normal vital signs except temperature normal range .
+Hospitalization involved undergoing elective L2-L3 and L4-5 laminectomies and R L4-L5 microdiscectomy under anesthesia with uneventful procedure and postoperative development of symptoms such as right lower extremity weakness and increased pain.
+Repeated MRIs showed small hematomas requiring multiple surgeries, ultimately resolving post-operatively .
+Following multiple surgeries the patient now experiences persistent paresthesias and mild motor impairment however remains willing to participate in rehabilitation.
+At discharge the patient requires only acetaminophen, bisacodyl, diazepam, gabapentin, glucagon, heparin and artificial tears due to various post-surgical complications .  
+
+
+###SUMMARY: 
+The patient is a 52-year-old female presenting with hypoxia due to severe COPD, on home oxygen therapy.
+She came to the emergency department seeking treatment for a guided lumbar puncture procedure for therapeutic drainage due to complications arising during the procedure.   
+The patient has a history of severe COPD, pseudotumor cerebri, coronary artery disease, diet-controlled type 2 diabetes mellitus.   
+Her main complaints included headaches consistent with pseudotumor cerebri, but there were other concerning signs such as hyperventilation causing respiratory alkalosis evidenced by lab results showing elevated bicarbonate levels.   
+Upon arriving at the hospital, she initially required higher levels of oxygen but eventually stabilized.   
+Throughout her stay, her headaches remained relatively constant and responded adequately to symptomatic treatment.   
+Her healthcare providers recognized the risks associated with long-term use of certain drugs such as acetazolamide, so they discontinued its use and instead opted for alternative treatments to control her headaches.   
+Upon completing her stay, the patient experienced improvements in respiratory function and reduction in her reliance on oxygen therapy when discharged on compressed oxygen.   
+Additionally, adjustments made to her metoprolol dosage resulted in normalization of her heart rate.   
+At discharge, the healthcare providers advised her to discontinue certain medications and instead prescribed new ones tailored towards addressing her specific health needs.   
+Her overall mental status remained unchanged upon discharge    
+
+
+###SUMMARY: 
+A 78-year-old male came into the hospital complaining of severe chest pain, specifically STEMI pain in the upper lateral part of the chest.
+He came to the hospital despite experiencing transient ischemic attacks over several weeks prior to being hospitalized for unstable angina, indicating unstable cardiovascular health.
+Relevant chronic conditions include CAD (coronary artery disease), hypertension, hyperlipidemia, chronic parkinsonism disease, DJD, chronic neck pain, colonic polyps, esophageal reflux, hemorrhoids, carpal tunnel syndrome, and OCD.
+His physical exam shows bilateral bradycardia.
+During the stay, the patient underwent PCIs with primary treatment being placement of additional stents.
+Despite treatment, the patient exhibited persistent chest pain despite initial resolution, prompting concern for potential in-hospital complications such as acute pericarditis, pulmonary emboli, and deep vein thrombosis.    
+endoftext||   
+The patient came in for unstable angina complicated by transient ischemic attacks prior to developing unstable angina and ultimately STEMI.
+Relevant past medical history includes CAD, hypertension, and various other comorbidities including parkinsonism, DJD, and esophageal reflux.
+Physical examinations show bilateral bradycardia and normal vital signs upon discharge.
+Upon hospital stay PCIs were done which included placement of additional stents resulting in improvement initially although later persistent pain arose indicating potential complications such as pericarditis or emboli.    
+endoftext||   After discharge, patients should follow these instructions carefully: take new medications such as Clopidogrel 75mg daily and atorvastatin 80mg daily.
+Also decrease Aspirin dosage, stop simvastatin intake altogether.
+It's recommended that patients maintain regular activity levels such as those experienced in cardiac rehab programs.
+Additionally, patients should maintain regular follow-up appointments with cardiologists such as quarterly visits for monitoring purposes.    
+endoftext||   
+The patient exhibits clear mental status and consciousness level upon discharge while displaying ambulatory activity level.
+Given these factors patients will generally follow prescribed medicines regularly including statins like atorvastatin, antiplatelet agents like clopidogrel, anti-inflammatory drugs such as ibuprofen or naproxen.    
+endoftext
+
+

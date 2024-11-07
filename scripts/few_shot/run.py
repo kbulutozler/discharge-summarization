@@ -44,9 +44,6 @@ def main():
     initial_prompt = create_prompt(few_shot_df)
     with open(os.path.join(project_path, "output/few_shot_summaries/initial_prompt.txt"), "w") as f:
         f.write(initial_prompt)
-
-
-
         
     client = Together(api_key=API_KEY)
 

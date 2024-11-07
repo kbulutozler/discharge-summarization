@@ -1,0 +1,65 @@
+###SUMMARY: 
+The patient is an 89-year-old male who was admitted to the hospital with severe lower abdominal pain, nausea, and vomiting.
+He has a history of paroxysmal atrial fibrillation, chronic diastolic heart failure, diabetes type II, asbestosis, essential tremor, knee osteoarthrosis, esophagus, colonic adenoma, obesity, vit B12 deficiency, and BPH with nocturia.
+He has allergies to morphine and penicillins.   
+The patient underwent laparoscopic converted to open cholecystectomy for chronic cholecystitis.
+His physical examination on admission showed normal vital signs, and his physical examination on discharge showed him to be well appearing, afebrile, and with stable vital signs.   
+The patient was prescribed the following medications at discharge:
+acetaminophen, cyanocobalamin, diltiazem, doxazosin, fluorouracil, furosemide, metformin, metoprolol, omeprazole, rivaroxaban, and triamcinolone.
+He was discharged home with services and instructed to follow up with his doctor or nurse practitioner if he experiences any new symptoms.
+
+
+###SUMMARY: 
+The patient is a 65-year-old female who was admitted to the hospital with complaints of dyspnea on exertion and chest discomfort.
+She has a past medical history of CAD, DM with CKD, Afib, and HLP.
+She was recently hospitalized for volume overload and underwent ultrafiltration and diuresis.
+On admission, her troponin level was 0.08, and a d-dimer was positive.
+She underwent cardiac catheterization, which showed significant atherosclerotic disease in the left main coronary artery and left anterior descending artery.
+She was diagnosed with mitral regurgitation and had a left ventricular ejection fraction of unknown percentage.  
+The patient's medications at discharge include ASA 325 and SL nitroglycerin.
+She has a history of allergies to Motrin.
+Her physical examination was notable for a palpable pulse in the right and left carotid, femoral, popliteal, and dorsal pedal arteries.
+Her skin examination showed multiple areas of shallow ulceration and apparent desquamation on the dorsum of her right hand.  
+The patient's review of systems was negative for prior history of stroke, TIA, deep venous thrombosis, pulmonary embolism, bleeding at the time of surgery, myalgias, joint pains, cough, hemoptysis, black stools or red stools.
+She denied recent fevers, chills, or rigors.
+
+
+###SUMMARY: 
+Mrs. [Name], a 60-year-old female, was admitted to the hospital for lumbar stenosis.
+She had undergone an L3-L4 laminectomy for lumbar stenosis in the past and had developed pain down her right leg over the last year.
+She underwent an elective L2-3 and L4-5 laminectomies plus right L4-5 microdiscectomy, which was uneventful initially.
+However, she developed right lower extremity weakness and new radicular pain, and a small hematoma collection was found, which required re-exploration.
+She was discharged with paresthesias in her right lower extremity and weakness in her right hip flexor and knee flexors and extensors.  
+The patient has a history of diabetes, cutaneous candidiasis, hip pain, vitamin D deficiency, hepatic steatosis, hypothyroidism, sleep apnea, and hypertension.
+She has allergies to penicillins, cephalosporins, codeine, Lipitor, econazole, nitrate, peppers, Flagyl, ProAir HFA, sage, nystatin, and Victoza.  
+The patient's diagnosis is lumbar stenosis, and she underwent procedures including L2-3 and L4-5 laminectomies and right L4-5 microdiscectomy.
+She was prescribed medications including acetaminophen, bisacodyl, diazepam, docusate sodium, gabapentin, glucagon, heparin, insulin, milk of magnesia, oxyCODONE, polyethylene glycol, senna, artificial tears, atenolol, levothyroxine, pravastatin, and vitamin D.  
+The patient was discharged to extended care and was instructed to follow up with her neurosurgeon.
+She was advised to avoid heavy lifting, running, climbing, or other strenuous exercise until her follow-up appointment and to take pain medications as directed.
+
+
+###SUMMARY: 
+The patient is a 52-year-old female who was admitted to the hospital with hypoxia and headaches.
+She has a history of severe COPD, pseudotumor cerebri, and myocardial infarction with three stents placed.
+She is also morbidly obese and has diabetes mellitus type 2.
+The patient's allergies include penicillins, OxyContin, Vicodin, and MS.
+She was admitted to the MICU for oxygen monitoring and treatment of her hypoxia and headaches.
+During her admission, she underwent an interventional radiology-guided lumbar puncture and was treated with nebulizers, steroids, and antibiotics.
+The patient's oxygen saturation improved, and she was eventually transferred to the floor for further treatment.
+At discharge, she was prescribed medications including acetazolamide, oxycodone, and tylenol, and was scheduled for follow-up appointments with a pulmonologist and sleep medicine specialist.
+
+
+###SUMMARY: 
+The patient is a 78-year-old male who presented to the emergency department with chest pain.
+He has a history of coronary artery disease (CAD), hypertension, hyperlipidemia, and gastroesophageal reflux disease (GERD).
+He was admitted to the hospital with a diagnosis of ST-elevation myocardial infarction (STEMI) related to in-stent restenosis in the left anterior descending (LAD) artery.
+The patient underwent percutaneous coronary intervention (PCI) and was prescribed medications including Plavix, heparin, and nitroglycerin.  
+The patient has a history of multiple stents placed in the RCA and LAD arteries, as well as balloon angioplasty of a totally occluded RCA.
+He has also had a cardiac catheterization procedure in the past, which showed multi-vessel disease and multiple everolimus-eluting stents were placed.  
+The patient's allergies include shellfish, and he has a history of anginal symptoms, which are usually relieved with rest.
+He has used sublingual nitroglycerin several times in the past 9 months.  
+The patient's physical examination was normal, with no signs of distress or discomfort.
+His laboratory results showed elevated troponin levels, indicating myocardial infarction.
+He was discharged with medications and instructions to follow up with his cardiologist.
+
+
