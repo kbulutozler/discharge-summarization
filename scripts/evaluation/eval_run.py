@@ -20,20 +20,23 @@ def main():
         'gold_summary': gold_summaries,
         'gen_summary': final_summaries,
         'rouge_l': [round(score, 2) for score in individual_rouge_l],
-        'bertscore_f1': [round(score, 2) for score in individual_bertscore]
+        'bertscore_f1': [round(score, 2) for score in individual_bertscore],
     })
     avg_scores = pd.DataFrame({
         'model': LLM_NAME,
         'method': method,
         'avg_rouge_l': [round(avg_rouge_l, 2)], 
-        'avg_bertscore': [round(avg_bertscore, 2)]  
+        'avg_bertscore': [round(avg_bertscore, 2)]
     })
 
     # fill out the big table
     score_tables_path = os.path.join(project_path, "results", "score_tables")
-    # dont overwrite the file just append
-    with open(os.path.join(score_tables_path, "all.csv"), "a") as f:
-        avg_scores.to_csv(f, header=f.tell() == 0, index=False)
+    # dont overwrite the file just append unless it is the first time
+    if not os.path.exists(os.path.join(score_tables_path, "all.csv")):
+        avg_scores.to_csv(os.path.join(score_tables_path, "all.csv"), index=False)
+    else:
+        with open(os.path.join(score_tables_path, "all.csv"), "a") as f:
+            avg_scores.to_csv(f, header=f.tell() == 0, index=False)
     
     # fill out the method-model specific scores table for all test samples
     score_tables_path = os.path.join(score_tables_path, method, LLM_NAME)
