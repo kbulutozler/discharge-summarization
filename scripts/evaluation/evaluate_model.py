@@ -13,14 +13,13 @@ def split_and_merge(df):
         generated_summaries.append(final_summary)
     return generated_summaries
 
-def clean_stop_tokens(sequences):
+def clean_stop_tokens(sequences): # slice until first stop token
     pattern = r'(<[^>]+>)|(\|\|.+?\|\|)|(\n{2,})|(\s+\)|\(\s+)|(endoftext)'
     cleaned_sequences = []
     for sequence in sequences:
         sliced_text = re.split(pattern, sequence, maxsplit=1)[0]
         cleaned_sequences.append(sliced_text)
     return cleaned_sequences
-
 def main():
     project_path = os.getcwd()
     generated = pd.read_csv(os.path.join(project_path, "output", "zero_shot_summaries", "qa_style_trials.csv"))
