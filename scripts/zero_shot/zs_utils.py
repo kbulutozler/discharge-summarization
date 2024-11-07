@@ -37,7 +37,7 @@ def generate_summaries(df):
     # add empty column for generated summaries  
     generated_summaries = []
     # Generate summaries using the Together.AI API
-    for i, trial in tqdm(df.iterrows(), total=df.shape[0], desc="Generating summaries"):
+    for i, trial in tqdm(df.iterrows(), total=df.shape[0], desc=f"Generating summaries with {LLM_NAME}"):
         text = trial["discharge_report"]
         prompt = f"Here is a discharge report of a patient: \n\n{text}\n\n{ZS_SYSTEM_PROMPT}\n\n" 
         generated_summaries.append(single_inference_api(prompt))

@@ -13,6 +13,9 @@ def main():
     raw_generated = pd.read_csv(os.path.join(project_path, "output", "zs_summaries", "test_zs_unprocessed.csv"))
     final_summaries, gold_summaries = postprocess(raw_generated)
     avg_rouge_l, individual_rouge_l = calculate_rouge_l(final_summaries, gold_summaries)
+    print("avg rouge l", avg_rouge_l)
+    print("individual rouge l", individual_rouge_l)
+    
     avg_bertscore, individual_bertscore = calculate_bertscore(final_summaries, gold_summaries)
 
     # Create a DataFrame with the required columns
