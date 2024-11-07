@@ -1,77 +1,243 @@
 ###SUMMARY: 
-The patient is a 52-year-old male who was admitted to the hospital with worsening joint pain.
-He has a history of acute myeloid leukemia (AML) and has undergone a myeloablative double cord blood transplant.
-He has been experiencing chronic joint pain since his transplant, which has worsened over the past two weeks.
-The patient has been taking oxycodone for pain control, but has recently decreased his dosage due to nausea and vomiting.
-He has also been experiencing fever, fatigue, and swelling in his joints.
-
-
-The patient's past medical history includes a diagnosis of AML, sarcoidosis, and chronic GVHD.
-He has undergone several treatments for his AML, including induction therapy, consolidation therapy, and relapse treatment.
-He has also received Rituxan for his chronic GVHD.
-
-
-The patient's physical examination revealed a middle-aged, Cushingoid, overweight man with bilateral 2+ pitting edema to his knees.
-His joints were tender to palpation, and he had ecchymoses on his abdomen.
-His laboratory results showed an elevated CRP level, indicating an inflammatory process.
-
-
-The patient's diagnosis is chronic GVHD with joint pain, likely due to a combination of GVHD and changes in his narcotics regimen.
-His treatment plan includes increasing his prednisone dosage and discontinuing his plaquinil medication.
+The patient is a 69-year-old male who was admitted to the hospital for a planned radical pancreatoduodenectomy to clear biopsy-proven adenocarcinoma of the uncinate process of the pancreas.
+He presented with obstructive jaundice and weight loss.
+The patient has a history of myocardial infarction, diabetes mellitus, hypertension, and spinal stenosis.
+He also has a history of coronary artery disease and has undergone percutaneous transluminal coronary angioplasty.
+The patient's past medical history is significant for a tonsillectomy as a child and a history of cancer in his mother and father.  
+The patient underwent exploratory laparoscopy and laparoscopic liver biopsy, which revealed metastatic disease to his liver.
+He was then taken to the operating room for an elective Whipple procedure, but it was aborted due to the discovery of metastatic disease.
+Instead, the patient underwent ERCP and a metal biliary stent was placed in his common bile duct.  
+The patient was discharged home in stable condition, with a diagnosis of metastatic pancreatic carcinoma and a common bile duct stricture.
+He was prescribed several medications, including aspirin, atenolol, docusate sodium, enalapril, furosemide, gabapentin, glargine, metformin, omeprazole, oxycoDONE, senna, and simvastatin.
+He was also advised to follow up with his surgeon and primary care provider as advised, and to resume all regular home medications unless specifically advised not to take a particular medication.
 
 
 ###SUMMARY: 
-The patient is a 91-year-old female who was admitted to the hospital with a chief complaint of RUQ pain and fevers.
-She has a history of dementia, hypertension, CAD, diabetes, hyperlipidemia, atrial fibrillation, and a papillary neoplasm of the ampulla of Vater.
-She was previously treated for cholangitis with biliary stents and presented to the hospital with 3 days of fever, RUQ pain, and jaundice.
-She was found to have elevated liver enzymes and underwent an ERCP procedure, which revealed debris and stones in the bile duct.
-She was treated with antibiotics and had a successful outcome.
-
-
-The patient's past medical history includes dementia, anxiety, DM2, HLD, HTN, atrial fibrillation, papillary neoplasm of the ampulla of Vater, CAD, and cholangitis.
-She has no known allergies or adverse reactions.
-
-
-The patient's diagnosis was acute cholangitis, transaminitis, acute hypoxemic respiratory failure, and pneumonia.
-She underwent an ERCP procedure, which revealed debris and stones in the bile duct, and was treated with antibiotics.
-
-
-The patient's medications at discharge included cefpodoxime and metronidazole for a planned seven-day course to cover both cholangitis and possible pneumonia.
+The patient is a 58-year-old female who was admitted for valve-sparing aortic root replacement surgery.
+She has a history of aortic insufficiency, aortic aneurysm, asthma, chronic obstructive pulmonary disease, and hyperlipidemia.
+Her chief complaint was dyspnea on exertion.
+The patient underwent a successful surgery and was discharged on post-operative day 6.  
+The patient's past medical history includes aortic insufficiency, aortic aneurysm, asthma, chronic obstructive pulmonary disease, depression, gastroesophageal reflux disease, hyperlipidemia, insomnia, liver mass, psoriasis, and vitamin D deficiency.  
+The patient's medications at discharge include acetaminophen, amLODIPine, aspirin, docusate sodium, furosemide, metoprolol tartrate, ranitidine, senna, and trazodone.  
+The patient's physical examination revealed a warm, dry, and intact skin with multiple purpura and bruising on her arms and legs.
+Her vital signs were stable, and she was awake and alert.
+Her neurological examination was grossly intact, and her cardiovascular examination revealed a regular rhythm with a III/VI diastolic murmur at the aortic position.
 
 
 ###SUMMARY: 
-The patient is a 53-year-old female who presented to the emergency department with a brief loss of consciousness and subsequent fall.
-She has a history of end-stage renal disease (ESRD) secondary to hypertensive nephropathy, and has undergone a renal transplant.
-She also has a history of substance abuse, depression, and hypothyroidism.
-On physical examination, her vital signs were stable, and she had no signs of acute distress.
-Laboratory results showed mild anemia, elevated creatinine, and hypocalcemia.
-The patient was diagnosed with a syncopal episode and was treated with IV fluids and dialysis.
-She was also prescribed medications for her hypertension and hypothyroidism.
+The patient is a 27-year-old female with a past medical history of ITP, AIHA, and thrombocytopenia.
+She was admitted to the hospital for elective port placement, but was found to have a platelet count of <5 without bleeding.
+She received two doses of IVIG with improvement in her platelet count, and a R chest port a cath was placed without issues.
+During her hospitalization, she noted dysphagia and odynophagia for approximately the last two weeks, and was treated empirically with Fluconazole 200 mg PO x14 days.
+She was discharged home with a diagnosis of ITP, thrombocytopenia, and anemia.  
+The patient's medications at discharge include Acetaminophen 1000 mg PO Q8H, Fluconazole 200 mg PO Q24H, OxyCODONE (Immediate Release) 5 mg PO Q4H:PRN, butalbital-acetaminophen-caff 1 tab mg oral Q4H:PRN, Lidocaine Viscous 2% 15 mL PO DAILY:
+PRN, clindamycin phosphate 1 % topical DAILY, Multivitamins 1 TAB PO DAILY, PredniSONE 60 mg PO DAILY, tacrolimus 0.1 % topical BID:PRN, Tretinoin 0.025% Cream 1 Appl TP QHS, and Triamcinolone Acetonide 0.1% Ointment 1 Appl TP BID:PRN as directed.
 
 
 ###SUMMARY: 
-The patient is a 51-year-old female who was admitted to the hospital with flank pain and was found to have multiple obstructing stones in her right ureter, causing severe hydronephrosis.
-She has a history of HIV/AIDS, CNS toxoplasmosis, and seizure disorder.
-She was prescribed oxycodone and Zofran for pain and nausea, and was also taking medications for hypertension, hyperlipidemia, and seizure disorder.
-The patient underwent a cystoscopy and ureteral stent placement, and was discharged with a diagnosis of nephrolithiasis (kidney stones).
-She was instructed to continue taking potassium citrate and to follow up with her providers regarding her low viral load and further HIV care.
+The patient is an 89-year-old female who was admitted to the hospital with a left intertrochanteric fracture after falling from standing and landing on her left hip.
+She has a history of atrial fibrillation, mild COPD, hypertension, and osteoarthritis.
+She is allergic to sulfa, dicloxacillin, and Bactrim.
+The patient underwent left hip ORIF with TFN and was discharged with a diagnosis of left intertrochanteric hip fracture.
+She was prescribed medications including Lovenox for DVT prophylaxis, and was instructed to take Tylenol and narcotics as needed for pain.
+She was also advised to continue her home medications, except for those that were adjusted during her hospital stay.
+The patient was discharged in stable condition, with her incision well approximated and dressing clean and dry.
+She was instructed to follow up with her surgeon and to take her medications as prescribed.
+
+
+###SUMMARY: 
+The patient is a 55-year-old female who was admitted to the hospital with complaints of chest pain.
+She has a history of coronary artery disease, hypertension, hypothyroidism, and depression.
+She was referred for a stress test, which revealed anterior ischemia, and was subsequently found to have three-vessel disease.
+She underwent a cardiac catheterization and was referred to cardiac surgery for surgical revascularization.  
+The patient's past medical history includes coronary artery disease, hypertension, hypothyroidism, depression, and ulcerative colitis.
+She has allergies to statins and has had adverse reactions to blood pressure medications.  
+The patient's diagnosis was severe three-vessel coronary artery disease, and she underwent a coronary artery bypass graft x 2.
+She was also found to have mild mitral regurgitation and trivial aortic regurgitation.  
+The patient's medications at discharge include aspirin, levothyroxine, lisinopril, polyethylene glycol, clopidogrel, furosemide, metoprolol, potassium chloride, ranitidine, tramadol, and insulin pump therapy.  
+The patient's physical examination revealed a pulse of 53, blood pressure of 124/54 mmHg, and oxygen saturation of 100% on room air.
+Her abdomen was soft and non-distended, and her extremities were warm and well-perfused.
+
+
+###SUMMARY: 
+The patient is a 60-year-old male who was admitted to the neurosurgery service after falling and experiencing a loss of consciousness for approximately 10 minutes.
+He was found lying on the ground by his wife and friend, and he does not recall the events surrounding the fall.
+He was taken to the hospital and evaluated, and a CT scan revealed a left frontal punctate hemorrhage and resolving subarachnoid hemorrhage, as well as multiple facial fractures.  
+The patient's past medical history includes a meniscectomy in his right knee and high cholesterol.
+He has no allergies or adverse reactions listed.
+His diagnosis is a traumatic brain injury with facial fractures.  
+The patient underwent no surgical procedures during his hospital stay.
+He was prescribed several medications at discharge, including acetaminophen for pain and fever, simvastatin for cholesterol, amoxicillin-pot clavulanate for infection prophylaxis, docusate sodium for constipation, and oxycodone for pain.  
+The patient's physical examination was normal, with the exception of some ecchymosis and lacerations on his face and scalp.
+His neurological examination was also normal, with no signs of seizure activity or incontinence.
+
+
+###SUMMARY: 
+The patient is a 38-year-old female who was admitted to the hospital after collapsing at home.
+She was found to have an intraventricular hemorrhage and was intubated.
+The patient has a history of diabetes and was found to have a moyamoya pattern on CT angiography, which could be secondary to vasculitis.
+She underwent a cerebral angiogram, bilateral EVD placement, and PEG placement.
+The patient's physical exam revealed an unresponsive patient with fixed bilateral pupils and no corneal reflex.
+Her laboratory results showed elevated white blood cell count, blood glucose, and creatinine levels.
+The patient was prescribed medications at discharge, including antibiotics and anticonvulsants.
+
+
+###SUMMARY: 
+The patient is a 59-year-old female who was admitted to the hospital for surgical intervention due to a long history of scoliosis.
+She presented with back pain and had previously attempted conservative treatment without success.
+The patient has a history of HLD, GERD, esophagus, asthma, migraines, scoliosis, anxiety, and mitral valve prolapse.
+She is allergic to Percocdan and nylon sutures.  
+The patient underwent three surgeries: L3-S1 anterior fusion, anterior fusion and decompression of T12-L3, and posterior decompression and fusion T9-S1 with instrumentation and bone graft.
+She developed a post-operative ileus and was treated with an NG tube and diet advancement.
+She also experienced acute distension and was transferred to the TICU for monitoring.  
+The patient was prescribed several medications at discharge, including oxycodone for pain management.
+She was advised to follow a normal healthy diet, take medication for constipation, and wear a TLSO brace for ambulation.
+She was also instructed to limit lifting, follow wound care instructions, and attend physical therapy sessions.  
+The patient's discharge diagnosis includes scoliosis, urinary incontinence, post-op ileus, and acute post-op blood loss anemia.
+Her discharge condition is good, and she was discharged with service.
 
 
 ###SUMMARY: 
 The patient is a 69-year-old male who was admitted with a right groin infection.
 He has a history of multiple medical problems, including a previous stroke, ascending aortic aneurysm, and severe hypertension.
-He was treated with antibiotics and instructed to follow up with vascular surgery, but his wound continued to worsen and he was readmitted to the hospital. 
-
-
+He was treated with antibiotics and instructed to follow up with vascular surgery, but his wound continued to worsen and he was readmitted to the hospital.   
 The patient underwent several surgical procedures, including exploration of the right groin, control of the external iliac artery, and excision of the distal portion of the axillary-femoral bypass.
-He also underwent abdominal washout, packing removal, and temporary abdominal closure. 
-
-
+He also underwent abdominal washout, packing removal, and temporary abdominal closure.   
 The patient's diagnosis was a right groin infection, and he was found to have a polymicrobial infection including Staphylococcus aureus, Streptococcus anginosus, and Escherichia coli.
-He was prescribed antibiotics, including ceftriaxone, clindamycin, and gentamicin. 
-
-
+He was prescribed antibiotics, including ceftriaxone, clindamycin, and gentamicin.   
 The patient's medications at discharge included ceftriaxone, clindamycin, and gentamicin.
 He also had an allergy to oxycodone.
+
+
+###SUMMARY: 
+The patient is a 58-year-old female who was admitted to the hospital with a left heel ulcer and cellulitis.
+She has a history of diabetes, hypertension, and depression, and has had multiple ulcerations and debridements in the past.
+She presented to the emergency department with a one-week history of increasing redness and pain in her left heel, which had worsened the day before her admission.
+She was treated with IV antibiotics and a culture of the wound was taken.
+The culture grew coagulase-negative Staphylococcus aureus and diptheroids, and she was started on Vancomycin and PO cipro and flagyl pending culture data.
+She was also treated with wet-to-dry dressing changes and remained afebrile with stable vital signs throughout her admission.
+She was discharged home on PO Bactrim and instructed to perform daily wet-to-dry dressing changes and follow up with her doctor in a week.  
+The patient's medications on admission included Lisinopril, Metformin, Oxybutynin Chloride, Percocet, Simvastatin, Spironolactone, Trazodone, and Multivitamin.
+Her discharge medications included Sulfamethoxazole-Trimethoprim, Budesonide-Formoterol, Lisinopril, Metformin, Simvastatin, Spironolactone, Trazodone, Fexofenadine, Multivitamin, Vitamin E, Ferrous Sulfate, and Oxybutynin Chloride.  
+The patient's discharge diagnosis was left heel ulcer and cellulitis, and her discharge condition was clear and coherent mental status, alert and interactive level of consciousness, and ambulatory-independent activity status.
+
+
+###SUMMARY: 
+The patient is a 51-year-old female who was admitted with chest pain and a history of CAD with prior MI.
+She presented with 3 days of persistent chest tightness and was found to have a posterior STEMI with occlusion of the distal circumflex artery.
+She underwent a left heart catheterization and was treated with a DES to the culprit vessel.
+She also had a non-culprit RCA lesion with diffuse irregularities.
+The patient's past medical history includes CAD, hypertension, CKD, hyperlipidemia, TIA, CVA, antiphospholipid syndrome, OSA, and fibromyalgia.
+She has allergies to morphine and fish oil.
+At discharge, the patient was prescribed medications including ticagrelor, aspirin, plavix, atorvastatin, metoprolol, and warfarin.
+She was also advised to continue using her CPAP machine for OSA.
+The patient developed several small hematomas during her hospital stay, but her CBC remained stable and she did not have evidence of internal bleeding.
+She was discharged with close cardiology follow-up.
+
+
+###SUMMARY: 
+The patient is a 67-year-old male who was admitted to the neurosurgery ICU for close observation after a head CT showed bilateral subdural hematoma.
+He was admitted after a ski accident five weeks ago, which he is unsure of the event and not sure why he went down-syncope vs. traumatic event.
+He reports a headache that started yesterday but has progressed this morning, and denies any visual issues, but reports nausea/vomiting.
+He has a history of hypertension, lung cancer diagnosed 10 years ago with no metastasis or lymph node spread, and a bilateral shoulder injury years ago.
+He was started on seizure prophylaxis and prednisone for headache pain and underwent bilateral burr hole procedures for evacuation of subdural hematoma.
+He was discharged home with instructions to follow up prior to flying to his destination for the results of his LENIs.
+
+
+###SUMMARY: 
+The patient is an 84-year-old female who was admitted to the hospital with dyspnea on exertion.
+She has a history of NSTEMI, cardiac catheterization, and COPD.
+She was transferred from another hospital for cardiac catheterization after presenting with chest pain and shortness of breath on exertion.
+The patient has allergies to penicillins and morphine.  
+The patient's diagnosis is 2-vessel coronary artery disease with thrombus in the ramus and occluded LCx with thrombus after DES.
+She underwent cardiac catheterization and PCI/DES to the LCx and POBA to the ramus.  
+The patient's past medical history includes diabetes, dyslipidemia, hypertension, NSTEMI, mild aortic stenosis, and chronic kidney disease.
+She also has a history of TIA, COPD, asthma, gout, and GERD.  
+The patient's physical examination revealed a well-appearing patient with a normal blood pressure and oxygen saturation.
+Her cardiac examination showed a regular rhythm with distant heart sounds and a soft systolic murmur.  
+The patient's discharge medications include amlodipine, atorvastatin, diltiazem, losartan, ASA, and lasix.
+She was also prescribed Plavix and heparin.  
+The patient's discharge summary notes that she is doing well with no symptoms of shortness of breath or chest pain.
+Her vital signs are stable, and she is able to ambulate without difficulty.
+
+
+###SUMMARY: 
+The patient is a 52-year-old female who was admitted to the hospital with hypoxia and headaches.
+She has a history of severe COPD, pseudotumor cerebri, and myocardial infarction with three stents placed.
+She is also morbidly obese and has diabetes mellitus type 2.
+The patient's allergies include penicillins, OxyContin, Vicodin, and MS.
+She was admitted to the MICU for oxygen monitoring and treatment of her hypoxia and headaches.
+During her admission, she underwent an interventional radiology-guided lumbar puncture and was treated with nebulizers, steroids, and antibiotics.
+The patient's oxygen saturation improved, and she was eventually transferred to the floor for further treatment.
+At discharge, she was prescribed medications including acetazolamide, oxycodone, and tylenol, and was scheduled for follow-up appointments with a pulmonologist and sleep medicine specialist.
+
+
+###SUMMARY: 
+The patient is a 75-year-old female who was admitted for a known large hepatic cyst with progressive shortness of breath over the past year.
+She has a history of hypertension, hyperlipidemia, urinary incontinence, spinal fusion, ovarian cysts, and osteoporosis.
+She is allergic to Cipro and Macrodantin.  
+The patient underwent a laparoscopic converted to open hepatic cyst unroofing, cholecystectomy, and repair of diaphragm with Gore-Tex patch, as well as ERCP.
+The cyst was benign and contained approximately 3 liters of clear fluid.
+The patient developed a bile leak and pancreatitis post-operatively, which was managed with a biliary stent and conservative treatment.  
+The patient was prescribed several medications at discharge, including acetaminophen, oxycodone, atenolol, simvastatin, fluticasone-salmeterol, docusate sodium, solifenacin, alendronate, calcium, and multivitamin.
+She was also advised to follow up with her doctor and to monitor her incision for redness, drainage, or bleeding.  
+The patient was discharged home with a JP drain still in place and was advised to follow up with her doctor for further treatment and management of her condition.
+
+
+###SUMMARY: 
+The patient is a 71-year-old female who was admitted for removal of her peritoneal dialysis catheter due to recurrent infections.
+She has a history of end-stage renal disease, hypertension, dyslipidemia, COPD, MGUS, anemia, obesity, and GERD.
+She is allergic to sulfa, Accupril, felodipine, metoprolol, diltiazem, and surgical tape.   
+During her hospital stay, she underwent removal of her peritoneal dialysis catheter and placement of a tunneled hemodialysis line.
+She experienced chest pain and was treated with sublingual nitroglycerine and full-strength aspirin.
+Her troponins were found to be higher than her baseline, but her EKG was unchanged.
+She was started on losartan and prn isosorbide for blood pressure control.   
+At discharge, the patient was prescribed several medications, including carvedilol, losartan, and prn isosorbide for blood pressure control, as well as medications for her other medical conditions.
+She was advised to follow up with her cardiologist and Dr. ___ as an outpatient.
+
+
+###SUMMARY: 
+The patient is a 61-year-old male who was admitted to the hospital with a chief complaint of breakthrough seizures.
+He has a history of focal epilepsy, probable temporal, and was started on Keppra 500 mg BID by Dr. ___ in the past.
+The patient reports full compliance with his medication and has not been sick recently or had any interval head trauma.
+He has a history of diabetes type II, currently diet-controlled, and hypothyroidism.
+The patient also has a history of insomnia, gastroesophageal reflux, elevated blood pressure, and elevated LFTs resolved with weight loss.
+He is married with two daughters and works 12 hours a day on his feet.
+The patient's diagnosis is focal epilepsy, and he was prescribed Keppra 500 mg BID at discharge.
+
+
+###SUMMARY: 
+The patient is a 65-year-old female who presented with abdominal pain.
+She reported a 2-week history of general malaise, upper respiratory tract infection, and decreased appetite.
+She also experienced severe abdominal pain, which began while she was sitting on the couch, and had not had a bowel movement or flatus in 2 days.
+She vomited non-bloody, non-bilious emesis shortly after eating.  
+The patient has no known allergies or adverse reactions.
+She has no past medical history, past surgical history, or family history of note.  
+The patient's physical examination revealed a soft, tender abdomen with focal rebound and guarding.
+Laboratory results showed elevated white blood cell count, blood urea nitrogen, and creatinine levels, as well as abnormal liver function tests.  
+The patient underwent a diagnostic laparoscopy, which revealed a gastric perforation.
+She was converted to an exploratory laparotomy and underwent repair of the perforation with a patch and placement of a Pravena vac.  
+The patient was prescribed medications at discharge, but the specific medications are not mentioned in the report.
+
+
+###SUMMARY: 
+The patient is a 79-year-old male who presented to the emergency department with chest pain.
+He has a history of coronary artery disease, chronic stable angina, moderate aortic stenosis, bladder cancer, chronic kidney disease, and renal cell carcinoma.
+He has also had a history of intolerance to beta blockers due to symptomatic bradycardia.   
+The patient was diagnosed with non-ST elevation myocardial infarction (NSTEMI) and underwent cardiac catheterization, which showed effective revascularization.
+However, due to the complexity of possible percutaneous coronary intervention (PCI), he was medically managed instead.   
+During his hospital stay, the patient developed acute kidney injury (AKI) due to postrenal ureteral stenosis, which was treated with a ureteral stent.
+He also had anemia, which was managed with blood transfusions.   
+The patient was discharged on medications including aspirin, rosuvastatin, metoprolol, IMDUR, and ranolazine.
+He will also need to keep a ureteral stent in place for several weeks and follow up with his doctor in clinic.
+
+
+###SUMMARY: 
+The patient is a 41-year-old female who was admitted to the hospital for a pelvic abscess.
+She has a history of familial polyposis, hypothyroidism, and other medical conditions.
+She underwent a transperineal completion proctectomy and gracilis flap reconstruction to manage her recurrent pelvic abscess.
+The patient has allergies to lanolin, egg, and vancomycin.
+She was prescribed several medications at discharge, including Levothyroxine, Ranitidine, Linezolid, Gabapentin, OxycoDONE, OxyCODONE SR, and Acetaminophen.
+The patient was discharged to a rehabilitation facility for continued monitoring of her surgical wounds and physical therapy.
 
 

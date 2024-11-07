@@ -1,76 +1,248 @@
 ###SUMMARY: 
-This 52-year-old male patient presented with chronic worsening joint pain and excessive fatigue over the past two weeks.
-His medical history includes acute myeloid leukemia (AML), status post allogeneic stem cell transplant complicated by chronic graft-versus-host disease (GVHD) of the joints.
-He was previously managed on tacrolimus and plaquenil but stopped them due to side effects.
-During the admission, his prednisone was increased to 20mg daily, and oxycontin was restarted at 10mg BID.
-Additionally, keflex was prescribed for a minor toe infection, and colace and senna were initiated for constipation.
-The patient's pain, fatigue, and nausea improved during the hospital stay, and he was discharged home with follow-up instructions.
-Notably, he experienced an episode of hypotension possibly related to high-dose narcotics.
-Long-term management of his GVHD requires discussion with his primary care physician.
-
+In summary, the patient is a 69-year-old male presenting with obstructive jaundice and weight loss due to suspected pancreatic adenocarcinoma.
+His significant past medical histories include myocardial infarction, hypertension, diabetes mellitus type 2, spinal stenosis, GERD, tonsillectomy as a childhood event, thrombectomies, and aortic stenting.
+His admission symptoms included an obstructive jaundice and weight loss, prompting an emergency exploration and then a planned elective Whipple procedure that was subsequently canceled due to discovery of metastases to the liver.
+Following aborting the planned Whipple procedure, an exploratory laparotomy and subsequent diagnostic procedures confirmed an adenocarcinoma of the uncinate process.
+He had then undergone an Emergency Cholangiopancreatography (ERCP), where a biliary stent was placed below an obstruction caused by a tumor.
+Upon recovery, he recovered remarkably with minimal complications and returned home on the same conditions with post-operative pain managed appropriately.  
 
 
 ###SUMMARY: 
-This 91-year-old woman presented with a three-day history of right upper quadrant pain, jaundice, and fever, raising concerns about cholangitis.
-Her past medical history includes dementia, anxiety, type II diabetes mellitus, hyperlipidemia, hypertension, atrial fibrillation, coronary artery disease with a stented left anterior descending artery, and a papillary neoplasm of the ampulla of Vater.
-On examination, she was found to have tachycardia, hypotension, and signs of dehydration, which responded to fluid resuscitation.
-Laboratory tests revealed abnormal liver enzymes, indicating transaminitis.
-Imaging studies demonstrated common bile duct dilation and gallbladder sludge, suggesting cholangitis.
-Endoscopic retrograde cholangiography pancreatography (ERCP) was performed, revealing multiple stents and allowing for their successful removal, extraction of sludge and stones, and replacement with two new stents.
-Antibiotics were administered to treat both cholangitis and suspected pneumonia.
-During her hospital stay, she experienced episodes of atrial flutter and required adjustments to her medication regimen.
-At discharge, she was considered stable enough to return home with ongoing care services.</BEGIN_SUMMARY>
+The patient is 58-year-old female who came to the hospital because of dyspnea on exertion due to suspected aortic insufficiency.
+Relevant pieces of their past medical history include conditions such as aortic insufficiency, aortic aneurysm, asthma, chronic obstructive pulmonary disease/emphysema, depression, gastroesophageal reflux disease, hyperlipidemia, liver mass, psoriasis, vitamin D deficiency, meniscus repair, polypotomy of vocal cords, sacral nerve/bladder stimulator, and meniscal repair.
+Their symptoms included dyspnea on exertion, which worsened over time due to suspected progressive aortic insufficiency.
+On physical examination, patients had warm skin with multiple purpuras and bruises on arms and legs but overall appeared comfortable awake and alert with minor complaints of sternum pain and faint breath sounds in the chest.
+During admission, patients underwent a successful valve sparing aortic root replacement procedure using a 28-mm Valsalva graft under general anesthesia due to progressive valvular heart disease leading to significant dyspnea and fatigue which affected the quality of life significantly.
+Upon discharge patients would take aspirin, metformin, ranitidine, clonaczapam for anxiety management; beta blockers metoprolol tartrate would start to manage heart rate variability; ranitidine would help prevent stomach ulcers and ranizidine could help prevent stomach ulcers as well.
+At home patients should take acetaminophen regularly for pain management, avoid heavy lifts, maintain proper posture and proper positioning, keep wounds clean and redressed properly without applying creams oils lotions powders etc.
+They should avoid lying flat which may increase swelling.
+Patients can resume walking but should avoid heavy exercise for six months due to swelling risk.
+They can resume light exercise gradually within six months depending upon how quickly swelling decreases.  
 
 
 ###SUMMARY: 
-This 53-year-old female patient presented to the emergency department after experiencing a brief loss of consciousness followed by a fall.
-Her medical history includes end-stage renal disease (ESRD) requiring dialysis, polysubstance abuse currently treated with methadone, hypertension, migraine headaches, spinal stenosis, hepatitis C, seizure disorders, depression, and hypothyroidism.
-Upon evaluation, she was found to be hypothyroid with a low free thyroxine level and hypoglycemic with a glucose level of 45.
-Additionally, she complained of diarrhea and blurred vision.
-Laboratory results revealed mildly elevated troponin levels, which were attributed to her kidney disease rather than a myocardial infarction.
-Imaging studies, including electrocardiograms, echocardiograms, computed tomography scans of the head, and chest X-rays, were largely unrevealing.
-During her hospital course, she underwent dialysis, received fluids and electrolytes, and was started on levothyroxine for her hypothyroidism.
-At discharge, her medications included fluticasone-salmeterol inhaler, calcium carbonate, fluoxetine, folic acid, levetiracetam, aspirin, trazodone, and levothyroxine.
-Follow-up appointments were scheduled with her primary care physician and nephrologist.
-
-<END_SUMMARY>
-
-Note: I made some minor formatting adjustments for readability purposes.
+A 27-year-old female patient was hospitalized due to severe thrombocytopenia resulting from Immune Thrombocytopenic Purpura (ITP), requiring emergency admission due to the impossibility of performing surgery due to very low platelet counts (<5).
+Her main issue while in the hospital was ongoing throat pain despite being previously diagnosed with a viral upper respiratory tract infection.
+Throughout her stay, several tests revealed severe anemia and thrombocytopenia despite receiving treatment including steroids and antibiotics.
+Upon successful completion of her antibiotic regimen for suspected Candida esophageal infections, a chest power port-a-cath was successfully implanted without complications.
+Post-discharge, it is advised that if symptom persistence occurs beyond the initial treatment duration, seek evaluation via gastroenterology specialist consultation due to potential complications arising from misidentified infections within the upper gastrointestinal system.
+Upon successful completion of therapy, the patient was released back into ambulatory independent status under prescribed medication regimens including anti-inflammatory treatments, antifungal therapy, analgesics, and vitamin supplements, emphasizing careful follow-up for signs of recurrence or progression of underlying conditions.
 
 
 ###SUMMARY: 
-This 51-year-old female presented with right flank pain and 
-was found to have multiple obstructing stones causing hydronephrosis 
-and acute kidney injury.
-She underwent cystoscopy and ureteral 
-stent placement.
-Her past medical history includes HIV/AIDS, 
-seizure disorder, cardiovascular disease, hypertension, hyperlipidemia, 
-oral candidiasis, fibroids, tonsillitis, anemia, and transient ischemic attack. 
-
-Her social history is unremarkable.
-The patient's physical exam revealed 
-minimal flank tenderness.
-Laboratory results showed mild anemia 
-with normal electrolyte levels.
-Imaging studies demonstrated 
-right-sided hydronephrosis caused by multiple obstructing stones. 
-
-She was discharged home with prescriptions for oxycodone, 
-nausea medication, and potassium citrate to help pass the remaining 
-stone.
-Follow-up appointments were scheduled with urology and 
-her primary care physician.
-
-
-</BEGIN_SUMMARY>
+Age and Gender of Patient:  The patient is an 89-year-old female who came to the hospital due to a traumatic injury resulting from falling from a standing position, leading to left hip pain.
+She experienced difficulty maintaining balance and mobility due to her pre-existing conditions such as hypertension, laryngopharyngeal reflux disease, paroxysmal atrial fibrillation, and chronic obstructive pulmonary disease (COPD).
+Relevant Pieces of Past Medical History: The patient’s notable past medical conditions such as chronic obstructive pulmonary disease (COPD), paroxysmal atrial fibrillation treated with Xarelto, laryngopharyngeal reflux disease, and osteoporosis-related issues requiring multiple surgeries, including two previous total knee replacements (TKRs).
+Chief Complaint and Physical Examination Findings: Upon presentation, the patient reported acute onset of left intertrochanteric hip fracture due to trauma.
+Her general appearance, cardiovascular system, abdomen, and peripheral pulses appeared relatively healthy upon initial evaluation.
+However, detailed physical examinations focusing on specific areas affected revealed localized tenderness suggestive of localized trauma near the surgical site.
+Hospital Visit and Treatment Outcome: During the hospital stay, the patient underwent successful Orthopaedic Surgery with repair involving insertion of a titanium femoral neck plate fixation device using transcutaneous fixation nail technique (TFN).
+Post-surgery assessment indicated relatively smooth anesthesia recovery and overall stability.
+Following anesthesia removal, the patient received standard hospital management protocols consisting of intravenous fluid administration and standard pain control measures via morphine-based analgesia administration.
+Discharge Instructions, Condition, Medications: Upon discharge, patients received detailed advice on managing their surgical site through proper wound healing practices.
+Medication regimens included continuation of prescribed pre-surgical medications alongside additional opioid pain relief doses tailored according to patient tolerance levels.
+Patients required adherence to specific dosages ranging between four doses within six-hour intervals spaced evenly throughout each 24-hour period during early treatment stages, gradually reduced thereafter according to individual needs until complete cessation.
+Anticoagulant therapy remained ongoing throughout entire hospital stay.
 
 
 ###SUMMARY: 
-This 69-year-old male patient presented with a right groin wound dehiscence and Streptococcus anginosus/Methicillin-sensitive Staphylococcus aureus (MSSA) bacteremia.
-He underwent surgical interventions, including exploratory laparotomy, control of the external iliac artery, excision of the distal portion of the axillary-femoral bypass, and vein patch repair of the femoral artery.
-He developed complications such as abdominal compartment syndrome, requiring additional surgeries.
-The patient was discharged to extended care with instructions for wound management, antibiotic suppression therapy, and follow-up appointments.
-Key diagnoses include infected right femoral axillary bypass, retroperitoneal and intra-abdominal bleeding, abdominal compartment syndrome, hypercholesterolemia, atrial valve replacement (AVR) mechanical valve, acute renal failure on chronic renal failure, and failure to thrive.
+The patient is a 55-year-old female who came to the hospital due to increasing chest pain that worsens upon exertion and increases in intensity and frequency as she walks around airports.
+Her previous diagnosis was related to her long-standing history of LAD stenting but recent events made her more symptomatic.
+She had undergone previous cardiac interventions, such as a coronary artery bypass graft, and currently presents with three-vessel disease that requires surgical intervention.   
+She has significant past medical history that includes hypertension, chronic anemia due to her birth, Sjögren’s syndrome, hypothyroidism, depression, ulcerative colitis that had resolved, diabetes mellitus, C-section x2, ketoacidosis in her past, coronary artery disease due to right coronary artery stenting.   
+Her chief complaint centers around chest pain exacerbated upon exertion and recent onset of lightheadedness upon changing positions that resolves within seconds.
+Physical exam reveals tachycardia and hypertension with tachycardia only observed in the right arm.   
+During her stay, she had a cardiac catheterization that showed three-vessel disease requiring surgical intervention; subsequently underwent two-stage coronary artery bypass grafts, and post-operative care involved managing her high blood sugar levels through insulin pumps.   
+At discharge, the patient appears alert and orientated; ambulates steadily; shows minimal signs of edema; manages incision-related pain; receives specific care regarding her wounds; receives regular medication prescriptions that focus primarily on cardiovascular health and managing potential complications like high blood sugar and hypertension.   
+
+
+###SUMMARY: 
+A 60-year-old male patient presents due to falling down and having an unclear memory about it, but admits to pain above his left eye, fractured teeth, and nausea due to narcotics administered earlier during observation for possible head injuries.
+He comes under observation due to concerns of possible head trauma.
+During the observation period, it is determined that the patient suffered head injuries leading to intracranial bleeding, but it resolves quickly.
+Additionally, he sustained various types of injuries including fractures around the face including left orbital area, left cribriform plate fracture and depression in the left frontal calvaria due to trauma.
+The rest of the mechanism of injury wasn't confirmed however he claimed he drank alcohol prior to falling down.
+Other significant health issues mentioned include high blood cholesterol levels in the patients' medical history.
+
+
+###SUMMARY: 
+This question requires critical thinking and attention to detail.
+The goal is to synthesize large amounts of data into concise summaries.    
+Patient's details: Age and Gender: The patient is 38 years old female who came to the hospital after complaining of sudden severe symptoms including neck pain, nausea and vomiting followed by seizures.
+Relevant Past Medical History: Diabetic mellitus II and possibly vasculitis based on imaging results.  
+Chief Complaint: Neck pain followed by sudden severe nausea and vomiting leading to loss of responsiveness.  
+Physical Examination Findings:
+Initially, the patient was described as "unresponsive", "unoriented", "fixated pupils" "no corneal reflex".
+Later improvement allowed for orientation, motor function assessment, left-sided neglect and gait disturbance assessment.
+Hospital Visit: Upon admission, emergent bilateral EVD placements occurred followed by initial imaging revealing an intraventricular hemorrhage.
+Subsequent investigations indicated Moyamoya syndrome, possible vasculitis affecting his internal carotid arteries and middle cerebral arteries.
+Upon transfer to the rehabilitation center he experienced gradual improvement initially regressing back to lethargy during fevers prompting re-exploration and further interventions including lumbar puncture and eventual resolution.
+Relevant tests included MRI, MRA, and laboratory tests including platelet counts, PT and PT levels indicating slight elevation of PT indicating slight coagulation disorder likely due to heparin therapy used during insertion and removal of the external ventriculostomy device.
+Post-discharge follow-up included regular visits to monitor the patients rehabilitation progress including improvements in motor function assessment, gait assessment and reduction in platelet count and lab results indicating resolution of coagulation disorder.   
+
+
+###SUMMARY: 
+Patient Profile Summary The patient is a 59-year-old female who came to the hospital seeking surgical relief for back pain caused by scoliosis.
+Her relevant past medical histories include hypertension, gastroesophageal reflux disease (GERD), stomach ulcers, asthma, migraines, anxiety disorders, and heart conditions such as mitral valve prolapse.  
+During admission, she presented with back pain symptoms which led to major surgical interventions including spinal surgeries such as a L3-S1 anterior fusion, Anterior fusion and decompression of T12-L3, Posterior decompression and fusion T9-S1 w/ instrumentation and bone graft.  
+Her initial stay involved multiple surgeries including anterior interbody fusion and posterior spine stabilization procedures.
+After recovering sufficiently from these procedures, she experienced complications such as a post-operative ileus requiring placement of an nasogastric tube.
+She gradually recovered, had abdominal decompression and removal of nasogastric tubes and eventually was able to eat normally again.  
+Following multiple surgical interventions, the patient underwent various treatments such as analgesic medications like opioids.
+Throughout her stay, the patient received multiple medications, mostly focused on managing symptoms related to pain, nausea and vomiting, gastrointestinal issues among others.
+Upon discharge, patients received guidance to continue certain medications, wear protective orthotics for limited mobility during early stages of recovery.    
+
+
+###SUMMARY: 
+The 69-year-old male came into the hospital with a right groin wound dehiscence and fever, likely caused by a ruptured aneurysm at the femoral graft site following a previous surgical procedure.
+Relevant past medical histories included a history of coronary artery disease, atrial fibrillation, hypertension, diabetes mellitus, hyperlipidemia, gout, thyroid nodular goiter, hypertension, and thyroid nodular goiter.
+The patient presented with complaints of soreness in the right groin area and fever.
+On physical exam, there were concerns regarding a possible abdominal compartment syndrome due to increased bladder pressure.
+After numerous surgeries including exploration of the retropetioneal space, washout of retropetioneal space and intra abdominal cavity, packing of the retropetioneal space with ioban closure of the abdominal incision and temporary abdominal closure, it became clear that the patient required extended care.
+During his extended care period, the patient required assistance with walking due to muscle weakness, and required close monitoring of laboratory values such as liver enzymes.
+After being discharged with ongoing treatment and precautions, it became clear that he required ongoing care related to wound management, nutritional support, and continued management of underlying conditions such as hypertension.
+Medications prescribed included antihypertensives, antiplatelets, diuretics, lipid-lowering agents, analgesics, and antibiotics.
+Additionally, nutritional supplements such as vitamin B complex, iron supplements, and multivitamins were required.
+Moreover, medications such as heparin, clopidogrel, cilostazol, cilostazole, ranexa, ranexarine, ranitiidine ranarixin ranitirox ranitarine ranarixin ranirax Ranaron Ranison Ranior Ranios Raniorin Ranios.   ||endoftext|| This patient underwent numerous surgeries related to complications arising from a ruptured aneurysm at a previous surgical procedure.
+His ongoing management involves ongoing antibiotic suppression therapy for the underlying cause of the wound complication, continued management of underlying conditions, nutritional support, and careful management of laboratory values.
+Further complications arose including an abdominal compartment syndrome requiring temporary abdominal closure, necessitating careful assessment and adjustment of treatments accordingly.
+After being discharged, it becomes clear that extensive outpatient follow-up and
+specialized care are necessary to ensure successful recovery from these complications.
+The complexities involved highlight the importance of multi-disciplinary approaches towards managing complex cases requiring coordinated input across various specialties including vascular surgery
+
+
+###SUMMARY: 
+The patient is 58-year-old female.
+The reasons behind the visits are not stated but it appears that she came to the emergency department due to increasing redness, pain, and swelling of her left heel, presenting as cellulitis.  
+Relevant pieces of her past medical history include diabetes mellitus complicated by neuropathy, hypertension, depression, multiple ulcerations requiring multiple debridements, and allergies to penicillin and bee pollens.
+Her chief complaint centers around an increasing redness, pain, and swelling on her left heel, specifically described as a left heel ulcer/cellulitis.
+Her physical exam revealed evidence of peripheral vascular disease including pedal pulses being palpable but sub-papillary vasoconstriction time being prolonged, indicating impaired circulation to the affected limb.  
+During her hospital stay, she underwent treatment for her cellulitis using intravenous antibiotics initially, but due to laboratory results indicating a likely diagnosis involving Staphylococcus species and probable enterococcus and Corynebacterium species, she received vancomycin treatment instead due to her previous history of Methicillin-resistant Staphylococcus Aureus (MRSA).  
+Upon resolution of the infection, her dressings changed regularly using a wet-to-dry method, she received guidance regarding medication management, weight-bearing precautions post-surgery shoe usage, elevation of affected limb to reduce swelling, care for managing medication regimens and advice regarding post-discharge management, specifically regarding the care of her left heel wounds to monitor for complications such as redness, swelling, or further infection.   
+She was prescribed various medications during her hospitalization period, such as lisinopril, metformin, oxybutynin chloride, percocet, simvastatin, spironolactone, trazodone, fexofenadine multivitamins vitamin e ferrous sulfate oxybutynin chloride before being prescribed sulfa-methoxazole-tri-meth-o-prime tablet twice a day, formoterol-budesonide inhaler as needed for breathing difficulties, lisinopril tablet daily, metformin tablet twice a day, simvastatin tablet daily spironolactone tablet twice a day trazodone tablet before bedtime ferro-sulfate tablet daily multivital-min tablet daily oxy-bu-ti-n-chloride tablet bid oxy-bu-ti-n-chloride before bed.   
+She was instructed to return to her physician within 1 week
+
+
+###SUMMARY: 
+Patient details revealed through this document indicate that this 51-year-old female patient underwent treatment due to experiencing persistent chest pain, leading her healthcare provider to diagnose this instance as a STEMI.
+Her primary concern was identified through her chief complaint regarding "chest pain".
+Furthermore, upon reviewing her Past Medical History, key factors revealed are CAD, prior MI approximately three years earlier, hypertension, chronic kidney disease (CKD), hyperlipidemia, previous transient ischemia attacks, cerebral vascular accidents due to antiphospholipid syndrome, obstructive sleep apnea (OSA), and fibromyalgia.
+Physical exam revealed obesity, general lethargy despite being responsive to stimuli, slight tachypnoea, hypertension, tachycardia, decreased lung sounds, abdominal tenderness, diminished peripheral pulses, neurologic deficits, and skin lesions indicative of minor trauma.
+Upon detailed evaluation and subsequent interventions, such as angioplasty followed by placement of dual antiplatelet therapy via clopidogrel and aspirin due to high risk of cardiovascular events such as stroke, and adjustment of medication therapy towards more comprehensive management addressing multiple chronic conditions, including managing high risk coronary artery disease, treating related hypertension, utilizing antiplatelet therapy, managing sleep disorders through sleep aids like CPAP devices etc., careful observation led towards successful recovery under close monitoring by healthcare professionals upon return to home environment under prescribed medication dosage protocols.    
+
+
+###SUMMARY: 
+A 67-year-old male came to the hospital because of a headache that developed suddenly during a flight.
+He reported an uncertainty regarding whether it began due to trauma from skiing five weeks earlier or syncope due to lack of memory.
+After an initial negative head CT scan five weeks earlier, he visited again due to worsening headache symptoms starting the previous day.
+During his second visit, a head CT revealed bilateral subdural hematomas.  
+The patient has hypertension, lung cancer diagnosed several years ago with metastasis spread beyond the lung itself and lymph nodes.
+Other notable allergies and histories include injuries and surgeries related to sports activities.  
+The patient presented with a general feeling of discomfort due to weakness due to weight loss, and a lack of appetite.
+His blood pressure measured 167/76, heart rate measured 81, respiratory rate measured 16 oxygen saturation measured at 99%.
+Head examination revealed a slightly elevated pulse temperature.  
+His mental state appears awake and alert.
+However, cranial nerves I through XII show abnormalities including decreased reaction to light indicating reduced pupillary reactivity.  
+Upon further investigation, blood tests revealed abnormalities including high white blood cell count, low hemoglobin levels, low platelet counts, low neutrophils levels indicating potential neutropenia, high glucose levels, high urea nitrogen levels, high creatinine level, high calcium level, and other electrolyte abnormalities.    
+The patient was hospitalized and managed under Neurosurgeries department due to severe headache resulting from Bilateral Subdural Hematomas.
+He received general anesthesia in the operating room and underwent Bilateral Burr Hole Procedures to evacuate the hematomas.    
+After successful surgery, he became slightly feverish, developed a productive cough, reported right eye pain, and had left eye pain.    
+Prior to discharge, he received antibiotics for bacterial infections risk, laxatives for constipation caused by opioid painkillers.    
+Upon discharge, the patient returned home upon being declared clinically free of acute complications.    
+Prior medications included hypertension management with Losartan tablet form, pain management with Acetaminophen tablets form.    
+
+
+###SUMMARY: 
+Patient Age: 84 years old.
+Female Gender.
+Admitted to the hospital due to presenting with Chest Pain and Shortness of Breath on Exertion and was diagnosed with Coronary Artery Disease, including Diastolic Heart Failure and Paroxysmal Atrial Fibrillation.  
+Relevant Pieces of Past Medical History: Includes Diabetes, Dyslipidemia, Hypertension, Mild Coronary Artery Disease, Cardiac Catheterization without PCI performed previously, Pulmonary Hypertension, Stage IV Kidney Disease, Kidney Atrophy, Proteinuria, Prior Transient Ischemic Attack, Congestive Cardiac Failure, Prior Cardiac Tamponade, Prior Pulmonary Embolism, Prior Thrombotic Thromboembolism, Gout, Asthma/COPD.  
+Chief Complaint: Dyspnea on Exertion leading to Chest Pain and Shortness of Breath.
+Physical Examination Findings: General appears well, dry mucous membranes, no jugular venous distension, heart sounds distant but a soft murmur heard at the radial ultrasound.  
+Hospital Visit: Admitted to the hospital with Chest Pain and Shortness of Breathing, underwent Coronary Angiography showing Diagonal Coronary Stenosis, received Diuretic, Beta Blockers, ACE inhibitors, Anti-Arrhythmic Drugs, Anticoagulant Therapy including Warfarin, Angiotensin Receptor Blockers, Angiotensin-Converting Enzyme inhibitors.
+Transferred back to ICU after complications arose from angioplasty procedures and received treatment for low cardiac output shock including dopamine, Levophed, and intra-aortic Balloon Pump.  
+Discharge Instruction: Warns against stopping or altering medication such as Aspirin and Clopidogrel required for preventing Stent Thrombosis and encourages monitoring Blood Pressure through Use of Home Blood Pressure Monitor and reporting back to Doctor upon significant increases.  
+Condition: Stable Mental Status, Level of consciousness alert, activity level out of bed assisted through wheelchair mobility.
+Received various medications including ACE inhibitors and Beta blockers through oral administration.  
+
+
+###SUMMARY: 
+The patient, Mrs., is 52 year old female.
+She came into the hospital due to having very low oxygen levels indicating Hypoxia to COPD, a symptom indicating that she might have further complications due to Chronic Obstructive Pulmonary Disease (COPD).  
+Her Past Medical History includes Severe COPD, Pseudotumor cerebri, History of myocardial Infarction (MI), Morbid Obesity, Diabetes Mellitus type 2 (controlled diet-wise).  
+Her Chief Complaint and physical exam reveals Hypoxia and Headache, typical presentations of her known conditions COPD and Pseudotumor cerebri respectively.
+Following her hospital stay, she underwent Interventional Radiology-guided Lumbar Puncture and was found to have small ventricles and sulci, partially emptied sella, and reduced cerebral spinal fluid, characteristic features of her previously diagnosed Pseudotumor Cerebri.
+Despite having headaches prior to her presentation due to poor breathing management of her COPD.   
+After going through the intensive care department initially due to Hypoxia, the patient was later transferred to another ward due to stabilization and eventually discharged home upon completing treatment.   
+Upon discharge, patients' mental status is found to be clear, consciousness level alert and interactive but ambulating requiring assistance or walking aid due to unstable cardiovascular system.
+They receive comprehensive instructions including managing oxygen levels and continuing therapy like Metoprolol for cardiovascular issues and Spirova for managing bronchodilator use.  
+
+
+###SUMMARY: 
+Patient Profile Analysis   This patient is a 75-year-old female who came into the hospital primarily because she experienced progressive shortness of breath despite having a long-standing known large hepatic cyst which progressively enlarged.   
+Her pertinent past medical histories included hypertension, hyperlipidemia, urinary incontinence, spinal fusion, ovarian cysts, and osteoporosis.   
+Upon evaluation, the key aspects regarding her current Chief Complaint included experiencing progressively worsening shortness of breath over the past year.   
+During the emergency department evaluation, various diagnostic tests showed several lab results including elevated levels of lactate dehydrogenase (LD), alanine transaminase (ALT), and aspartate aminide transferase (AST) indicating severe damage or necrosis.   
+Her physical exam indicated signs indicative of respiratory distress, particularly involving her lungs and general well-being such as hypoxia and systemic inflammatory response syndrome signs.   
+Hospital visits revealed that this lady underwent laparoscopic conversion followed by Open Hepatic Unrooferiung Cholecyctectomy repair of Diaphram wth Gore Tex Patch chest tube placement which resulted in respiratory complications which led to her eventual transfer to Intensive Care and eventually recovery afterwards    Upon recovery this lady experienced minor complications which included slight swelling of left ankle but overall recovered well enough to return home under care of Home health nurses within ten days   Throughout this entire ordeal this woman experienced discomfort but managed well through strong medication regimens including pain relief medication such as Acetaminophen, Narcotics such as Oxycodone, Anti-inflammatory such as Fluticasone-Salmeterol    
+
+
+###SUMMARY: 
+This patient, a 71-year-old female, presented with complaints related to chronic kidney disease requiring peritoneal dialysis, likely exacerbated by repeated episodes of peritoneal dialysis catheter-related infections despite recent antibiotic therapy.
+Relevant to their past medical history includes chronic kidney disease (stage V) secondary to hypertension and focal segmental glomerulosclerosis, hypertension, dyslipidemia, chronic obstructive pulmonary disease, myeloma-related anaemia, obesity, GERD, among others.
+Upon admission, their vital signs showed a slight hypotension without acute distress, while their general appearance indicated frailty without immediate distress.
+Their physical exam revealed minor tenderness over the previous PD catheter insertion site without current distressing symptoms; notable cardiovascular assessment revealed a mild systolic heart murmur without other abnormalities; respiratory system showed clear lungs; neurologic assessment indicated absence of neurological deficits; laboratory results reflected stable electrolyte balance except for mildly elevated urea levels indicative of renal function decline; serum calcium levels also slightly below normal range; however, other tests like troponins remained stable despite initial elevation during postoperative period indicating possible post-procedure angina without overt concern.
+The patient underwent successful removal of their peritoneal dialysis catheter followed by successful dialysis session through a newly inserted tunneled vascular access catheter; there were transient episodes of angina during hospital stay necessitating cardiology consultation and adjustment of antihypertensives to manage blood pressure elevation leading to anginal episodes.
+Following successful stabilization, cardiology recommended continued management without immediate intervention to continue managing symptoms.
+Finally, the patient underwent successful removal of previous PD catheter, followed by insertion of new vascular access for future dialysis sessions.   
+Upon successful completion of the procedure without complications, the patient was provided with comprehensive care plan outlining necessary adjustments to management regimen, close monitoring, and necessary lifestyle modifications aimed at optimizing overall health status.   
+
+
+###SUMMARY: 
+The patient, Mr., is a 61-year-old man.
+His chief complaint is breakthrough seizures.
+He came to the hospital due to concerns from his family members about increasing seizure frequency.
+However, upon arrival, Mr. described only one possible incident where he might have experienced a seizure, which occurred at a church where he bumped his head and possibly experienced a concussion.
+Despite this incident, Mr.'s overall mental state remains clear and coherent.
+Relevant pieces of his past medical history include Diabetes Type II managed through diet control, Hypothyroidism treated with levothyroxine, previous episodes described earlier including amnesia due to discrete episodes of confusion lasting approximately 2 minutes, and Epilepsy diagnosed previously confirmed through the EEG results, possibly indicating Temporal Lobe Epilepsy based on semiology and family history.
+Physical Examination reveals no immediate neurological deficit.
+Upon presentation, Mr.'s initial concerns led to the suspension of his antiepileptic medication; subsequently, they resumed under close observation through continuous video EEG monitoring, capturing no evidence of seizures.
+As part of further assessment, a lumbar puncture showed minimal cellular infiltrates indicating possible inflammation or encephalopathy; despite thorough investigations, including autoimmune encephalitis panels, viral PCRs, and thyroid function tests, results remain inconclusive.
+Following stabilization under continuous observation, Mr. was discharged back home with stable vital signs and managed through insulin therapy, maintaining regular dosage for diabetes control; continued adherence to antiepileptic treatment; maintaining levothyroxine dosage; and strict monitoring through periodic follow-up appointments to track any possible adverse effects.
+
+
+###SUMMARY: 
+The patient is a 65-year-old female who came to the hospital because of severe abdominal pain.
+Her Chief Complaint includes generalized malaise and recent respiratory issues leading to loss of appetite and weight loss.
+Her Physical Examination reveals tenderness and rebound tenderness in both lower腹s and a recent loss of bowel movement.
+Relevant Past Medical Histories includes hypertension, coronary artery disease, and cerebrovascular accident.
+Her diagnosis involves gastrointestinal issues including a suspected perforation of the stomach and infected H. pylori.
+During her hospital visit, Laparoscopic-assisted exploration revealed a gastric perforation and subsequent exploratory Laparotomy required intervention, including the use of Pravena VAC dressing for wound care.
+After initial stabilization, the patient recovered sufficiently to tolerate a regular diet, allowing her subsequent discharge under Homecare conditions.    
+
+
+###SUMMARY: 
+Please provide answers according to the format asked.    
+The patient is a 79-year-old male who comes into the hospital complaining of chest pain due to having a Non-Stress Elevation Myocardial Infarction (NSTEMI).
+Relevant aspects of his past medical history include being diagnosed with unstable angina post Cardiac Artery Disease Surgery, multiple instances of Non-Stress Elevation Myocardial Infarctions, coronary artery disease post Cardiac Artery Disease Surgery, hypertension, chronic kidney disease stage III, renal cell carcinoma post left nephrectomy, bladder cancer post transurethral resection, polymyalgia rheumatica, diverticulosis, irritable bowel syndrome, gastroesophageal reflux disease with small sliding hiatal hernia, esophageal dysmotility, right-sided exophytic renal cyst, melanoma, metabolic acidosis, anxiety/panic disorder, seasonal allergies, and seasonal affective disorder-bradycardia post anesthesia.    
+The patient underwent a cardiac catheterization test during his stay where it revealed multiple native vessels completely blocked but three highly patent grafts were shown resulting in making further interventions unnecessary.    
+His vital signs show a temperature of 98.3°F, Blood Pressure of 160/57mmhg, Heart Rate of 77beats per minute, Respiratory rate of 18 breaths per minute, oxygen saturation of 98%, and a raised white Blood Cell count with slight changes throughout his hospital days.    
+Upon examination, Physical Examination Findings revealed regular heartbeat and absence of murmurs, lungs clear without wheezes, abdomen soft, non-tender, non-distended, skin warm, limbs warm and dry, pulses bilateral radiating through both legs equally.   
+His vital signs returned within range before discharge while his medication intake includes multiple daily pills, indicating successful transition into post-discharge period.    
+He should adhere strictly to prescribed medication regimens including taking aspirin daily for antiplatelet purposes, managing hypertension, anti-anxiety medication if required and monitoring his diet according to guidelines set forth for diabetes management in case complications arise in future.    
+The patient remains mentally status alert and interactive post-discharge.    
+The healthcare team wished him well while expressing gratitude for allowing them to provide necessary care and wishes continued health in future endeavors.    
+endoftext
+
+
+###SUMMARY: 
+A 41-year-old female patient presented with complaints related to her pelvic anatomy following multiple surgeries previously performed including hysterectomy and colectomy with ileal pouch-anal-anastomosis for familial polyposis.
+Her primary complaints included experiencing two previous episodes of pelvic abscesses despite multiple attempts of drainage and treatment.
+Following recent worsening of her condition, she required urgent intervention for treatment of recurring pelvic abscesses with subsequent development of complications such as a retained anal sphincter and J-pouch anastomosis issues leading to recommendation of further intervention via a completion proctectomy and gracilis flap reconstruction .
+Her conditions improved somewhat post-surgery; however, complications arose such as right lower extremity swelling, possible deep vein thrombosis, suspected urinary tract infections, possible acute kidney injury etc., necessitating further interventions such as placement of pelvic drains , administration of appropriate antibiotic treatments including IV antibiotics , placement of CT-guided aspirations , administration of supportive care including hydration fluids etc .
+Furthermore complications arose regarding wound healing including a superficial wound infection requiring prompt intervention including antibiotic administration including appropriate topical treatments etc  requiring immediate attention including Linezolid administration.
+Her current status showed mental clarity, full interaction ability and ambulation capabilities requiring some support despite several complications arising throughout the course of her illness.
+At discharge , appropriate discharging orders were given based upon specific complications arising during the course of illness progression including monitoring of ostomy function proper hygiene etc.
+Her various medications received necessary attention and close adherence was emphasized throughout discharging orders.  
 
 

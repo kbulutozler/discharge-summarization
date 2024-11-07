@@ -13,3 +13,7 @@ Discharge Medications
 Discharge Diagnosis
 Discharge Condition
 Discharge Instructions
+
+further analysis of outputs:
+correctness
+hallucinations
