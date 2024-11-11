@@ -8,7 +8,6 @@ def main():
     project_path = os.getcwd()
     data_path = os.path.join(project_path, "data/processed")
     test_df = pd.read_csv(os.path.join(data_path, "all.csv"))
-
     test_generated_unprocessed = generate_summaries(test_df)
     
     # Display results

@@ -26,7 +26,7 @@ def load_model_and_tokenizer(model_path):
     
     if tokenizer.pad_token_id is None: # autoregressive models' pad token not set by default
         tokenizer.pad_token_id = tokenizer.eos_token_id 
-   
+    
 
     return model, tokenizer
 
