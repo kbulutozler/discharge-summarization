@@ -7,6 +7,8 @@ from torch.utils.data import DataLoader
 import transformers
 from typing import Any, Dict, List
 import peft
+from huggingface_hub import login 
+login("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")
 
 def load_model_and_tokenizer(model_path):
     ''' load model and tokenizer '''
@@ -126,6 +128,12 @@ def get_hf_dataset(data_path):
     test_df = pd.read_csv(os.path.join(data_path, 'test.csv'))
     train_df.columns = ['text', 'text_label']
     test_df.columns = ['text', 'text_label']
+    # inject ||startoftext|| and ||endoftext||
+    train_df['text_label'] = train_df['text_label'].apply(lambda x: "||startoftext||" + x + " ||endoftext||")
+    test_df['text_label'] = test_df['text_label'].apply(lambda x: "||startoftext||" + x + " ||endoftext||")
+    train_df = train_df[:16]
+    test_df = test_df[:8]
+    
     train_dataset = Dataset.from_pandas(train_df)
     test_dataset = Dataset.from_pandas(test_df)
 
@@ -149,10 +157,13 @@ def get_tokenized_datasets(data_path, tokenizer, device):
 
 
 def main():
+    
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Using device: {device}")
+    torch.cuda.empty_cache()
+
     # load model and tokenizer with qlora 
-    model_path = "/home/kbozler/Documents/Llama-3.1-8B"
+    model_path = "meta-llama/Llama-3.2-1B"
     model, tokenizer = load_model_and_tokenizer(model_path)
     model = get_tunable_model(model, device)
 
@@ -160,20 +171,19 @@ def main():
     data_path = os.path.join(project_path, "data/processed")
 
     train_dataset, test_dataset = get_tokenized_datasets(data_path, tokenizer, device)
-
     # Define training arguments
     training_args = TrainingArguments(
         output_dir="./results",
         learning_rate=1e-3,
         per_device_train_batch_size=1,
-        num_train_epochs=3,
+        num_train_epochs=1,
         weight_decay=0.01,
         logging_dir="./logs",
-        logging_steps=100,
+        logging_steps=2,
         save_strategy="no",  # Disable intermediate model saving
         gradient_accumulation_steps=4,  # Set gradient accumulation steps
         lr_scheduler_type="linear",  # Set learning rate schedule to linear decay
-        warmup_steps=100,  # Set number of warmup steps for the scheduler
+        warmup_steps=2,  # Set number of warmup steps for the scheduler
     )
 
     # Initialize Trainer
@@ -187,6 +197,11 @@ def main():
 
     # Train 
     trainer.train()    
+    
+    # save final model
+    model_name = "meta-llama/Llama-3.2-1B-ft"
+    model.save_pretrained(os.path.join(project_path, "models", model_name))
+    tokenizer.save_pretrained(os.path.join(project_path, "models", model_name))
 
 if __name__ == '__main__':
     main()
