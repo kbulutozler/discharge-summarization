@@ -17,3 +17,5 @@ ZS_SYSTEM_PROMPT = """ You are a medical doctor who is expert at writing and ana
     Stop generation after ||endoftext||.
     """
 
+RAW_DATA_FILEPATH = "data/raw/Hospitalization-Summarization.json"
+PROCESSED_DATA_DIR = "data/processed"
