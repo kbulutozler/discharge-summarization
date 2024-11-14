@@ -1,5 +1,5 @@
 ---
-base_model: /xdisk/bethard/kbozler/repositories/discharge-summarization/../Llama-3.2-1B
+base_model: /xdisk/bethard/kbozler/repositories/discharge-summarization/../../local-models/Llama-3.2-1B
 library_name: peft
 ---
 
