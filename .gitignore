@@ -1,0 +1,9 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Mac OS and system files
+.DS_Store
+Thumbs.db
+desktop.ini

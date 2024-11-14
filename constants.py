@@ -19,3 +19,10 @@ ZS_SYSTEM_PROMPT = """ You are a medical doctor who is expert at writing and ana
 
 RAW_DATA_FILEPATH = "data/raw/Hospitalization-Summarization.json"
 PROCESSED_DATA_DIR = "data/processed"
+UNPROCESSED_GENERATED_DIR = "output/unprocessed_generated"
+
+METRICS_SAVE_DIR = "results/metrics"
+ADAPTER_SAVE_DIR = "output/adapters"
+FINETUNE_MODEL_LIST = ["Llama-3.2-1B"]
+FINETUNE_MODEL_NAME = FINETUNE_MODEL_LIST[0]
+SEED = 31

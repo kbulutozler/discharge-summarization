@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 from scripts.zero_shot.zs_utils import generate_summaries
-
+from constants import UNPROCESSED_GENERATED_DIR
 
 def main():
     # Load and process data
@@ -11,7 +11,7 @@ def main():
     test_generated_unprocessed = generate_summaries(test_df)
     
     # Display results
-    save_path = os.path.join(project_path, "output/zs_summaries/test_zs_unprocessed.csv")
+    save_path = os.path.join(project_path, UNPROCESSED_GENERATED_DIR, "zeroshot", "generated.csv")
     test_generated_unprocessed.to_csv(save_path, index=False)
 
 

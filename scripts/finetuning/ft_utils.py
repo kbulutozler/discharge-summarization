@@ -1,25 +1,72 @@
-from constants import ZS_SYSTEM_PROMPT, API_KEY, LLM_NAME
+from constants import ZS_SYSTEM_PROMPT, API_KEY, FINETUNE_MODEL_NAME
 import torch
 import os
 import pandas as pd
 import json
 from sklearn.model_selection import train_test_split
 from datasets import Dataset
-from torch.utils.data import DataLoader
-from transformers import AutoModelForCausalLM, AutoTokenizer, AutoConfig
+from transformers import AutoModelForCausalLM, AutoTokenizer
 import transformers
 import peft
-from transformers import default_data_collator
+from constants import SEED
 import argparse
 from tqdm import tqdm
 
+def single_inference_local(model, tokenizer, test_sample):
+    """
+    Generates a single summary using the local model
+    Args:
+        model (transformers.AutoModelForCausalLM): model to use
+        test_sample (str): sample to generate a summary for
+
+    Returns:
+        str: generated summary
+    """
+    # generate summary
+    inputs = tokenizer(test_sample, return_tensors="pt")
+    print("shape of input_ids", inputs["input_ids"].shape)
+    outputs = model.generate(inputs["input_ids"],
+                            tokenizer=tokenizer,
+                            min_new_tokens=250,
+                            max_new_tokens=500,
+                            temperature=0.8,
+                            top_p=0.9,
+                            top_k=40,
+                            repetition_penalty=1.2,
+                                stop_strings=["||endoftext||"]
+                                )
+    return tokenizer.decode(outputs[0], skip_special_tokens=True)
+    
+def generate_summaries(model, tokenizer, df):
+    """
+    Generates summaries from df
+    Args:
+        model (transformers.AutoModelForCausalLM): model to use
+        tokenizer (transformers.AutoTokenizer): tokenizer to use
+        df (pd.DataFrame): dataframe with discharge reports
+
+    Returns:
+        pd.DataFrame: dataframe with generated summaries
+    """
+    # add empty column for generated summaries  
+    generated_summaries = []
+    # Generate summaries using the Together.AI API
+    for i, trial in tqdm(df.iterrows(), total=df.shape[0], desc=f"Generating summaries with {FINETUNE_MODEL_NAME}"):
+        text = trial["text"]
+        generated_summaries.append(single_inference_local(model, tokenizer, text))
+    df.loc[:, "generated_summary"] = generated_summaries
+    # drop report column
+    df = df.drop(columns=["text"])
+    
+    return df
+    
 def get_args():
     parser = argparse.ArgumentParser(description="Finetuning Script")
     parser.add_argument('--batch_size', type=int, default=4, help='Batch size for training')
     parser.add_argument('--lr0', type=float, default=1e-3, help='Initial learning rate')
     parser.add_argument('--max_epochs', type=int, default=5, help='Maximum number of training epochs')
+    parser.add_argument('--max_samples', type=int, default=None, help='Maximum number of samples to use')
     parser.add_argument('--patience', type=int, default=3, help='Patience for early stopping')
-    parser.add_argument('--model_name', type=str, default='Llama-3.2-1B', help='Model name')
     parser.add_argument('--lr_schedule', type=str, default='linear_decay', help='Learning rate schedule')
     parser.add_argument('--lr_num_warmup_steps', type=int, default=100, help='Number of warmup steps for learning rate')
     parser.add_argument('--gradient_accumulation_steps', type=int, default=4, help='Gradient accumulation steps')
@@ -45,26 +92,31 @@ def gpu_info():
 def load_model_and_tokenizer(model_path):
     ''' load model and tokenizer '''
 
-    # Add memory optimizations
-    config = AutoConfig.from_pretrained(model_path)
-    config.use_cache = False  # Disable KV cache for training
-    
-    model = AutoModelForCausalLM.from_pretrained(
-        model_path,
-        config=config,
-    )
-    
+    # set quantization configs if using qlora
+    quantization_config = transformers.BitsAndBytesConfig(
+                load_in_4bit=True,
+                bnb_4bit_use_double_quant=True,
+                bnb_4bit_quant_type="nf4",
+                bnb_4bit_compute_dtype=torch.float16
+            )
+
+    # define model and tokenizer
+    model = AutoModelForCausalLM.from_pretrained(model_path,
+                                                    quantization_config=quantization_config)
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     
     if tokenizer.pad_token_id is None: # autoregressive models' pad token not set by default
         tokenizer.pad_token_id = tokenizer.eos_token_id 
+
     return model, tokenizer
 
-def get_tunable_model(model):
+def get_tunable_model(model, device):
     ''' prep model for param-efficient fine-tuning '''
 
     task_type = peft.TaskType.CAUSAL_LM
     
+    # prepare for k-bit training
+    model = peft.prepare_model_for_kbit_training(model) 
     
     # get peft configs based on architecture (task_type) and fine-tuning method
     config = peft.LoraConfig(task_type=task_type, inference_mode=False,
@@ -72,12 +124,13 @@ def get_tunable_model(model):
                                 lora_dropout=0.1)
 
     # wrap model w peft configs
-    model = peft.get_peft_model(model, config)
+    model = peft.get_peft_model(model, config).to(device)
     model.print_trainable_parameters()
 
     return model
 
-def preprocess_data(data_path, save_data_path, max_samples=None, split_ratio=0.5):
+
+def preprocess_data(data_path, save_data_path, max_samples, train_ratio=0.5):
     """ load data from json file to pandas dataframe """
     with open(data_path, 'r') as f:
         data = json.load(f)
@@ -94,10 +147,10 @@ def preprocess_data(data_path, save_data_path, max_samples=None, split_ratio=0.5
     # inject ||startoftext|| and ||endoftext||
     data['target'] = data['target'].apply(lambda x: "||startoftext||" + x + " ||endoftext||")
     
-    # First split data into train and temp (0.5 each)
-    train_data, temp_data = train_test_split(data, test_size=0.5, random_state=42)
-    # Split temp data into val and test (0.5 each, resulting in 0.25 of original data each)
-    val_data, test_data = train_test_split(temp_data, test_size=0.5, random_state=42)
+    # First split data into train and temp 
+    train_data, temp_data = train_test_split(data, test_size=train_ratio, random_state=SEED)
+    # Split temp data into val and test equally, half of the remaining data
+    val_data, test_data = train_test_split(temp_data, test_size=0.5, random_state=SEED)
     
     # save to csv
     train_data.to_csv(os.path.join(save_data_path, 'train.csv'))
@@ -159,20 +212,20 @@ def tokenize_function(examples, tokenizer, max_length):
         # pad labels
         labels["input_ids"][i] = ([-100] * (max_length - len(sample_label_input_ids)) +
                                  sample_label_input_ids)
-    # print("0th model_inputs", model_inputs["input_ids"][0])
-    # print("length of 0th model_inputs", len(model_inputs["input_ids"][0]))
-    # print("0th labels", labels["input_ids"][0])
-    # print("length of 0th labels", len(labels["input_ids"][0]))
-    # print("0th attention mask", model_inputs["attention_mask"][0])
-    # print("length of 0th attention mask", len(model_inputs["attention_mask"][0]))
+        # truncate to max_length, but im not sure if this is necessary since we already calculated max_length on combined input-target length + 1 for eos token
+        model_inputs["input_ids"][i] = model_inputs["input_ids"][i][:max_length]
+        model_inputs["attention_mask"][i] = model_inputs["attention_mask"][i][:max_length]
+        labels["input_ids"][i] = labels["input_ids"][i][:max_length]
+        # print("0th model_inputs", model_inputs["input_ids"][0])
+        # print("length of 0th model_inputs", len(model_inputs["input_ids"][0]))
+        # print("0th labels", labels["input_ids"][0])
+        # print("length of 0th labels", len(labels["input_ids"][0]))
+        # print("0th attention mask", model_inputs["attention_mask"][0])
+        # print("length of 0th attention mask", len(model_inputs["attention_mask"][0]))
+        
+
     # Add labels to model inputs
     model_inputs["labels"] = labels["input_ids"]
-
-    # truncate to max_length, but im not sure if this is necessary since we already calculated max_length on combined input-target length + 1 for eos token
-    model_inputs["input_ids"][i] = model_inputs["input_ids"][i][:max_length]
-    model_inputs["attention_mask"][i] = model_inputs["attention_mask"][i][:max_length]
-    model_inputs["labels"][i] = model_inputs["labels"][i][:max_length]
-
 
     return model_inputs
 

@@ -48,4 +48,3 @@ def generate_summaries(df):
         
     return df
 
-
