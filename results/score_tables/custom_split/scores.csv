@@ -1,0 +1,3 @@
+model,method,avg_rouge_l,avg_bertscore
+Llama-3.2-1B,finetune,0.12,0.8
+Llama-3.2-1B,finetune,0.04,0.71

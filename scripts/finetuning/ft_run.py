@@ -14,6 +14,10 @@ def get_args():
     return args
 
 def main():
+    """
+    Main function to run the finetuned model to generate and store the generations. 
+    generations get postprocessed in eval_run file under evaluation folder
+    """
     args = get_args()
     set_seed(SEED)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -32,11 +36,12 @@ def main():
     model.eval()
 
     test_df = pd.read_csv(os.path.join(processed_data_path, "test.csv"))
-    test_generated_unprocessed = generate_summaries(model, tokenizer, test_df)
-    save_path = os.path.join(project_path, UNPROCESSED_GENERATED_DIR, "finetune", "generated.csv")
+    test_generated_unprocessed = generate_summaries(args, model, tokenizer, test_df)
+    save_path = os.path.join(project_path, UNPROCESSED_GENERATED_DIR, "finetune", "test_unprocessed.csv")
     if not os.path.exists(save_path):
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
     test_generated_unprocessed.to_csv(save_path, index=False)
+    print(f"Unprocessed generations saved at {save_path}. run eval_run.py to postprocess and evaluate")
     
     
 

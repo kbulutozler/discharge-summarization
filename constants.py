@@ -29,8 +29,12 @@ ZS_SYSTEM_PROMPT = """ You are a medical doctor who is expert at writing and ana
 RAW_DATA_FILEPATH = "data/raw/Hospitalization-Summarization.json"
 PROCESSED_DATA_DIR = "data/processed"
 UNPROCESSED_GENERATED_DIR = "output/unprocessed_generated"
+PROCESSED_GENERATED_DIR = "output/processed_generated"
 
-METRICS_SAVE_DIR = "results/metrics"
+
+TRAINING_METRICS_SAVE_DIR = "results/training_metrics"
+SCORES_SAVE_DIR = "results/score_tables"
+
 ADAPTER_SAVE_DIR = "output/adapters"
 SEED = 31
 PREPROCESS_SEED = 42

@@ -1,4 +1,4 @@
-from constants import PROCESSED_DATA_DIR, METRICS_SAVE_DIR, ADAPTER_SAVE_DIR, SEED
+from constants import PROCESSED_DATA_DIR, TRAINING_METRICS_SAVE_DIR, ADAPTER_SAVE_DIR, SEED
 from transformers import default_data_collator   
 import os
 import torch
@@ -47,7 +47,7 @@ def main():
     project_path = os.getcwd()
     processed_data_path = os.path.join(project_path, PROCESSED_DATA_DIR)
     base_model_path = os.path.join(project_path, '..', '..', "local-models", args.llm_name)
-    metrics_save_path = os.path.join(project_path, METRICS_SAVE_DIR, f'{args.llm_name}')
+    metrics_save_path = os.path.join(project_path, TRAINING_METRICS_SAVE_DIR, f'{args.llm_name}')
     adapter_save_path = os.path.join(project_path, ADAPTER_SAVE_DIR, f'{args.llm_name}')
 
     # load quantized model with lora and tokenizer     
@@ -169,7 +169,7 @@ def main():
     # Save metrics to JSON file after training
     if not os.path.exists(metrics_save_path):
         os.makedirs(metrics_save_path)
-    with open(os.path.join(metrics_save_path, 'training_metrics.json'), 'w') as f:
+    with open(os.path.join(metrics_save_path, args.llm_name, 'training_metrics.json'), 'w') as f:
         json.dump(metrics, f, indent=4)
 
 if __name__ == '__main__':

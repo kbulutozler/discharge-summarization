@@ -34,8 +34,8 @@ def single_inference_local(model, tokenizer, test_sample):
                             top_k=40,
                             repetition_penalty=1.2,
                             stop_strings=["||endoftext||"]
-                            )
-    return tokenizer.decode(outputs[0], skip_special_tokens=True)
+                            ) #check stop strings class 
+    return tokenizer.decode(outputs[0], skip_special_tokens=True)[len(test_sample):]
     
 def generate_summaries(args, model, tokenizer, df):
     """
@@ -50,13 +50,12 @@ def generate_summaries(args, model, tokenizer, df):
     """
     # add empty column for generated summaries  
     generated_summaries = []
-    # Generate summaries using the Together.AI API
     for i, trial in tqdm(df.iterrows(), total=df.shape[0], desc=f"Generating summaries with {args.llm_name}"):
         if (i+1)/df.shape[0] % 0.1 == 0:
-            print(f"test sample {i}")
+            print(f"test sample {i+1} of {df.shape[0]}")
         text = trial["text"]
         generated_summaries.append(single_inference_local(model, tokenizer, text))
-    df.loc[:, "generated_summary"] = generated_summaries
+    df.loc[:, "generated_target"] = generated_summaries
     # drop report column
     df = df.drop(columns=["text"])
     
@@ -108,8 +107,9 @@ def load_model_and_tokenizer(model_path):
                                                     quantization_config=quantization_config)
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     
-    if tokenizer.pad_token_id is None: # autoregressive models' pad token not set by default
-        tokenizer.pad_token_id = tokenizer.eos_token_id 
+    tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+    model.resize_token_embeddings(len(tokenizer))
+    model.config.pad_token_id = tokenizer.pad_token_id
 
     return model, tokenizer
 
@@ -122,11 +122,13 @@ def get_lora_model(model, device):
     model = peft.prepare_model_for_kbit_training(model) 
     
     # get peft configs based on architecture (task_type) and fine-tuning method
-    config = peft.LoraConfig(task_type=task_type, 
-                             inference_mode=False,
-                             r=8, 
-                             lora_alpha=32,
-                             lora_dropout=0.1)
+    config = peft.LoraConfig(   
+                                task_type=task_type, 
+                                inference_mode=False,
+                                r=8, 
+                                lora_alpha=32,
+                                lora_dropout=0.1
+                            )
 
     # wrap model w peft configs
     model = peft.get_peft_model(model, config).to(device)
