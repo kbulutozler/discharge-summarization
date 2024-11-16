@@ -5,15 +5,7 @@ import numpy as np
 import argparse
 
 
-def get_args():
-    """
-    Get arguments for the evaluation script
-    """
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--llm_name", type=str, default=None)
-    parser.add_argument("--method", type=str, default=None)
-    args = parser.parse_args()
-    return args
+
 
 def postprocess(df):
     """
@@ -28,6 +20,9 @@ def postprocess(df):
     generated_summaries = split_and_merge(df)
     post_summaries = clean_stop_tokens(generated_summaries)
     gold_summaries = df["target"].tolist()
+    for i, summary in enumerate(gold_summaries):
+        gold_summaries[i] = summary.replace("||startoftext||", "").replace("||endoftext||", "") 
+
     return post_summaries, gold_summaries
 
 def calculate_bertscore(pred_sequences, gold_sequences, device):
@@ -84,18 +79,22 @@ def split_and_merge(df):
         generated_summaries.append(final_summary)
     return generated_summaries
 
-def clean_stop_tokens(sequences): # slice until first stop token
+def clean_stop_tokens(sequences):
     """
-    Cleans stop tokens from the sequences
+    Extracts text between startoftext and endoftext
     Args:
         sequences (list): list of sequences to clean
 
     Returns:
         list: list of cleaned sequences
     """
-    pattern = r'(<[^>]+>)|(\|\|.+?\|\|)|(\n{2,})|(\s+\)|\(\s+)|(endoftext)'
     cleaned_sequences = []
     for sequence in sequences:
-        sliced_text = re.split(pattern, sequence, maxsplit=1)[0]
-        cleaned_sequences.append(sliced_text)
+        pattern = r'startoftext(.*?)endoftext'
+        match = re.search(pattern, sequence, re.IGNORECASE)
+        if match:
+            cleaned_text = match.group(1).strip()
+        else:
+            cleaned_text = sequence.strip()
+        cleaned_sequences.append(cleaned_text)
     return cleaned_sequences

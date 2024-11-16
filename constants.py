@@ -26,18 +26,19 @@ ZS_SYSTEM_PROMPT = """ You are a medical doctor who is expert at writing and ana
     Stop generation after ||endoftext||.
     """
 
-BASE_DIR = "/xdisk/bethard/kbozler"
-PROJECT_DIR = os.path.join(BASE_DIR, "repositories/discharge-summarization")
-RAW_DATA_FILEPATH = os.path.join(PROJECT_DIR, "data/raw/Hospitalization-Summarization.json")
-PROCESSED_DATA_DIR = os.path.join(PROJECT_DIR, "data/processed")    
-UNPROCESSED_GENERATED_DIR = os.path.join(PROJECT_DIR, "output/unprocessed_generated")
-PROCESSED_GENERATED_DIR = os.path.join(PROJECT_DIR, "output/processed_generated")
+SYSTEM_DIR = "/xdisk/bethard/kbozler" 
+PROJECT_DIR = os.path.join(SYSTEM_DIR, "repositories/discharge-summarization") 
+ORIGINAL_DATAPATH = os.path.join(PROJECT_DIR, "data/original/Hospitalization-Summarization.json") 
+CUSTOM_SPLIT_PATH = os.path.join(PROJECT_DIR, "data/custom_split") # train, val, test
+UNPROCESSED_OUTPUT_PATH = os.path.join(PROJECT_DIR, "output/unprocessed_outputs") # model generations, without postprocessing
+PROCESSED_OUTPUT_PATH = os.path.join(PROJECT_DIR, "output/processed_outputs") # postprocessed generations
 
 
-LOCAL_MODELS_DIR = os.path.join(BASE_DIR, "local-models")
-LOCAL_FINETUNED_MODELS_DIR = os.path.join(BASE_DIR, "finetuned-models/discharge-summarization/")
-SCORES_SAVE_DIR = os.path.join(PROJECT_DIR, "results/score_tables")
-
+LOCAL_MODELS_PATH = os.path.join(SYSTEM_DIR, "local-models") 
+OUTPUT_MODEL_PATH = os.path.join(PROJECT_DIR, "output/models") # trained models saved with loss plot and training logs
+RUN_ARGS_PATH = os.path.join(PROJECT_DIR, "output/run_args") # run identifier: args/hparams
+RESULT_PATH = os.path.join(PROJECT_DIR, "results") # accumulated scores. benchmark for zeroshot benchmark comparison, custom_split for project's fewshot-zeroshot-finetune comparisons
+CONFIG_PATH = os.path.join(PROJECT_DIR, "config/config.yaml") # config for args and hparams for each run
 SEED = 31
 PREPROCESS_SEED = 42
-PREPROCESS_TEST_SIZE = 250
+PREPROCESS_TEST_SIZE = 360
