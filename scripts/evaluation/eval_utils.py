@@ -78,7 +78,7 @@ def split_and_merge(df):
     nlp = spacy.load("en_core_web_sm") # python -m spacy download en_core_web_sm
     generated_summaries = []
     for i, row in df.iterrows():
-        generated_doc = nlp(row["generated_target"].replace('\n', ' ').replace('\r', ' '))
+        generated_doc = nlp(row["generated_summary"].replace('\n', ' ').replace('\r', ' '))
         list_of_sentences = [sent.text for sent in generated_doc.sents if sent.text.strip()]
         final_summary = " ".join(list_of_sentences)
         generated_summaries.append(final_summary)

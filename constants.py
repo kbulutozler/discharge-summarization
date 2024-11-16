@@ -30,7 +30,7 @@ RAW_DATA_FILEPATH = "data/raw/Hospitalization-Summarization.json"
 PROCESSED_DATA_DIR = "data/processed"
 UNPROCESSED_GENERATED_DIR = "output/unprocessed_generated"
 PROCESSED_GENERATED_DIR = "output/processed_generated"
-
+LOCAL_MODELS_DIR = os.path.join(os.getcwd(), '..', '..', "local-models")
 
 TRAINING_METRICS_SAVE_DIR = "results/training_metrics"
 SCORES_SAVE_DIR = "results/score_tables"
@@ -38,4 +38,4 @@ SCORES_SAVE_DIR = "results/score_tables"
 ADAPTER_SAVE_DIR = "output/adapters"
 SEED = 31
 PREPROCESS_SEED = 42
-PREPROCESS_TEST_SIZE = 250
+PREPROCESS_TEST_SIZE = 200

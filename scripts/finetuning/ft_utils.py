@@ -7,6 +7,9 @@ import transformers
 import peft
 import argparse
 from tqdm import tqdm
+import matplotlib.pyplot as plt
+
+
 
 
 # INFERENCE HELPER METHODS
@@ -35,7 +38,7 @@ def single_inference_local(model, tokenizer, test_sample):
                             repetition_penalty=1.2,
                             stop_strings=["||endoftext||"]
                             ) #check stop strings class 
-    return tokenizer.decode(outputs[0], skip_special_tokens=True)[len(test_sample):]
+    return tokenizer.decode(outputs[0], skip_special_tokens=True)
     
 def generate_summaries(args, model, tokenizer, df):
     """
@@ -50,12 +53,16 @@ def generate_summaries(args, model, tokenizer, df):
     """
     # add empty column for generated summaries  
     generated_summaries = []
+    full_output = []
     for i, trial in tqdm(df.iterrows(), total=df.shape[0], desc=f"Generating summaries with {args.llm_name}"):
         if (i+1)/df.shape[0] % 0.1 == 0:
             print(f"test sample {i+1} of {df.shape[0]}")
         text = trial["text"]
-        generated_summaries.append(single_inference_local(model, tokenizer, text))
-    df.loc[:, "generated_target"] = generated_summaries
+        trial_summary = single_inference_local(model, tokenizer, text)
+        full_output.append(trial_summary)
+        generated_summaries.append(trial_summary[len(text):])
+    df.loc[:, "generated_summary"] = generated_summaries
+    df.loc[:, "report_and_generated_summary"] = full_output
     # drop report column
     df = df.drop(columns=["text"])
     
@@ -84,11 +91,7 @@ def gpu_info():
     if gpu_count > 0:
         for i in range(gpu_count):
             print(f"\nGPU {i}: {torch.cuda.get_device_name(i)}")
-            # Get memory info in bytes
-            memory_allocated = torch.cuda.memory_allocated(i)
-            memory_reserved = torch.cuda.memory_reserved(i)
-            print(f"Memory Allocated: {memory_allocated/1024**2:.2f}MB")
-            print(f"Memory Reserved: {memory_reserved/1024**2:.2f}MB")
+
 
 
 def load_model_and_tokenizer(model_path):
@@ -104,8 +107,9 @@ def load_model_and_tokenizer(model_path):
 
     # define model and tokenizer
     model = AutoModelForCausalLM.from_pretrained(model_path,
-                                                    quantization_config=quantization_config)
+                                                 quantization_config=quantization_config)
     tokenizer = AutoTokenizer.from_pretrained(model_path)
+    
     
     tokenizer.add_special_tokens({'pad_token': '[PAD]'})
     model.resize_token_embeddings(len(tokenizer))
@@ -113,7 +117,7 @@ def load_model_and_tokenizer(model_path):
 
     return model, tokenizer
 
-def get_lora_model(model, device):
+def get_lora_model(model):
     ''' add peft adapter to model '''
 
     task_type = peft.TaskType.CAUSAL_LM
@@ -130,8 +134,10 @@ def get_lora_model(model, device):
                                 lora_dropout=0.1
                             )
 
-    # wrap model w peft configs
-    model = peft.get_peft_model(model, config).to(device)
+    # wrap model with peft configs
+    model = peft.get_peft_model(model, config)
+
+    
     model.print_trainable_parameters()
 
     return model
@@ -205,3 +211,24 @@ def define_optimizer(args, model):
     print(str_)
 
     return optimizer, lr_scheduler
+
+def plot_losses(train_losses, valid_losses, save_path):
+    """
+    Plots training and validation losses on the same graph.
+
+    Args:
+        train_losses (list): List of training losses per step.
+        valid_losses (list): List of validation losses per step.
+        save_path (str): Path to save the plot.
+    """
+    plt.figure(figsize=(10, 6))
+    plt.plot(train_losses, label='Training Loss', color='blue', linestyle='-', linewidth=2)
+    plt.plot(valid_losses, label='Validation Loss', color='orange', linestyle='--', linewidth=2)
+    plt.title('Training and Validation Losses', fontsize=16)
+    plt.xlabel('Steps', fontsize=14)
+    plt.ylabel('Loss', fontsize=14)
+    plt.legend()
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig(save_path)
+    plt.close()
