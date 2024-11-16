@@ -144,6 +144,10 @@ def main():
         # Validation loop remains same but store metrics
         epoch_val_losses = []
         model.eval()
+        # make eval a function that you call
+        # do eval every 2 grad acc steps
+        # save model after each eval if eval loss is lower than best val loss
+        
         for batch in tqdm(dev_dataloader, total=len(dev_dataloader), desc="Validation"):
                 batch = {k: v.to(args.device) for k, v in batch.items()}
                 with torch.no_grad():
