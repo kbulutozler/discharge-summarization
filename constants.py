@@ -26,16 +26,18 @@ ZS_SYSTEM_PROMPT = """ You are a medical doctor who is expert at writing and ana
     Stop generation after ||endoftext||.
     """
 
-RAW_DATA_FILEPATH = "data/raw/Hospitalization-Summarization.json"
-PROCESSED_DATA_DIR = "data/processed"
-UNPROCESSED_GENERATED_DIR = "output/unprocessed_generated"
-PROCESSED_GENERATED_DIR = "output/processed_generated"
-LOCAL_MODELS_DIR = os.path.join(os.getcwd(), '..', '..', "local-models")
+BASE_DIR = "/xdisk/bethard/kbozler"
+PROJECT_DIR = os.path.join(BASE_DIR, "repositories/discharge-summarization")
+RAW_DATA_FILEPATH = os.path.join(PROJECT_DIR, "data/raw/Hospitalization-Summarization.json")
+PROCESSED_DATA_DIR = os.path.join(PROJECT_DIR, "data/processed")    
+UNPROCESSED_GENERATED_DIR = os.path.join(PROJECT_DIR, "output/unprocessed_generated")
+PROCESSED_GENERATED_DIR = os.path.join(PROJECT_DIR, "output/processed_generated")
 
-TRAINING_METRICS_SAVE_DIR = "results/training_metrics"
-SCORES_SAVE_DIR = "results/score_tables"
 
-ADAPTER_SAVE_DIR = "output/adapters"
+LOCAL_MODELS_DIR = os.path.join(BASE_DIR, "local-models")
+LOCAL_FINETUNED_MODELS_DIR = os.path.join(BASE_DIR, "finetuned-models/discharge-summarization/")
+SCORES_SAVE_DIR = os.path.join(PROJECT_DIR, "results/score_tables")
+
 SEED = 31
 PREPROCESS_SEED = 42
 PREPROCESS_TEST_SIZE = 200

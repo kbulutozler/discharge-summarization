@@ -212,7 +212,7 @@ def define_optimizer(args, model):
 
     return optimizer, lr_scheduler
 
-def plot_losses(train_losses, valid_losses, save_path):
+def plot_losses(train_losses, valid_losses, eval_steps, save_path):
     """
     Plots training and validation losses on the same graph.
 
@@ -222,8 +222,8 @@ def plot_losses(train_losses, valid_losses, save_path):
         save_path (str): Path to save the plot.
     """
     plt.figure(figsize=(10, 6))
-    plt.plot(train_losses, label='Training Loss', color='blue', linestyle='-', linewidth=2)
-    plt.plot(valid_losses, label='Validation Loss', color='orange', linestyle='--', linewidth=2)
+    plt.plot(eval_steps, train_losses, label='Training Loss', color='blue', linestyle='-', linewidth=2)
+    plt.plot(eval_steps, valid_losses, label='Validation Loss', color='orange', linestyle='--', linewidth=2)
     plt.title('Training and Validation Losses', fontsize=16)
     plt.xlabel('Steps', fontsize=14)
     plt.ylabel('Loss', fontsize=14)
