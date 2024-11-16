@@ -1,7 +1,7 @@
 import pandas as pd
-from constants import SEED, ADAPTER_SAVE_DIR, PROCESSED_DATA_DIR, UNPROCESSED_GENERATED_DIR, LOCAL_MODELS_DIR
+from constants import SEED, PROCESSED_DATA_DIR, UNPROCESSED_GENERATED_DIR, LOCAL_MODELS_DIR, LOCAL_FINETUNED_MODELS_DIR
 from utils import set_seed
-from scripts.finetuning.ft_utils import load_model_and_tokenizer, generate_summaries
+from scripts.finetuning.ft_utils import load_model_and_tokenizer, generate_summaries, from_df_to_tokenized_dataset
 import torch
 import os
 import argparse
@@ -22,11 +22,13 @@ def main():
     set_seed(SEED)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     # Load the LoRA adapter
-    project_path = os.getcwd()
-    adapter_save_path = os.path.join(project_path, ADAPTER_SAVE_DIR, f'{args.llm_name}')
+
     base_model_path = os.path.join(LOCAL_MODELS_DIR, args.llm_name)
-    processed_data_path = os.path.join(project_path, PROCESSED_DATA_DIR)
     base_model, tokenizer = load_model_and_tokenizer(base_model_path)
+    dataset = from_df_to_tokenized_dataset(PROCESSED_DATA_DIR, tokenizer)
+
+    adapter_save_path = os.path.join(LOCAL_FINETUNED_MODELS_DIR, f'{args.llm_name}', f'split_{len(dataset["train"])}_{len(dataset["validation"])}')
+
     model = PeftModel.from_pretrained(
         base_model,
         adapter_save_path,
@@ -34,14 +36,11 @@ def main():
     )
     print("model has been loaded from LoRA adapter located at ", adapter_save_path)
     model.eval()
-    
 
-    test_df = pd.read_csv(os.path.join(processed_data_path, "test.csv"))
-    test_df = test_df[:5]
+    test_df = pd.read_csv(os.path.join(PROCESSED_DATA_DIR, "test.csv"))
     test_generated_unprocessed = generate_summaries(args, model, tokenizer, test_df)
-    print(test_generated_unprocessed.columns)
     
-    save_path = os.path.join(project_path, UNPROCESSED_GENERATED_DIR, "finetune", "test_unprocessed.csv")
+    save_path = os.path.join(UNPROCESSED_GENERATED_DIR, "finetune", "test_unprocessed.csv")
     if not os.path.exists(save_path):
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
     test_generated_unprocessed.to_csv(save_path, index=False)
