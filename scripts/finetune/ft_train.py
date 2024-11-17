@@ -6,7 +6,7 @@ import os
 import torch
 from torch.utils.data import DataLoader
 from utils import set_seed, get_args
-from scripts.finetune.ft_utils import load_model_and_tokenizer, get_lora_model, define_optimizer, from_df_to_tokenized_dataset, gpu_info, plot_losses
+from scripts.finetune.ft_utils import load_model_and_tokenizer, get_lora_model, define_optimizer, from_df_to_tokenized_dataset, gpu_info, plot_losses, save_args_to_json
 from tqdm import tqdm
 import json
 from torch.amp import autocast, GradScaler
@@ -30,18 +30,13 @@ def main():
     set_seed(SEED)
     gpu_info()
     args = get_args("finetune_config")
-    identifier = str(uuid.uuid1())[:8] # identifies the run, hparams
-    # log identifier to file
-    with open("identifier.txt", "w") as f:
-        f.write(identifier)
-    print(f"identifier: {identifier} is written to identifier.txt")
+    identifier = args.identifier # identifies the run, hparams
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     scaler = GradScaler(enabled=True)
     # define paths
     base_model_path = os.path.join(LOCAL_MODELS_PATH, args.llm_name)
     model_save_path = os.path.join(OUTPUT_MODEL_PATH, f'{args.llm_name}', identifier)
-    if not os.path.exists(model_save_path):
-        os.makedirs(model_save_path)
+    os.makedirs(model_save_path, exist_ok=True)
 
     # load quantized model with lora and tokenizer     
     model, tokenizer = load_model_and_tokenizer(base_model_path)
@@ -50,7 +45,8 @@ def main():
     model.gradient_checkpointing_enable()
         
     dataset = from_df_to_tokenized_dataset(CUSTOM_SPLIT_PATH, tokenizer)
-    
+    args.train_size = len(dataset['train'])
+    args.dev_size = len(dataset['dev'])
     train_dataloader = DataLoader(
         dataset['train'], shuffle=True, collate_fn=default_data_collator, batch_size=args.batch_size
     )
@@ -151,6 +147,8 @@ def main():
                     patience = args.patience
                     print(f"current val loss {val_loss_avg} is less than best val loss {best_val_loss}")
                     best_val_loss = val_loss_avg
+                    args.best_val_loss = best_val_loss
+                    args.best_val_loss_step = n_steps
                     # Save the LoRA adapter weights
                     model.save_pretrained(model_save_path)
                     print(f'saved model to {model_save_path} at step {n_steps}')
@@ -176,8 +174,9 @@ def main():
     plot_losses(metrics['train_loss_per_eval_step'], metrics['val_loss_per_eval_step'], eval_steps, os.path.join(model_save_path, 'loss_plot.png'))
     with open(os.path.join(model_save_path, f'training_log.json'), 'w') as f:
         json.dump(metrics, f, indent=4)
-    with open(os.path.join(RUN_ARGS_PATH, f'{identifier}.json'), 'w') as f:
-        json.dump(args.__dict__, f, indent=4)
+    # save args
+    save_args_to_json(args.__dict__, identifier, os.path.join(RUN_ARGS_PATH, f"{identifier}.json"))
+    print(f"finished training for {identifier}")
 
 if __name__ == '__main__':
     main()

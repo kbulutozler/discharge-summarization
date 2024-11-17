@@ -3,7 +3,15 @@ import re
 import evaluate
 import numpy as np
 import argparse
+import json
 
+def update_json_with_identifier(identifier, update_json, save_path):
+    with open(save_path, 'r') as f:
+        run_args = json.load(f)
+    for key, value in update_json.items():
+        run_args[identifier][key] = value
+    with open(save_path, 'w') as f:
+        json.dump(run_args, f, indent=4)
 
 
 

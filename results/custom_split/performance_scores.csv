@@ -1,7 +1,0 @@
-model,method,identifier,avg_rouge_l,avg_bertscore
-Llama-3.2-1B-Instruct,finetune,0683c7ce,0.0,0.213
-Llama-3.2-1B-Instruct,finetune,0683c7ce,0.264,0.855
-Llama-3.2-1B-Instruct,finetune,0683c7ce,0.264,0.854
-Llama-3.2-1B-Instruct,finetune,0683c7ce,0.264,0.855
-Llama-3.2-1B-Instruct,finetune,0683c7ce,0.264,0.855
-Llama-3.2-1B-Instruct,finetune,a0c433a4,0.222,0.851

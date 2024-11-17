@@ -9,9 +9,28 @@ import peft
 import argparse
 from tqdm import tqdm
 import matplotlib.pyplot as plt
-
+import json
 import yaml
 
+
+def save_args_to_json(args_dict, identifier, save_path):
+    """
+    Save args dictionary to a JSON file. If file exists, update it with new data.
+    
+    Args:
+        args_dict (dict): Dictionary containing arguments
+        identifier (str): Unique identifier for the run
+        save_path (str): Path to save the JSON file
+    """
+    if not os.path.exists(save_path):
+        with open(save_path, 'w') as f:
+            json.dump({identifier: args_dict}, f, indent=4)
+    else:
+        with open(save_path, 'r') as f:
+            existing_data = json.load(f)
+        existing_data[identifier] = args_dict
+        with open(save_path, 'w') as f:
+            json.dump(existing_data, f, indent=4)
 
 # INFERENCE HELPER METHODS
 def single_inference_local(model, tokenizer, test_sample):

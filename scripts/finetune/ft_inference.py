@@ -13,13 +13,8 @@ def main():
     """
     args = get_args("finetune_config")
     set_seed(SEED)
-    # read identifier from file
-    if os.path.exists("identifier.txt"):
-        with open("identifier.txt", "r") as f: 
-            identifier = f.read() 
-    else:
-        raise ValueError("identifier.txt not found. Complete a run first...")
-            
+    identifier = args.identifier
+    
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     base_model_path = os.path.join(LOCAL_MODELS_PATH, args.llm_name)
@@ -35,14 +30,15 @@ def main():
     )
     print("trained lora adapter loaded.")
     model.eval()
+    model.to(device)
 
     dev_df = pd.read_csv(os.path.join(CUSTOM_SPLIT_PATH, "dev.csv"))
     dev_generated_unprocessed = generate_summaries(args, model, tokenizer, dev_df)
     
-    save_path = os.path.join(UNPROCESSED_OUTPUT_PATH, identifier, "unprocessed_output.csv")
-    if not os.path.exists(save_path):
-        os.makedirs(os.path.dirname(save_path), exist_ok=True)
-    dev_generated_unprocessed.to_csv(save_path, index=False)
+    save_path = os.path.join(UNPROCESSED_OUTPUT_PATH, identifier)
+    os.makedirs(save_path, exist_ok=True)
+        
+    dev_generated_unprocessed.to_csv(os.path.join(save_path, "unprocessed_output.csv"), index=False)
     print(f"Unprocessed generations saved at {save_path}. run eval_run.py to postprocess and evaluate")
     
     

@@ -17,22 +17,24 @@ def set_seed(seed=42):
     
 
 def get_args(config_type):
-    with open(CONFIG_PATH, 'r') as f:
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--config', type=str, default=None, help='config file name')
+    parser.add_argument('--identifier', type=str, default=None, help='identifier for the run, usually job id')
+    cmd_args = parser.parse_args()
+    with open(os.path.join(CONFIG_PATH, f"{cmd_args.config}.yaml"), 'r') as f:
         config = yaml.safe_load(f)
     # Convert dict to namespace
     args = argparse.Namespace(**config[config_type])
+    args.identifier = cmd_args.identifier
     return args
 
-def preprocess_data(data_path, save_data_path, max_samples=None):
+def preprocess_data(data_path, save_data_path):
     """ load data from json file to pandas dataframe """
     with open(data_path, 'r') as f:
         data = json.load(f)
 
     data = pd.DataFrame(data)
     test_size = PREPROCESS_TEST_SIZE
-    if max_samples is not None:
-        data = data[:max_samples]
-        test_size = int(max_samples/2)
 
     # remove columns except for instruct and answer
     data = data[['instruct', 'answer']]
