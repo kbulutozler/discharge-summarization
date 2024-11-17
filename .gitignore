@@ -10,6 +10,7 @@ desktop.ini
 
 # outputs
 output/*
+config/*
 
 # logs
 .hpclogs/

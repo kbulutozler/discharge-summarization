@@ -44,7 +44,7 @@ def main():
     model.to(device)
     model.gradient_checkpointing_enable()
         
-    dataset = from_df_to_tokenized_dataset(CUSTOM_SPLIT_PATH, tokenizer)
+    dataset = from_df_to_tokenized_dataset(args.dataset_path, tokenizer)
     args.train_size = len(dataset['train'])
     args.dev_size = len(dataset['dev'])
     train_dataloader = DataLoader(

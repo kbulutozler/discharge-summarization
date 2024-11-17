@@ -30,6 +30,7 @@ SYSTEM_DIR = "/xdisk/bethard/kbozler"
 PROJECT_DIR = os.path.join(SYSTEM_DIR, "repositories/discharge-summarization") 
 ORIGINAL_DATAPATH = os.path.join(PROJECT_DIR, "data/original/Hospitalization-Summarization.json") 
 CUSTOM_SPLIT_PATH = os.path.join(PROJECT_DIR, "data/custom_split") # train, val, test
+TOY_CUSTOM_SPLIT_PATH = os.path.join(PROJECT_DIR, "data/toy_custom_split") # small batch of train, val, test
 UNPROCESSED_OUTPUT_PATH = os.path.join(PROJECT_DIR, "output/unprocessed_outputs") # model generations, without postprocessing
 PROCESSED_OUTPUT_PATH = os.path.join(PROJECT_DIR, "output/processed_outputs") # postprocessed generations
 
@@ -39,6 +40,7 @@ OUTPUT_MODEL_PATH = os.path.join(PROJECT_DIR, "output/models") # trained models 
 RUN_ARGS_PATH = os.path.join(PROJECT_DIR, "output/run_args") # run identifier: args/hparams
 RESULT_PATH = os.path.join(PROJECT_DIR, "results") # accumulated scores. benchmark for zeroshot benchmark comparison, custom_split for project's fewshot-zeroshot-finetune comparisons
 CONFIG_PATH = os.path.join(PROJECT_DIR, "config") # config for args and hparams for each run
+
 SEED = 31
 PREPROCESS_SEED = 42
 PREPROCESS_TEST_SIZE = 250

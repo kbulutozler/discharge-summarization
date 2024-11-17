@@ -1,10 +1,12 @@
 finetune_config:
-    llm_name: "Llama-3.2-1B"
+    llm_name: "Llama-3.2-1B-Instruct"
     method: "finetune"
-    batch_size: 1
-    max_epochs: 8
-    lr0: 1.0e-5
-    patience_ratio: 0.10
+    batch_size: 1   
+    max_epochs: 5
+    lr0: 1.0e-4
+    patience_ratio: 0.05
     gradient_accumulation_steps: 8
-    lr_schedule: "linear_decay"
-    lr_warmup_steps_ratio: 0.15
+    lr_scheduler_type: "polynomial_decay"
+    lr_warmup_steps_ratio: 0.10
+    optimizer_type: "adamw"
+    dataset_path: "/xdisk/bethard/kbozler/repositories/discharge-summarization/data/custom_split"

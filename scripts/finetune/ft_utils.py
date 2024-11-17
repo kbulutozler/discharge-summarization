@@ -11,7 +11,7 @@ from tqdm import tqdm
 import matplotlib.pyplot as plt
 import json
 import yaml
-
+from adopt import ADOPT
 
 def save_args_to_json(args_dict, identifier, save_path):
     """
@@ -198,20 +198,39 @@ def define_optimizer(args, model):
     
     # extract learning rate params
     lr0 = args.lr0 # initial learning rate
-
-    # define optimizer, lr_scheduler
-    optimizer = transformers.AdamW(model.parameters(), lr=lr0,
+    
+    # define optimizer
+    if args.optimizer_type == "adamw":
+        optimizer = transformers.AdamW(model.parameters(), lr=lr0,
                                    no_deprecation_warning=True)
+    elif args.optimizer_type == "adopt":
+        optimizer = ADOPT(model.parameters(), lr=lr0, decoupled=True)
+    else:
+        raise ValueError(f"Unsupported optimizer_type: {args.optimizer_type}")
 
-    str_ = f'using linear scheduler with lr0 {lr0},'
-    lr_scheduler = transformers.get_linear_schedule_with_warmup(
-        optimizer=optimizer,
-        num_warmup_steps=args.lr_num_warmup_steps,
-        num_training_steps=args.num_training_steps,
-    )
-        
-    str_ += f' and {args.lr_num_warmup_steps} warm-up steps!' 
-    print(str_)
+    if args.lr_scheduler_type == "linear":
+        lr_scheduler = transformers.get_linear_schedule_with_warmup(
+            optimizer=optimizer,
+            num_warmup_steps=args.lr_num_warmup_steps,
+            num_training_steps=args.num_training_steps,
+        )
+    elif args.lr_scheduler_type == "polynomial_decay":
+        lr_scheduler = transformers.get_polynomial_decay_schedule_with_warmup(
+            optimizer=optimizer,
+            num_warmup_steps=args.lr_num_warmup_steps,
+            num_training_steps=args.num_training_steps,
+            power=1.0
+        )
+    elif args.lr_scheduler_type == "cosine":
+        lr_scheduler = transformers.get_cosine_schedule_with_warmup(
+            optimizer=optimizer,
+            num_warmup_steps=args.lr_num_warmup_steps,
+            num_training_steps=args.num_training_steps,
+        )
+    else:
+        raise ValueError(f"Unsupported lr_scheduler_type: {args.lr_scheduler_type}")
+
+    print(f'Using {args.lr_scheduler_type} scheduler and {args.optimizer_type} optimizer with lr0 {lr0} and {args.lr_num_warmup_steps} warm-up steps!')
 
     return optimizer, lr_scheduler
 

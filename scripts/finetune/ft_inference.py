@@ -32,7 +32,7 @@ def main():
     model.eval()
     model.to(device)
 
-    dev_df = pd.read_csv(os.path.join(CUSTOM_SPLIT_PATH, "dev.csv"))
+    dev_df = pd.read_csv(os.path.join(args.dataset_path, "dev.csv"))
     dev_generated_unprocessed = generate_summaries(args, model, tokenizer, dev_df)
     
     save_path = os.path.join(UNPROCESSED_OUTPUT_PATH, identifier)
