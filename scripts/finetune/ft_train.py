@@ -177,6 +177,7 @@ def main():
         json.dump(metrics, f, indent=4)
     # save args
     save_args_to_json(args.__dict__, identifier, os.path.join(RUN_ARGS_PATH, f"{identifier}.json"))
+    save_args_to_json(args.__dict__, identifier, os.path.join(model_save_path, f"run_args.json"))
     print(f"finished training for {identifier}")
 
 if __name__ == '__main__':

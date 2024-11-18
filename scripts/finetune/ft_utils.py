@@ -220,7 +220,8 @@ def define_optimizer(args, model):
             optimizer=optimizer,
             num_warmup_steps=args.lr_num_warmup_steps,
             num_training_steps=args.num_training_steps,
-            power=args.poly_decay_power
+            power=args.poly_decay_power,
+            lr_end=1.0e-6
         )
     elif args.lr_scheduler_type == "cosine":
         lr_scheduler = transformers.get_cosine_schedule_with_warmup(
@@ -254,7 +255,7 @@ def plot_training_metrics(args, metrics_dict, eval_steps, save_path):
     
     # Add dot at best validation step
     best_step_idx = eval_steps.index(args.best_val_loss_step)
-    plt.plot(args.best_val_loss_step, metrics_dict['val_loss_per_eval_step'][best_step_idx], 'ro', markersize=10, label='Best model saved here')
+    plt.plot(args.best_val_loss_step, metrics_dict['val_loss_per_eval_step'][best_step_idx], 'ro', markersize=10, label='Saved model')
 
     plt.title('Training and Validation Losses', fontsize=16)
     plt.ylabel('Loss', fontsize=14)
