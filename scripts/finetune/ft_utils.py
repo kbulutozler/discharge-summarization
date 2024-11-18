@@ -9,6 +9,7 @@ import peft
 import argparse
 from tqdm import tqdm
 import matplotlib.pyplot as plt
+import math
 import json
 import yaml
 from adopt import ADOPT
@@ -207,7 +208,7 @@ def define_optimizer(args, model):
         optimizer = ADOPT(model.parameters(), lr=lr0, decoupled=True)
     else:
         raise ValueError(f"Unsupported optimizer_type: {args.optimizer_type}")
-
+    # num_training_steps is total number of steps where the model parameters is updated by the optimizer. it is NOT the number of forward/backward passes. it's where optimizer shows up. 
     if args.lr_scheduler_type == "linear":
         lr_scheduler = transformers.get_linear_schedule_with_warmup(
             optimizer=optimizer,
@@ -219,7 +220,7 @@ def define_optimizer(args, model):
             optimizer=optimizer,
             num_warmup_steps=args.lr_num_warmup_steps,
             num_training_steps=args.num_training_steps,
-            power=1.0
+            power=args.poly_decay_power
         )
     elif args.lr_scheduler_type == "cosine":
         lr_scheduler = transformers.get_cosine_schedule_with_warmup(
@@ -234,25 +235,48 @@ def define_optimizer(args, model):
 
     return optimizer, lr_scheduler
 
-def plot_losses(train_losses, valid_losses, eval_steps, save_path):
+def plot_training_metrics(args, metrics_dict, eval_steps, save_path):
     """
-    Plots training and validation losses on the same graph.
+    Plots training metrics (losses or learning rate) on a graph.
 
     Args:
-        train_losses (list): List of training losses per step.
-        valid_losses (list): List of validation losses per step.
-        save_path (str): Path to save the plot.
+        metrics_dict (dict): Dictionary containing metrics to plot
+            For loss: {'train_loss': [...], 'valid_loss': [...]}
+            For lr: {'learning_rate': [...]}
+        eval_steps (list): List of evaluation steps
+        save_path (str): Path to save the plot
+        plot_type (str): Type of plot - "loss" or "lr"
     """
     plt.figure(figsize=(10, 6))
-    plt.plot(eval_steps, train_losses, label='Training Loss', color='blue', linestyle='-', linewidth=2)
-    plt.plot(eval_steps, valid_losses, label='Validation Loss', color='orange', linestyle='--', linewidth=2)
+    
+    plt.plot(eval_steps, metrics_dict.get('train_loss_per_eval_step', []), label='Training Loss', color='blue', linestyle='-', linewidth=2)
+    plt.plot(eval_steps, metrics_dict.get('val_loss_per_eval_step', []), label='Validation Loss', color='orange', linestyle='--', linewidth=2)
+    
+    # Add dot at best validation step
+    best_step_idx = eval_steps.index(args.best_val_loss_step)
+    plt.plot(args.best_val_loss_step, metrics_dict['val_loss_per_eval_step'][best_step_idx], 'ro', markersize=10, label='Best model saved here')
+
     plt.title('Training and Validation Losses', fontsize=16)
-    plt.xlabel('Steps', fontsize=14)
     plt.ylabel('Loss', fontsize=14)
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig(save_path)
+    plt.savefig(os.path.join(save_path, 'loss_plot.png'))
+    plt.close()
+
+    plt.figure(figsize=(10, 6))
+    plt.plot(eval_steps, metrics_dict.get('learning_rate_per_eval_step', []), color='green', linestyle='-', linewidth=2)
+    plt.title('Learning Rate Schedule', fontsize=16)
+    plt.ylabel('Learning Rate', fontsize=14)
+    plt.xlabel('Steps', fontsize=14)
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig(os.path.join(save_path, 'learning_rate_plot.png'))
     plt.close()
 
 
+def calc_num_learning_steps(num_batches, grad_acc_steps, epochs):
+    a = num_batches * epochs #  args.num_training_steps
+    b = grad_acc_steps 
+    c = epochs
+    return (a//b) + c - (a//math.lcm(num_batches,b))

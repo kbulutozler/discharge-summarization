@@ -6,7 +6,7 @@ import os
 import torch
 from torch.utils.data import DataLoader
 from utils import set_seed, get_args
-from scripts.finetune.ft_utils import load_model_and_tokenizer, get_lora_model, define_optimizer, from_df_to_tokenized_dataset, gpu_info, plot_losses, save_args_to_json
+from scripts.finetune.ft_utils import load_model_and_tokenizer, get_lora_model, define_optimizer, from_df_to_tokenized_dataset, gpu_info, save_args_to_json, plot_training_metrics, calc_num_learning_steps
 from tqdm import tqdm
 import json
 from torch.amp import autocast, GradScaler
@@ -45,20 +45,21 @@ def main():
     model.gradient_checkpointing_enable()
         
     dataset = from_df_to_tokenized_dataset(args.dataset_path, tokenizer)
-    args.train_size = len(dataset['train'])
-    args.dev_size = len(dataset['dev'])
+    args.train_samples = len(dataset['train'])
+    args.dev_samples = len(dataset['dev'])
     train_dataloader = DataLoader(
         dataset['train'], shuffle=True, collate_fn=default_data_collator, batch_size=args.batch_size
     )
     dev_dataloader = DataLoader(
         dataset['dev'], shuffle=True, collate_fn=default_data_collator, batch_size=args.batch_size
     )
-    
-    args.num_training_steps = math.ceil(len(train_dataloader) * args.max_epochs)
-    args.lr_num_warmup_steps = math.ceil(args.num_training_steps * args.lr_warmup_steps_ratio)
-    args.patience = math.ceil(args.num_training_steps * args.patience_ratio)
+    eval_frequency = args.gradient_accumulation_steps * 2  # Evaluation frequency. if gradient accumulation steps is 4, then evaluate every 8 steps
+    num_batches_per_epoch = len(train_dataloader)
+    args.num_training_steps = num_batches_per_epoch * args.max_epochs # total number of forward/backward passes, NOT the number of optimizer updates bc of gradient accumulation
+    args.num_learning_steps = calc_num_learning_steps(num_batches_per_epoch, args.gradient_accumulation_steps, args.max_epochs) # number of times model weights are updated
+    args.lr_num_warmup_steps = math.floor(args.num_learning_steps * args.lr_warmup_steps_ratio) # basically number of times lr is updated * warmup ratio
     print(f"when batch size is {args.batch_size}, num training steps is {args.num_training_steps} "
-            f"because total number of train samples is {len(dataset['train'])} and maximum number of epochs is {args.max_epochs}")
+            f"because number of train samples is {args.train_samples} and maximum number of epochs is {args.max_epochs}")
     
     optimizer, lr_scheduler = define_optimizer(args, model)
     # create a dictionary to store metrics
@@ -75,7 +76,7 @@ def main():
     # Initialize variables for tracking losses and steps
     best_val_loss = float('inf')
     n_steps = 0
-    eval_every_steps = args.gradient_accumulation_steps * 2  # Evaluation frequency
+    
     trn_losses_since_eval = []
     eval_steps = []
     patience = args.patience
@@ -106,7 +107,7 @@ def main():
             
             # Update weights after gradient accumulation steps or at epoch end
             if (n_steps % args.gradient_accumulation_steps == 0) or (n_steps % len(train_dataloader) == 0):
-                print(f'update weights at step {n_steps}')
+                print(f'update weights and learning rate at step {n_steps}')
                 scaler.step(optimizer)
                 scaler.update()
                 optimizer.zero_grad()
@@ -116,8 +117,8 @@ def main():
             
             del batch  # free up memory
 
-            # Perform evaluation every 'eval_every_steps'
-            if n_steps % eval_every_steps == 0 or n_steps % len(train_dataloader) == 0:
+            # Perform evaluation every 'eval_frequency' steps or at the end of the epoch
+            if n_steps % eval_frequency == 0 or n_steps % len(train_dataloader) == 0:
                 print(f'evaluate at step {n_steps}')
                 eval_steps.append(n_steps)
                 # Compute average training loss since last evaluation
@@ -171,7 +172,7 @@ def main():
         print(f'train loss: {trn_loss_epoch}, val loss: {val_loss_avg}, learning rate: {lr_scheduler.get_last_lr()[0]}')
 
     # Save metrics and plot after training
-    plot_losses(metrics['train_loss_per_eval_step'], metrics['val_loss_per_eval_step'], eval_steps, os.path.join(model_save_path, 'loss_plot.png'))
+    plot_training_metrics(args, metrics, eval_steps, model_save_path)
     with open(os.path.join(model_save_path, f'training_log.json'), 'w') as f:
         json.dump(metrics, f, indent=4)
     # save args
