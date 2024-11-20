@@ -155,10 +155,16 @@ def main():
                     print(f'saved model to {model_save_path} at step {n_steps}')
                 else:
                     patience -= 1
+                    print(f'current val loss {val_loss_avg} is not less than best val loss {best_val_loss}, reducing patience by 1, to {patience}')
                     if patience == 0:
                         print(f"early stopping at epoch {epoch+1}")
                         break
                 model.train()
+        if patience == 0:
+            break
+                
+            
+        
 
         # End of epoch metrics
         trn_loss_epoch = sum(epoch_trn_losses) / len(epoch_trn_losses)

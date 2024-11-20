@@ -12,7 +12,7 @@ timestamp=$(date +"%Y-%m-%d-%H:%M")
 if $move_files; then
     mkdir -p "/xdisk/bethard/kbozler/ds-run-outputs/ds-run-outputs_$timestamp"
     mv output/* "/xdisk/bethard/kbozler/ds-run-outputs/ds-run-outputs_$timestamp" 
-    cp .run_multi.sh "/xdisk/bethard/kbozler/ds-run-outputs/ds-run-outputs_$timestamp"
+    cp .run_multi*.sh "/xdisk/bethard/kbozler/ds-run-outputs/ds-run-outputs_$timestamp"
     mv .hpclogs "/xdisk/bethard/kbozler/ds-run-outputs/ds-run-outputs_$timestamp"
 fi
 
