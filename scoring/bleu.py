@@ -9,7 +9,7 @@
 # Authors : Hao Fang <hfang@uw.edu> and Tsung-Yi Lin <tl483@cornell.edu>
 
 import torch.nn as nn
-from bleu_scorer import BleuScorer
+from scoring.bleu_scorer import BleuScorer
 
 
 class Bleu(nn.Module):

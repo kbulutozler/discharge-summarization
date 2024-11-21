@@ -5,11 +5,13 @@ import pandas as pd
 
 import evaluate
 
-from bleu import Bleu
-from rouge import Rouge
-from bertscore import BertScore
-from align import AlignScorer
-from UMLSScorer import UMLSScorer
+from scoring.bleu import Bleu
+from scoring.rouge import Rouge
+from scoring.bertscore import BertScore
+from scoring.align import AlignScorer
+from scoring.UMLSScorer import UMLSScorer
+
+
 
 
 def calculate_scores(generated, reference, metrics):
@@ -38,7 +40,7 @@ def calculate_scores(generated, reference, metrics):
         alignScorer = AlignScorer()
         print("alignScorer initialized")
     if "medcon" in metrics:
-        medconScorer = UMLSScorer(quickumls_fp="/home/quickumls/")
+        medconScorer = UMLSScorer(quickumls_fp="/xdisk/bethard/kbozler/repositories/discharge-summarization/quickumls")
         print("medconScorer initialized")
 
     def calculate_scores(rows_ref, rows_gen):
@@ -230,11 +232,11 @@ def compute_overall_score(scores):
 
 #################################################################################################
 # specify the directories for your submission.csv and the discharge_target.csv
-reference_dir = os.path.join("/app/input/", "ref")
-generated_dir = os.path.join("/app/input/", "res")
+reference_dir = "/xdisk/bethard/kbozler/discharge-me/physionet.org/files/discharge-me/1.3/test_phase_2"
+generated_dir = "/xdisk/bethard/kbozler/repositories/discharge-summarization/output/submissions/"
 
 # specify the directory where the scores.json file will be saved
-score_dir = "/app/output/"
+score_dir = "/xdisk/bethard/kbozler/repositories/discharge-summarization/results/"
 #################################################################################################
 
 print("Reading generated texts...")

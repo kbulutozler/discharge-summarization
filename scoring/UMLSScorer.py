@@ -16,7 +16,7 @@ SEMANTICS = ['T017', 'T029', 'T023', 'T030', 'T031', 'T022', 'T025', 'T026', 'T0
 
 class UMLSScorer(torch.nn.Module):
 
-    def __init__(self, use_umls=True, quickumls_fp="quickumls/"):
+    def __init__(self, use_umls=True, quickumls_fp="/xdisk/bethard/kbozler/repositories/discharge-summarization/quickumls"):
         super().__init__()
         self.quickumls_fp = quickumls_fp
         self.WINDOW_SIZE = 5
