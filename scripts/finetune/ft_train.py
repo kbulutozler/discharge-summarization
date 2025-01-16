@@ -6,7 +6,7 @@ import os
 import torch
 from torch.utils.data import DataLoader
 from utils import set_seed, get_args
-from scripts.finetune.ft_utils import load_model_and_tokenizer, get_lora_model, define_optimizer, from_df_to_tokenized_dataset, gpu_info, save_args_to_json, plot_training_metrics, calc_num_learning_steps
+from scripts.finetune.ft_utils import load_model_and_tokenizer, get_lora_model, define_optimizer, from_df_to_tokenized_dataset, save_args_to_json, plot_training_metrics, calc_num_learning_steps
 from tqdm import tqdm
 import json
 from torch.amp import autocast, GradScaler
@@ -28,25 +28,32 @@ def main():
     """
 
     set_seed(SEED)
-    gpu_info()
+    print("Seed set to:", SEED)
     args = get_args("finetune_config")
+    print("Arguments loaded:", args)
     identifier = args.identifier # identifies the run, hparams
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    print(f"Device set to: {device}")
     scaler = GradScaler(enabled=True)
     # define paths
     base_model_path = os.path.join(LOCAL_MODELS_PATH, args.llm_name)
     model_save_path = os.path.join(OUTPUT_MODEL_PATH, f'{args.llm_name}', identifier)
     os.makedirs(model_save_path, exist_ok=True)
+    print("Model save path created:", model_save_path)
 
     # load quantized model with lora and tokenizer     
     model, tokenizer = load_model_and_tokenizer(base_model_path)
+    print("Model and tokenizer loaded.")
     model = get_lora_model(model)
     model.to(device)
     model.gradient_checkpointing_enable()
         
     dataset = from_df_to_tokenized_dataset(args.dataset_path, tokenizer)
+    print("Dataset tokenized.")
     args.train_samples = len(dataset['train'])
     args.dev_samples = len(dataset['dev'])
+    print(f"Training samples: {args.train_samples}, Validation samples: {args.dev_samples}")
+    
     train_dataloader = DataLoader(
         dataset['train'], shuffle=True, collate_fn=default_data_collator, batch_size=args.batch_size
     )
@@ -62,6 +69,8 @@ def main():
             f"because number of train samples is {args.train_samples} and maximum number of epochs is {args.max_epochs}")
     
     optimizer, lr_scheduler = define_optimizer(args, model)
+    print("Optimizer and learning rate scheduler defined.")
+    
     # create a dictionary to store metrics
     metrics = {
         'train_loss_per_eval_step': [],

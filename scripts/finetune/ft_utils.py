@@ -89,16 +89,6 @@ def generate_summaries(args, model, tokenizer, df):
     
     return df
 
-def gpu_info():
-    # Check number of GPUs available
-    gpu_count = torch.cuda.device_count()
-    print(f"Number of GPUs available: {gpu_count}")
-
-    # If you want more details about each GPU
-    if gpu_count > 0:
-        for i in range(gpu_count):
-            print(f"\nGPU {i}: {torch.cuda.get_device_name(i)}")
-
 
 def load_model_and_tokenizer(model_path):
     ''' load model and tokenizer '''
@@ -112,14 +102,19 @@ def load_model_and_tokenizer(model_path):
             )
 
     # define model and tokenizer
+    print("Loading model from pretrained...")
     model = AutoModelForCausalLM.from_pretrained(model_path,
                                                  quantization_config=quantization_config)
+    print("Model loaded from pretrained.")
     tokenizer = AutoTokenizer.from_pretrained(model_path)
-    
+    print("Tokenizer loaded from pretrained.")
     
     tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+    print("Special tokens added to tokenizer.")
     model.resize_token_embeddings(len(tokenizer))
+    print("Model token embeddings resized.")
     model.config.pad_token_id = tokenizer.pad_token_id
+    print("Pad token ID set.")
 
     return model, tokenizer
 

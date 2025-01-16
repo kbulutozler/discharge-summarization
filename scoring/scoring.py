@@ -308,7 +308,7 @@ reference = reference.sort_values(by="hadm_id")
 print("Done.")
 
 scores = calculate_scores(
-    generated, reference, metrics=["bleu", "rouge", "bertscore", "meteor", "align", "medcon"]
+    generated, reference, metrics=["bleu", "rouge", "bertscore", "meteor", "medcon"] #["bleu", "rouge", "bertscore", "meteor", "align", "medcon"]
 )
 
 leaderboard = compute_overall_score(scores)

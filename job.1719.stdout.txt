@@ -1,0 +1,67 @@
+CONDA_PROMPT_MODIFIER=(hfenv) 
+USER=bulut
+XDG_SESSION_TYPE=unspecified
+SHLVL=1
+HOME=/home/bulut
+OLDPWD=/home/bulut
+CONDA_SHLVL=1
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1016/bus
+_CE_M=
+CUDA_VISIBLE_DEVICES=3
+LOGNAME=bulut
+_=/usr/bin/sh
+XDG_SESSION_CLASS=background
+GTK_OVERLAY_SCROLLING=0
+XDG_SESSION_ID=c294
+_CE_CONDA=
+PATH=/home/bulut/miniconda3/envs/hfenv/bin:/home/bulut/miniconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+XDG_RUNTIME_DIR=/run/user/1016
+CONDA_PYTHON_EXE=/home/bulut/miniconda3/bin/python
+SHELL=/bin/bash
+CONDA_DEFAULT_ENV=hfenv
+PWD=/home/bulut/repositories/discharge-summarization
+CONDA_EXE=/home/bulut/miniconda3/bin/conda
+CONDA_PREFIX=/home/bulut/miniconda3/envs/hfenv
+Seed set to: 31
+Arguments loaded: Namespace(llm_name='Llama-3.2-1B', method='finetune', batch_size=1, max_epochs=1, lr0=1e-05, patience=7, gradient_accumulation_steps=16, lr_scheduler_type='polynomial_decay', lr_warmup_steps_ratio=0.1, poly_decay_power=0.5, optimizer_type='adamw', dataset_path='/home/bulut/repositories/discharge-summarization/data/toy_custom_split', identifier='run_3')
+Device set to: cuda:0
+Model save path created: /home/bulut/repositories/discharge-summarization/output/models/Llama-3.2-1B/run_3
+Loading model from pretrained...
+Model loaded from pretrained.
+Tokenizer loaded from pretrained.
+Special tokens added to tokenizer.
+Model token embeddings resized.
+Pad token ID set.
+Model and tokenizer loaded.
+trainable params: 851,968 || all params: 1,236,668,416 || trainable%: 0.0689
+Dataset tokenized.
+Training samples: 14, Validation samples: 6
+when batch size is 1, num training steps is 14 because number of train samples is 14 and maximum number of epochs is 1
+Using polynomial_decay scheduler and adamw optimizer with lr0 1e-05 and 0 warm-up steps!
+Optimizer and learning rate scheduler defined.
+begin training!
+epoch 1/1
+update weights and learning rate at step 14
+evaluate at step 14
+Step 14: Train loss 0.07756548108799118, Val loss 1.1452569762865703
+current val loss 1.1452569762865703 is less than best val loss inf
+saved model to /home/bulut/repositories/discharge-summarization/output/models/Llama-3.2-1B/run_3 at step 14
+epoch 1 metrics:
+train loss: 0.07756548108799118, val loss: 1.1452569762865703, learning rate: 9.672617004934884e-06
+finished training for run_3
+Starting main function.
+Arguments loaded: Namespace(llm_name='Llama-3.2-1B', method='finetune', batch_size=1, max_epochs=1, lr0=1e-05, patience=7, gradient_accumulation_steps=16, lr_scheduler_type='polynomial_decay', lr_warmup_steps_ratio=0.1, poly_decay_power=0.5, optimizer_type='adamw', dataset_path='/home/bulut/repositories/discharge-summarization/data/toy_custom_split', identifier='run_3')
+Seed set to: 31
+Using device: cuda:0
+Loading model from path: /media/networkdisk/bulut/local-models/Llama-3.2-1B
+Loading model from pretrained...
+Model loaded from pretrained.
+Tokenizer loaded from pretrained.
+Special tokens added to tokenizer.
+Model token embeddings resized.
+Pad token ID set.
+Model and tokenizer have been loaded from base model.
+Loading trained lora adapter from: /home/bulut/repositories/discharge-summarization/output/models/Llama-3.2-1B/run_3
+Trained lora adapter loaded.
+Model set to evaluation mode and moved to device.
+Development dataset loaded with 6 samples.

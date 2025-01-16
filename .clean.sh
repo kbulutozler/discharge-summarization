@@ -10,10 +10,10 @@ fi
 timestamp=$(date +"%Y-%m-%d-%H:%M")
 
 if $move_files; then
-    mkdir -p "/xdisk/bethard/kbozler/ds-run-outputs/ds-run-outputs_$timestamp"
-    mv output/* "/xdisk/bethard/kbozler/ds-run-outputs/ds-run-outputs_$timestamp" 
-    cp .run_multi*.sh "/xdisk/bethard/kbozler/ds-run-outputs/ds-run-outputs_$timestamp"
-    mv .hpclogs "/xdisk/bethard/kbozler/ds-run-outputs/ds-run-outputs_$timestamp"
+    mkdir -p "/media/networkdisk/bulut/ds-run-outputs/ds-run-outputs_$timestamp/logs"
+    mv output/* "/media/networkdisk/bulut/ds-run-outputs/ds-run-outputs_$timestamp" 
+    mv .run_pbs_files "/media/networkdisk/bulut/ds-run-outputs/ds-run-outputs_$timestamp"
+    mv job.* "/media/networkdisk/bulut/ds-run-outputs/ds-run-outputs_$timestamp/logs"
 fi
 
 # remove used directories after runs
@@ -23,7 +23,11 @@ rm -rf "output/models"
 rm -rf "output/run_args"
 rm -rf "results"
 rm -rf "config"
-rm -rf ".hpclogs"
+rm -rf ".run_pbs_files"
+
+# remove error and output logs 
+rm -rf *.stderr.txt
+rm -rf *.stdout.txt
 
 # make new directories
 mkdir -p "output/unprocessed_outputs"
@@ -32,3 +36,7 @@ mkdir -p "output/models"
 mkdir -p "output/run_args"
 mkdir -p "results"
 mkdir -p "config"
+mkdir -p ".run_pbs_files"
+
+# kill processes
+pkill -u bulut python

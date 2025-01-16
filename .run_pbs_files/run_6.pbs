@@ -1,0 +1,26 @@
+#!/bin/bash
+### Job Name
+#PBS -N discharge_summarization-pipeline
+### Project code
+#PBS -A discharge_summarization
+### Maximum time this job can run before being killed (here, 1 day)
+#PBS -l walltime=01:00:00:00
+### Resource Request (must contain cpucore, memory, and gpu (even if requested amount is zero)
+#PBS -l cpucore=1:memory=32gb:gpu=1
+### Output Options (default is stdout_and_stderr)
+#PBS -l outputMode=stdout_and_stderr
+
+. /home/bulut/miniconda3/etc/profile.d/conda.sh
+
+conda activate hfenv
+printenv
+
+export OMP_NUM_THREADS=2
+
+# Run Python scripts
+(
+  CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES python -m scripts.finetune.ft_train --config config_6 --identifier run_6 &&
+  CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES python -m scripts.finetune.ft_inference --config config_6 --identifier run_6 &&
+  CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES python -m scripts.evaluation.eval_run --config config_6 --identifier run_6
+) &
+wait

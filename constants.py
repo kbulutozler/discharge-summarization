@@ -26,8 +26,8 @@ ZS_SYSTEM_PROMPT = """ You are a medical doctor who is expert at writing and ana
     Stop generation after ||endoftext||.
     """
 
-SYSTEM_DIR = "/xdisk/bethard/kbozler" 
-PROJECT_DIR = os.path.join(SYSTEM_DIR, "repositories/discharge-summarization") 
+SYSTEM_DIR = "/media/networkdisk/bulut" 
+PROJECT_DIR = "/home/bulut/repositories/discharge-summarization" 
 ORIGINAL_DATAPATH = os.path.join(PROJECT_DIR, "data/original/Hospitalization-Summarization.json") 
 CUSTOM_SPLIT_PATH = os.path.join(PROJECT_DIR, "data/custom_split") # train, val, test
 TOY_CUSTOM_SPLIT_PATH = os.path.join(PROJECT_DIR, "data/toy_custom_split") # small batch of train, val, test
