@@ -192,7 +192,7 @@ def main():
     with open(os.path.join(qlora_run_output_path, f'training_log.json'), 'w') as f:
         json.dump(metrics, f, indent=4)
     # save args
-    save_args_to_json(args.__dict__, identifier, os.path.join(qlora_run_output_path, f"run_args.json"))
+    save_args_to_json(args.__dict__, identifier, os.path.join(qlora_run_output_path, f"run_details.json"))
     print(f"finished training for {identifier}")
 
 if __name__ == '__main__':
