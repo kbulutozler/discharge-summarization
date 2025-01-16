@@ -16,7 +16,7 @@ SEMANTICS = ['T017', 'T029', 'T023', 'T030', 'T031', 'T022', 'T025', 'T026', 'T0
 
 class UMLSScorer(torch.nn.Module):
 
-    def __init__(self, use_umls=True, quickumls_fp="/home/bulut/repositories/discharge-summarization/quickumls"):
+    def __init__(self, use_umls=True, quickumls_fp="quickumls/"):
         super().__init__()
         self.quickumls_fp = quickumls_fp
         self.WINDOW_SIZE = 5
@@ -64,9 +64,10 @@ class UMLSScorer(torch.nn.Module):
         except ZeroDivisionError:
             return 0
 
+    def forward(self, reference, prediction):
+        return self.umls_score_individual(reference, prediction)
+
     def umls_score_group(self, references, predictions):
         return [self.umls_score_individual(reference, prediction) for reference, prediction in
                 zip(references, predictions)]
 
-    def forward(self, reference, prediction):
-        return self.umls_score_group(reference, prediction)

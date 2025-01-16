@@ -1,9 +1,17 @@
 import spacy
 import re
-import evaluate
 import numpy as np
 import argparse
 import json
+
+import evaluate
+
+
+
+
+
+
+
 
 def update_json_with_identifier(identifier, update_json, save_path):
     with open(save_path, 'r') as f:
@@ -12,8 +20,6 @@ def update_json_with_identifier(identifier, update_json, save_path):
         run_args[identifier][key] = value
     with open(save_path, 'w') as f:
         json.dump(run_args, f, indent=4)
-
-
 
 def postprocess(df):
     """
@@ -25,13 +31,52 @@ def postprocess(df):
         list: list of cleaned summaries
         list: list of gold summaries
     """
-    generated_summaries = split_and_merge(df)
-    post_summaries = clean_stop_tokens(generated_summaries)
+    summaries = split_and_merge(df)
+    summaries = clean_stop_tokens(summaries)
     gold_summaries = df["target"].tolist()
     for i, summary in enumerate(gold_summaries):
-        gold_summaries[i] = summary.replace("||startoftext||", "").replace("||endoftext||", "") 
+        gold_summaries[i] = summary.replace("||startoftext||", "").replace("||endoftext||", "") # remove to only show the summary
 
-    return post_summaries, gold_summaries
+    return summaries, gold_summaries
+
+
+def split_and_merge(df):
+    """
+    Splits the generated summaries into sentences and merges them into a single string
+    Args:
+        df (pd.DataFrame): dataframe with generated summaries
+
+    Returns:
+        list: list of merged summaries
+    """
+    nlp = spacy.load("en_core_web_sm") # python -m spacy download en_core_web_sm
+    summaries = []
+    for i, row in df.iterrows():
+        generated_doc = nlp(row["generated_summary"].replace('\n', ' ').replace('\r', ' '))
+        list_of_sentences = [sent.text for sent in generated_doc.sents if sent.text.strip()]
+        summary = " ".join(list_of_sentences) # merge sentences into a single string
+        summaries.append(summary)
+    return summaries
+
+def clean_stop_tokens(sequences): # not 100% success rate
+    """
+    Extracts text between startoftext and endoftext
+    Args:
+        sequences (list): list of sequences to clean
+
+    Returns:
+        list: list of cleaned sequences
+    """
+    cleaned_sequences = []
+    for sequence in sequences:
+        pattern = r'startoftext(.*?)endoftext'
+        match = re.search(pattern, sequence, re.IGNORECASE)
+        if match:
+            cleaned_text = match.group(1).strip()
+        else:
+            cleaned_text = sequence.strip()
+        cleaned_sequences.append(cleaned_text)
+    return cleaned_sequences
 
 def calculate_bertscore(pred_sequences, gold_sequences, device):
     """
@@ -69,40 +114,3 @@ def calculate_rouge_l(pred_sequences, gold_sequences):
     avg_rouge_l = np.mean(scores['rougeL'])
     return avg_rouge_l, scores['rougeL']  # returning individual scores and average
 
-def split_and_merge(df):
-    """
-    Splits the generated summaries into sentences and merges them into a single string
-    Args:
-        df (pd.DataFrame): dataframe with generated summaries
-
-    Returns:
-        list: list of merged summaries
-    """
-    nlp = spacy.load("en_core_web_sm") # python -m spacy download en_core_web_sm
-    generated_summaries = []
-    for i, row in df.iterrows():
-        generated_doc = nlp(row["generated_summary"].replace('\n', ' ').replace('\r', ' '))
-        list_of_sentences = [sent.text for sent in generated_doc.sents if sent.text.strip()]
-        final_summary = " ".join(list_of_sentences)
-        generated_summaries.append(final_summary)
-    return generated_summaries
-
-def clean_stop_tokens(sequences):
-    """
-    Extracts text between startoftext and endoftext
-    Args:
-        sequences (list): list of sequences to clean
-
-    Returns:
-        list: list of cleaned sequences
-    """
-    cleaned_sequences = []
-    for sequence in sequences:
-        pattern = r'startoftext(.*?)endoftext'
-        match = re.search(pattern, sequence, re.IGNORECASE)
-        if match:
-            cleaned_text = match.group(1).strip()
-        else:
-            cleaned_text = sequence.strip()
-        cleaned_sequences.append(cleaned_text)
-    return cleaned_sequences

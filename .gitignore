@@ -14,10 +14,14 @@ desktop.ini
 # outputs
 output/*
 config/*
+results/*
 
 # logs
 .hpclogs/
 .run_pbs_files/
 
 # umls files
-quickumls/
+scoring/quickumls/
+
+# any hidden files
+.*

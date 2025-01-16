@@ -36,9 +36,7 @@ PROCESSED_OUTPUT_PATH = os.path.join(PROJECT_DIR, "output/processed_outputs") # 
 
 
 LOCAL_MODELS_PATH = os.path.join(SYSTEM_DIR, "local-models") 
-OUTPUT_MODEL_PATH = os.path.join(PROJECT_DIR, "output/models") # trained models saved with loss plot and training logs
-RUN_ARGS_PATH = os.path.join(PROJECT_DIR, "output/run_args") # run identifier: args/hparams
-RESULT_PATH = os.path.join(PROJECT_DIR, "results") # accumulated scores. benchmark for zeroshot benchmark comparison, custom_split for project's fewshot-zeroshot-finetune comparisons
+RUN_OUTPUT_PATH = os.path.join(SYSTEM_DIR, "run-outputs/discharge-summarization") # trained models saved with loss plot and training logs
 CONFIG_PATH = os.path.join(PROJECT_DIR, "config") # config for args and hparams for each run
 
 SEED = 31

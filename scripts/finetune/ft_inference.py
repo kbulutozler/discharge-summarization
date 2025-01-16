@@ -1,6 +1,7 @@
 import pandas as pd
-from constants import SEED, CUSTOM_SPLIT_PATH, UNPROCESSED_OUTPUT_PATH, LOCAL_MODELS_PATH, OUTPUT_MODEL_PATH
+from constants import SEED, CUSTOM_SPLIT_PATH, UNPROCESSED_OUTPUT_PATH, LOCAL_MODELS_PATH, RUN_OUTPUT_PATH, PROCESSED_OUTPUT_PATH 
 from utils import set_seed, get_args
+from scripts.evaluation.eval_utils import postprocess
 from scripts.finetune.ft_utils import load_model_and_tokenizer, generate_summaries
 import torch
 import os
@@ -11,7 +12,7 @@ def main():
     Main function to run the finetuned model to generate and store the generations. 
     generations get postprocessed in eval_run file under evaluation folder
     """
-    print("Starting main function.")
+    print("### FINETUNED MODEL INFERENCE ON DEVELOPMENT SET ###")
     args = get_args("finetune_config")
     print(f"Arguments loaded: {args}")
     set_seed(SEED)
@@ -26,12 +27,12 @@ def main():
     base_model, tokenizer = load_model_and_tokenizer(base_model_path)
     print("Model and tokenizer have been loaded from base model.")
 
-    adapter_save_path = os.path.join(OUTPUT_MODEL_PATH, f'{args.llm_name}', identifier)
-    print(f"Loading trained lora adapter from: {adapter_save_path}")
+    qlora_run_output_path = os.path.join(RUN_OUTPUT_PATH, 'qlora', 'runs', identifier)
+    print(f"Loading trained lora adapter from: {qlora_run_output_path}")
 
     model = PeftModel.from_pretrained(
         base_model,
-        adapter_save_path,
+        qlora_run_output_path,
         is_trainable=False
     )
     print("Trained lora adapter loaded.")
@@ -40,16 +41,19 @@ def main():
     print("Model set to evaluation mode and moved to device.")
 
     dev_df = pd.read_csv(os.path.join(args.dataset_path, "dev.csv"))
-    print(f"Development dataset loaded with {len(dev_df)} samples.")
-    dev_generated_unprocessed = generate_summaries(args, model, tokenizer, dev_df)
-    print("Generated unprocessed summaries.")
-
-    save_path = os.path.join(UNPROCESSED_OUTPUT_PATH, identifier)
-    os.makedirs(save_path, exist_ok=True)
-    print(f"Output directory created at: {save_path}")
-        
-    dev_generated_unprocessed.to_csv(os.path.join(save_path, "unprocessed_output.csv"), index=False)
-    print(f"Unprocessed generations saved at {save_path}. Run eval_run.py to postprocess and evaluate.")
+    print(f"Development set loaded with {len(dev_df)} samples.")
+    inference_outputs_df = generate_summaries(args, model, tokenizer, dev_df)
+    
+    final_summaries, gold_summaries = postprocess(inference_outputs_df)
+    print("Postprocessing completed.")
+    # Create a DataFrame with the required columns
+    postprocessed_outputs_df = pd.DataFrame({ # gold_summary, gen_summary pairs
+        'gold_summary': gold_summaries,
+        'gen_summary': final_summaries,
+    })
+    # store 
+    postprocessed_outputs_df.to_csv(os.path.join(qlora_run_output_path, "postprocessed_outputs.csv"), index=False)
+    print(f"finetuned model has been used to generate summaries from development set. resulting gold summary generated summary pairs have been saved to {qlora_run_output_path} as postprocessed_outputs.csv")
     
     
 

@@ -29,7 +29,6 @@ def main():
     final_summaries, gold_summaries = postprocess(unprocessed_output)
     print("Postprocessing completed.")
     saved_model_path = os.path.join(OUTPUT_MODEL_PATH, f'{args.llm_name}', identifier)
-    print(f"Model will be saved to: {saved_model_path}")
 
     avg_rouge_l, individual_rouge_l = calculate_rouge_l(final_summaries, gold_summaries)
     print(f"Calculated average ROUGE-L: {avg_rouge_l}")

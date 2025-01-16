@@ -1,6 +1,6 @@
 import random
 import string
-from constants import SEED, LOCAL_MODELS_PATH, CUSTOM_SPLIT_PATH, OUTPUT_MODEL_PATH, RUN_ARGS_PATH
+from constants import SEED, LOCAL_MODELS_PATH, CUSTOM_SPLIT_PATH, RUN_OUTPUT_PATH
 from transformers import default_data_collator   
 import os
 import torch
@@ -28,6 +28,7 @@ def main():
     """
 
     set_seed(SEED)
+    print("### FINETUNING MODEL ###")
     print("Seed set to:", SEED)
     args = get_args("finetune_config")
     print("Arguments loaded:", args)
@@ -37,9 +38,9 @@ def main():
     scaler = GradScaler(enabled=True)
     # define paths
     base_model_path = os.path.join(LOCAL_MODELS_PATH, args.llm_name)
-    model_save_path = os.path.join(OUTPUT_MODEL_PATH, f'{args.llm_name}', identifier)
-    os.makedirs(model_save_path, exist_ok=True)
-    print("Model save path created:", model_save_path)
+    qlora_run_output_path = os.path.join(RUN_OUTPUT_PATH, 'qlora', 'runs', identifier)
+    os.makedirs(qlora_run_output_path, exist_ok=True)
+    print("Finetuning run output path created at:", qlora_run_output_path)
 
     # load quantized model with lora and tokenizer     
     model, tokenizer = load_model_and_tokenizer(base_model_path)
@@ -160,8 +161,8 @@ def main():
                     args.best_val_loss = best_val_loss
                     args.best_val_loss_step = n_steps
                     # Save the LoRA adapter weights
-                    model.save_pretrained(model_save_path)
-                    print(f'saved model to {model_save_path} at step {n_steps}')
+                    model.save_pretrained(qlora_run_output_path)
+                    print(f'saved model to {qlora_run_output_path} at step {n_steps}')
                 else:
                     patience -= 1
                     print(f'current val loss {val_loss_avg} is not less than best val loss {best_val_loss}, reducing patience by 1, to {patience}')
@@ -187,12 +188,11 @@ def main():
         print(f'train loss: {trn_loss_epoch}, val loss: {val_loss_avg}, learning rate: {lr_scheduler.get_last_lr()[0]}')
 
     # Save metrics and plot after training
-    plot_training_metrics(args, metrics, eval_steps, model_save_path)
-    with open(os.path.join(model_save_path, f'training_log.json'), 'w') as f:
+    plot_training_metrics(args, metrics, eval_steps, qlora_run_output_path)
+    with open(os.path.join(qlora_run_output_path, f'training_log.json'), 'w') as f:
         json.dump(metrics, f, indent=4)
     # save args
-    save_args_to_json(args.__dict__, identifier, os.path.join(RUN_ARGS_PATH, f"{identifier}.json"))
-    save_args_to_json(args.__dict__, identifier, os.path.join(model_save_path, f"run_args.json"))
+    save_args_to_json(args.__dict__, identifier, os.path.join(qlora_run_output_path, f"run_args.json"))
     print(f"finished training for {identifier}")
 
 if __name__ == '__main__':

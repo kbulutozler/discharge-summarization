@@ -4,8 +4,8 @@
 
 # Define parameter lists
 llm_names=("Llama-3.2-1B" "Llama-3.2-1B-Instruct")  # "Llama-3.2-1B" "Llama-3.2-1B-Instruct"
-lr0s=(1.0e-4 1.0e-5) 
-gas=(8 16)
+lr0s=(5.0e-4 1.0e-5) 
+gas=(16)
 lr_scheduler_types=("polynomial_decay") # "cosine" "linear" "polynomial_decay" for poly decay, be mindful of power parameter since if it's 1 then scheduler is linear
 optimizer_types=("adamw") # "adopt" "adamw"
 dataset_path="/home/bulut/repositories/discharge-summarization/data/toy_custom_split"
@@ -29,7 +29,8 @@ done
 
 # for loop to iterate over num_combinations
 for i in $(seq 0 $((num_combinations - 1))); do
-    identifier=run_${i}
+    # identifier should be run_${i}_yyyy_mm_dd_hh_mm_ampm
+    identifier=run_${i}_$(date +%Y_%m_%d_%H_%M_%p)
     config=config_${i}
     read llm lr0 ga lr_scheduler optimizer <<< "${configs[$i]}"
     # create a config file first
@@ -53,7 +54,7 @@ EOF
     cat <<EOF > .run_pbs_files/${identifier}.pbs
 #!/bin/bash
 ### Job Name
-#PBS -N discharge_summarization-pipeline
+#PBS -N discharge_summarization-qlora-${identifier}
 ### Project code
 #PBS -A discharge_summarization
 ### Maximum time this job can run before being killed (here, 1 day)
@@ -73,8 +74,7 @@ export OMP_NUM_THREADS=2
 # Run Python scripts
 (
   CUDA_VISIBLE_DEVICES=\$CUDA_VISIBLE_DEVICES python -m scripts.finetune.ft_train --config ${config} --identifier ${identifier} &&
-  CUDA_VISIBLE_DEVICES=\$CUDA_VISIBLE_DEVICES python -m scripts.finetune.ft_inference --config ${config} --identifier ${identifier} &&
-  CUDA_VISIBLE_DEVICES=\$CUDA_VISIBLE_DEVICES python -m scripts.evaluation.eval_run --config ${config} --identifier ${identifier}
+  CUDA_VISIBLE_DEVICES=\$CUDA_VISIBLE_DEVICES python -m scripts.finetune.ft_inference --config ${config} --identifier ${identifier} 
 ) &
 wait
 EOF
