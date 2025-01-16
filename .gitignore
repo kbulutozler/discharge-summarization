@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 *.so
+*.sh
+*.pbs
+*.txt
 
 # Mac OS and system files
 .DS_Store
@@ -14,6 +17,7 @@ config/*
 
 # logs
 .hpclogs/
+.run_pbs_files/
 
 # umls files
 quickumls/
