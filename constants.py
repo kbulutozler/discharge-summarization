@@ -31,8 +31,6 @@ PROJECT_DIR = "/home/bulut/repositories/discharge-summarization"
 ORIGINAL_DATAPATH = os.path.join(PROJECT_DIR, "data/original/Hospitalization-Summarization.json") 
 CUSTOM_SPLIT_PATH = os.path.join(PROJECT_DIR, "data/custom_split") # train, val, test
 TOY_CUSTOM_SPLIT_PATH = os.path.join(PROJECT_DIR, "data/toy_custom_split") # small batch of train, val, test
-UNPROCESSED_OUTPUT_PATH = os.path.join(PROJECT_DIR, "output/unprocessed_outputs") # model generations, without postprocessing
-PROCESSED_OUTPUT_PATH = os.path.join(PROJECT_DIR, "output/processed_outputs") # postprocessed generations
 
 
 LOCAL_MODELS_PATH = os.path.join(SYSTEM_DIR, "local-models") 

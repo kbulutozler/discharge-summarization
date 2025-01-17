@@ -7,7 +7,7 @@ class AlignScorer(nn.Module):
         super(AlignScorer, self).__init__()
         self.align_scorer = AlignScore(
             model='roberta-base', 
-            device='cpu',
+            device='cuda:0',
             batch_size=8, 
             ckpt_path='https://huggingface.co/yzha/AlignScore/resolve/main/AlignScore-base.ckpt', 
             evaluation_mode='nli_sp')
