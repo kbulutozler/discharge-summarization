@@ -1,0 +1,12 @@
+Namespace(model='meta-llama/Llama-3.3-70B-Instruct-Turbo', dataset_path='/home/bulut/repositories/discharge-summarization/data/custom_split/', is_basic=True, shot=2, output_path='/media/networkdisk/bulut/run-outputs/discharge-summarization/', test=True)
+n-shot method outputs will be saved to: /media/networkdisk/bulut/run-outputs/discharge-summarization/icl/runs/basic_prompt_2_shot_Llama-3.3-70B-Instruct-Turbo
+test dataset has been loaded with 250 samples.
+unprocessed inference outputs have been saved to /media/networkdisk/bulut/run-outputs/discharge-summarization/icl/runs/basic_prompt_2_shot_Llama-3.3-70B-Instruct-Turbo as unprocessed_outputs.csv
+Postprocessing completed.
+n-shot model has been used to generate summaries from given dataset. resulting gold summary generated summary pairs have been saved to /media/networkdisk/bulut/run-outputs/discharge-summarization/icl/runs/basic_prompt_2_shot_Llama-3.3-70B-Instruct-Turbo
+Namespace(model='meta-llama/Llama-3.3-70B-Instruct-Turbo', dataset_path='/home/bulut/repositories/discharge-summarization/data/custom_split/', is_basic=False, shot=2, output_path='/media/networkdisk/bulut/run-outputs/discharge-summarization/', test=True)
+n-shot method outputs will be saved to: /media/networkdisk/bulut/run-outputs/discharge-summarization/icl/runs/informative_prompt_2_shot_Llama-3.3-70B-Instruct-Turbo
+test dataset has been loaded with 250 samples.
+unprocessed inference outputs have been saved to /media/networkdisk/bulut/run-outputs/discharge-summarization/icl/runs/informative_prompt_2_shot_Llama-3.3-70B-Instruct-Turbo as unprocessed_outputs.csv
+Postprocessing completed.
+n-shot model has been used to generate summaries from given dataset. resulting gold summary generated summary pairs have been saved to /media/networkdisk/bulut/run-outputs/discharge-summarization/icl/runs/informative_prompt_2_shot_Llama-3.3-70B-Instruct-Turbo

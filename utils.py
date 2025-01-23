@@ -38,29 +38,29 @@ def preprocess_data(data_path, save_data_path):
 
     # remove columns except for instruct and answer
     data = data[['instruct', 'answer']]
-    # remove Input:\n from beginning of instruct texts
-    data['instruct'] = data['instruct'].apply(lambda x: x.split('Input:\n')[1] if 'Input:\n' in x else x)
-    # remove Output:" from the end of instruct texts
-    data['instruct'] = data['instruct'].apply(lambda x: x.split('Output:')[0] if 'Output:' in x else x)
+    # remove instructions from original reports
+    data.loc[:, 'instruct'] = data['instruct'].apply(lambda x: x.removeprefix("Input:\n").removesuffix("\n\nOutput:"))    
     # change column names to text and target
     data.rename(columns={'instruct': 'text', 'answer': 'target'}, inplace=True)
+    # inject ||startoftext|| and ||endoftext||. this will be undone in the postprocessing step
+    data.loc[:, 'target'] = data['target'].apply(lambda x: "||startoftext|| " + x + " ||endoftext||")
     
-    
-    # save without splitting, this is useful for zero shot evaluation
+    # save without splitting
     data.to_csv(os.path.join(save_data_path, 'all_data.csv'))
     
     # First obtain test data
     temp_data, test_data = train_test_split(data, test_size=test_size, random_state=PREPROCESS_SEED)
     # Split temp data into train and val 
     train_data, dev_data = train_test_split(temp_data, test_size=0.3, random_state=PREPROCESS_SEED)
-    
-    # inject ||startoftext|| and ||endoftext|| to train and dev data
-    train_data['target'] = train_data['target'].apply(lambda x: "||startoftext|| " + x + " ||endoftext||")
-    dev_data['target'] = dev_data['target'].apply(lambda x: "||startoftext|| " + x + " ||endoftext||")
+
     # save to csv
     train_data.to_csv(os.path.join(save_data_path, 'train.csv'))
     dev_data.to_csv(os.path.join(save_data_path, 'dev.csv'))
     test_data.to_csv(os.path.join(save_data_path, 'test.csv'))
+    
+    # save split indexes to a json file under save_data_path
+    with open(os.path.join(save_data_path, 'split_indexes.json'), 'w') as f:
+        json.dump({'train': train_data.index.tolist(), 'dev': dev_data.index.tolist(), 'test': test_data.index.tolist()}, f)
     
     # confirm split sizes
     print(f"Total samples: {len(data)}")

@@ -3,7 +3,7 @@ from constants import ORIGINAL_DATAPATH, CUSTOM_SPLIT_PATH, TOY_CUSTOM_SPLIT_PAT
 from utils import preprocess_data
 
 def main():
-    pass
+    preprocess_data(ORIGINAL_DATAPATH, CUSTOM_SPLIT_PATH)
     
 if __name__ == '__main__':
     main()

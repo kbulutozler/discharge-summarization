@@ -31,13 +31,13 @@ def postprocess(df):
         list: list of cleaned summaries
         list: list of gold summaries
     """
-    summaries = split_and_merge(df)
-    summaries = clean_stop_tokens(summaries)
+    generated_summaries = split_and_merge(df)
+    generated_summaries = clean_stop_tokens(generated_summaries)
     gold_summaries = df["target"].tolist()
     for i, summary in enumerate(gold_summaries):
         gold_summaries[i] = summary.replace("||startoftext||", "").replace("||endoftext||", "") # remove to only show the summary
 
-    return summaries, gold_summaries
+    return generated_summaries, gold_summaries
 
 
 def split_and_merge(df):
@@ -50,13 +50,13 @@ def split_and_merge(df):
         list: list of merged summaries
     """
     nlp = spacy.load("en_core_web_sm") # python -m spacy download en_core_web_sm
-    summaries = []
+    generated_summaries = []
     for i, row in df.iterrows():
         generated_doc = nlp(row["generated_summary"].replace('\n', ' ').replace('\r', ' '))
         list_of_sentences = [sent.text for sent in generated_doc.sents if sent.text.strip()]
         summary = " ".join(list_of_sentences) # merge sentences into a single string
-        summaries.append(summary)
-    return summaries
+        generated_summaries.append(summary)
+    return generated_summaries
 
 def clean_stop_tokens(sequences): # not 100% success rate
     """

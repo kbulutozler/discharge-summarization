@@ -75,7 +75,7 @@ def generate_summaries(args, model, tokenizer, df):
     # add empty column for generated summaries  
     generated_summaries = []
     full_output = []
-    for i, trial in tqdm(df.iterrows(), total=df.shape[0], desc=f"Generating summaries with {args.llm_name}"):
+    for i, trial in tqdm(df.iterrows(), total=df.shape[0], desc=f"Generating summaries with {args['llm_name']}"):
         if (i+1)/df.shape[0] % 0.1 == 0:
             print(f"test sample {i+1} of {df.shape[0]}")
         text = trial["text"]

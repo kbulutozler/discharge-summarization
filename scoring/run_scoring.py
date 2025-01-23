@@ -90,13 +90,15 @@ def calculate_scores(development_pairs):
     }
     overall_score = np.mean(list(metric_averages.values()))
 
-    return scores_df, overall_score
+    return scores_df, metric_averages, overall_score
 
 def main():
     # python -m scoring.run_scoring --method qlora
     # parse arguments
     parser = argparse.ArgumentParser()
-    parser.add_argument("--method", type=str, choices=["qlora", "zeroshot"], required=True) 
+    parser.add_argument("--method", type=str, choices=["qlora", "icl"], required=True) 
+    parser.add_argument("--test", action='store_true', help="if true, scores will be calculated on model generations of test set")
+
     args = parser.parse_args()
 
     
@@ -111,43 +113,82 @@ def main():
         table_dir = os.path.join(RUN_OUTPUT_PATH, "qlora")
         runs_dir = os.path.join(RUN_OUTPUT_PATH, "qlora", "runs")
     else:
-        table_dir = os.path.join(RUN_OUTPUT_PATH, "zeroshot")
-        runs_dir = os.path.join(RUN_OUTPUT_PATH, "zeroshot", "runs")
+        table_dir = os.path.join(RUN_OUTPUT_PATH, "icl")
+        runs_dir = os.path.join(RUN_OUTPUT_PATH, "icl", "runs")
+    
         
-    # check if a table called development_scores.csv exists in the table_dir
-    development_scores_path = os.path.join(table_dir, "development_scores.csv")
-    if os.path.exists(development_scores_path):
-        development_scores_df = pd.read_csv(development_scores_path)
+    if args.test:
+        scores_path = os.path.join(table_dir, "test_scores.csv")
     else:
-        development_scores_df = pd.DataFrame(columns=["run_name", "model_name", "gradient_accumulation_steps", "lr0", "lr_scheduler_type", "optimizer_type", "overall_score"])
+        scores_path = os.path.join(table_dir, "development_scores.csv")
+    if os.path.exists(scores_path):
+        scores_df = pd.read_csv(scores_path)
+    else:
+        if args.method == "qlora":
+            scores_df = pd.DataFrame(columns=["run_name", "model_name", "gradient_accumulation_steps", "lr0", "lr_scheduler_type", "optimizer_type", "bleu", "rouge1", "rouge2", "rougeL", "bertscore", "align", "medcon", "meteor", "overall_score"])
+        else:
+            scores_df = pd.DataFrame(columns=["run_name", "bleu", "rouge1", "rouge2", "rougeL", "bertscore", "align", "medcon", "meteor", "overall_score"])
     
     
     # there are run folders under runs_dir where each folder has all the output files of a run
     for run_folder in os.listdir(runs_dir):
         run_path = os.path.join(runs_dir, run_folder)
          # file path of original-generated pairs that this script will calculate scores for
-        postprocessed_outputs_path = os.path.join(run_path, "postprocessed_outputs.csv")
-        development_pairs = pd.read_csv(postprocessed_outputs_path)
-        individual_scores_df, overall_score = calculate_scores(development_pairs)
+        if args.test:
+            postprocessed_outputs_path = os.path.join(run_path, "test_postprocessed_outputs.csv")
+        else:
+            postprocessed_outputs_path = os.path.join(run_path, "postprocessed_outputs.csv")
+        if not os.path.exists(postprocessed_outputs_path):
+            print(f"Skipping {run_folder} because file does not exist")
+            continue
+        pairs = pd.read_csv(postprocessed_outputs_path)
+        individual_scores_df, metric_averages, overall_score = calculate_scores(pairs)
         # write individual scores to the table
-        individual_scores_df.to_csv(os.path.join(run_path, "individual_scores.csv"), index=False)
-        print(f"Individual scores saved to {os.path.join(run_path, 'individual_scores.csv')}")
-        run_details = json.load(open(os.path.join(run_path, "run_details.json")))[run_folder]
-        # add run's performance to development scores df
-        development_scores_df = pd.concat([development_scores_df, pd.DataFrame([{
-            "run_name": run_folder,
-            "model_name": run_details["llm_name"],
-            "gradient_accumulation_steps": run_details["gradient_accumulation_steps"],
-            "lr0": "{:.2e}".format(float(run_details["lr0"])), # Format lr0 in scientific notation
-            "lr_scheduler_type": run_details["lr_scheduler_type"],
-            "optimizer_type": run_details["optimizer_type"],
-            "overall_score": overall_score
-        }])], ignore_index=True)
+        if args.test:
+            individual_scores_df.to_csv(os.path.join(run_path, "test_individual_scores.csv"), index=False)
+            print(f"Individual scores saved to {os.path.join(run_path, 'test_individual_scores.csv')}")
+        else:
+            individual_scores_df.to_csv(os.path.join(run_path, "individual_scores.csv"), index=False)
+            print(f"Individual scores saved to {os.path.join(run_path, 'individual_scores.csv')}")
         
-    # save development scores df to csv, overwrite if it exists. sort by overall_score
-    development_scores_df = development_scores_df.sort_values(by="overall_score", ascending=False)
-    development_scores_df.to_csv(os.path.join(table_dir, "development_scores.csv"), index=False)
-    print(f"Development scores saved to {os.path.join(table_dir, 'development_scores.csv')}")
+        if args.method == "qlora":
+            run_details = json.load(open(os.path.join(run_path, "run_details.json")))[run_folder]
+            qlora_metrics = {
+                "model_name": run_details["llm_name"],
+                "gradient_accumulation_steps": run_details["gradient_accumulation_steps"],
+                "lr0": "{:.2e}".format(float(run_details["lr0"])),
+                "lr_scheduler_type": run_details["lr_scheduler_type"],
+                "optimizer_type": run_details["optimizer_type"]
+            }
+
+        # add run's performance to development scores df
+        base_metrics = {
+            "run_name": run_folder,
+            "bleu": metric_averages["bleu"],
+            "rouge1": metric_averages["rouge1"],
+            "rouge2": metric_averages["rouge2"],
+            "rougeL": metric_averages["rougeL"],
+            "bertscore": metric_averages["bertscore"],
+            "align": metric_averages["align"],
+            "medcon": metric_averages["medcon"],
+            "meteor": metric_averages["meteor"],
+            "overall_score": overall_score
+        }
+        
+        if args.method == "qlora":
+            metrics = {**base_metrics, **qlora_metrics}
+        else:
+            metrics = base_metrics
+            
+        scores_df = pd.concat([scores_df, pd.DataFrame([metrics])], ignore_index=True)
+        
+    # save scores df to csv, overwrite if it exists. sort by overall_score
+    scores_df = scores_df.sort_values(by="overall_score", ascending=False)
+    if args.test:
+        scores_df.to_csv(os.path.join(table_dir, "test_scores.csv"), index=False)
+    else:
+        scores_df.to_csv(os.path.join(table_dir, "development_scores.csv"), index=False)
+    print(f"scores saved to {table_dir}")
     
 
 if __name__ == "__main__":
